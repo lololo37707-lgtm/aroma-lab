@@ -10430,8 +10430,8 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
   </div>
 </section>
 
-<section id="page-logs" class="page"  <div class="al-page-head"><div class="kicker">MY COFFEE JOURNAL</div><h1>Coffee Journal</h1><p>每杯咖啡，一張屬於你嘅紀錄。</p></div>
->
+<section id="page-logs" class="page">
+  <div class="al-page-head"><div class="kicker">MY COFFEE JOURNAL</div><h1>Coffee Journal</h1><p>每杯咖啡，一張屬於你嘅紀錄。</p></div>
   <div class="card">
     <div class="row"><h2>咖啡紀錄</h2><span id="logCount" class="badge">0 筆</span></div>
     <div class="history-filter"><button class="mini filter active" data-filter="all" type="button">全部</button><button class="mini filter" data-filter="espresso" type="button">9Barista</button><button class="mini filter" data-filter="pour" type="button">手沖</button></div>
@@ -10694,8 +10694,8 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button class="al-more-card beans" data-open-page="beans" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 4.8c2.2 2.2 1.3 7.1-2 10.4-3.3 3.3-8.2 4.2-10.4 2-2.2-2.2-1.3-7.1 2-10.4 3.3-3.3 8.2-4.2 10.4-2Z"/><path d="M7.1 17.4c1.2-2.7 2.8-4.2 5.1-5.7 2.1-1.35 3.6-3 5.1-6"/></svg></div><b>豆庫</b><p>記錄買過嘅咖啡豆、剩餘重量、烘焙資料、價錢、店舖同咖啡袋相片。</p></button>
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
+  </div>
   <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.7 · Data stays in your browser</div>
-er</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -12907,7 +12907,8 @@ remembered.forEach(id=>$(id).addEventListener('focus',()=>showSuggestions(id)));
 $('photoInput').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;if(!current){toast('請先建立一筆 9Barista 紀錄');e.target.value='';return}try{toast('處理圖片中…');current.photo=await compressImage(f);renderPhoto();await saveEspresso(true);toast('圖片已保存')}catch(err){toast(err.message)}e.target.value=''});
 $('removePhoto').addEventListener('click',async()=>{if(!current)return;current.photo=null;renderPhoto();await saveEspresso(true);toast('圖片已移除')});
 
-$$('.filter').forEach(b=>b.addEventListener('click',()=>{historyFilter=b.dataset.filter;$$('.filter').forEach(x=>x.classList.toggle('act// v5.7: pure display helpers. No new fields or storage writes.
+$$('.filter').forEach(b=>b.addEventListener('click',()=>{historyFilter=b.dataset.filter;$$('.filter').forEach(x=>x.classList.toggle('active',x===b));renderHistory()}));
+// v5.7: pure display helpers. No new fields or storage writes.
 function receiptRow(label,value){return `<div class="receipt-row"><span>${esc(label)}</span><b>${esc(value==null||value===''?'—':String(value))}</b></div>`}
 function receiptMetric(label,value,unit=''){return `<div class="receipt-metric"><small>${esc(label)}</small><strong>${esc(String(value??'—'))}${unit?`<em>${esc(unit)}</em>`:''}</strong></div>`}
 function receiptBarcode(id){
@@ -12922,7 +12923,6 @@ function receiptRating(value){
   const n=Number(value),valid=Number.isFinite(n)&&n>0&&n<=5;
   return `<div class="receipt-rating"><span>RATING</span>${valid?`<span><span class="receipt-stars" aria-hidden="true">${'★'.repeat(Math.round(n))}${'☆'.repeat(5-Math.round(n))}</span> &nbsp;${esc(String(value))}/5</span>`:'<span>未評分</span>'}</div>`
 }
-ive',x===b));renderHistory()}));
 async function renderHistory(){
   if(!db)return;
   const es=await getAll('sessions'),ps=await getAll('pourLogs');
@@ -12930,19 +12930,19 @@ async function renderHistory(){
     .sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
   const filtered=list.filter(x=>historyFilter==='all'||x._type===historyFilter);
   $('logCount').textContent=list.length+' 筆';
-  const box=$(  if(!filtered.length){box.innerHTML='<div class="receipt-empty"><b>下一杯，值得記住。</b><div class="hint">'+(list.length?'呢個分類暫時未有紀錄。':'完成 9Barista 或手沖後，紀錄會出現喺呢度。')+'</div></div>';return}
-ass="hint">未有紀錄。</div>';return}
-
-  fi    const d=document.createElement('div');d.className='history-item receipt';
+  const box=$('historyList');box.innerHTML='';
+  if(!filtered.length){box.innerHTML='<div class="receipt-empty"><b>下一杯，值得記住。</b><div class="hint">'+(list.length?'呢個分類暫時未有紀錄。':'完成 9Barista 或手沖後，紀錄會出現喺呢度。')+'</div></div>';return}
+  filtered.slice(0,200).forEach(x=>{
+    const d=document.createElement('div');d.className='history-item receipt';
     const number=String(list.findIndex(item=>item._type===x._type&&item.id===x.id)+1).padStart(4,'0');
     const head=`<div class="receipt-head"><div class="receipt-brand">AROMA LAB</div><div class="receipt-sub">PERSONAL COFFEE JOURNAL</div></div><div class="receipt-number"><span>BREW / ${number}</span><span>${esc(x.endTs?'COMPLETED':'IN PROGRESS')}</span></div>`;
     const foot=`<div class="receipt-foot"><div class="receipt-code">${receiptBarcode(x.id)}<div class="receipt-id">${esc(String(x.id||''))}</div></div><div class="receipt-stamp">LOGGED</div></div>`;
-iv');d.className='history-item      const data=x.data||{},warm=x.extractStartTs?fmt(x.extractStartTs-x.startTs):'—',ext=x.extractStartTs&&x.endTs?fmt(x.endTs-x.extractStartTs):'—',rd=roastDays(data.roastDate),ey=data.tds&&parseFloat(data.dose)>0&&parseFloat(data.yield)>0?(parseFloat(data.yield)*parseFloat(data.tds)/parseFloat(data.dose)).toFixed(1):'';
+    if(x._type==='espresso'){
+      const data=x.data||{},warm=x.extractStartTs?fmt(x.extractStartTs-x.startTs):'—',ext=x.extractStartTs&&x.endTs?fmt(x.endTs-x.extractStartTs):'—',rd=roastDays(data.roastDate),ey=data.tds&&parseFloat(data.dose)>0&&parseFloat(data.yield)>0?(parseFloat(data.yield)*parseFloat(data.tds)/parseFloat(data.dose)).toFixed(1):'';
       const tags=Array.isArray(x.tasteTags)?x.tasteTags:[];
       d.innerHTML=head+`
-Fixed(1):'';
-      d.innerHTML=`
-        <div class="history-title">${esc(data.beans||x.beanSn        <div class="receipt-method">9BARISTA MK2 PRO · ESPRESSO</div>
+        <div class="history-title">${esc(data.beans||x.beanSnapshot?.name||'9Barista')}</div>
+        <div class="receipt-method">9BARISTA MK2 PRO · ESPRESSO</div>
         ${receiptRow('DATE',dateLabel(x.createdAt))}${receiptRow('ROASTER',data.roaster||x.beanSnapshot?.roaster)}
         ${receiptRow('GRINDER',grinderSummary(data))}
         <div class="receipt-metrics">${receiptMetric('DOSE',data.dose||'—','g')}${receiptMetric('YIELD',data.yield||'—','g')}${receiptMetric('EXTRACT',ext)}</div>
@@ -12957,17 +12957,17 @@ Fixed(1):'';
         ${receiptRow('WATER',data.water?data.water+' g':'')}${receiptRow('HEAT SOURCE',data.heatSource)}${receiptRow('HEAT',data.heat)}${receiptRow('PROCESS',data.processing)}${receiptRow('ORIGIN',data.origin)}${receiptRow('VARIETY',data.variety)}${receiptRow('ALTITUDE',data.altitude)}${receiptRow('ROASTER NOTES',data.roasterNotes)}${receiptRow('COACH',x.coachResult?.action)}
         </div></details>${foot}
         <div class="flex-actions"><button class="mini edit-log" type="button">查看 / 編輯</button><button class="mini danger delete-log" type="button">刪除</button></div>`;
-on">刪除</button>
-        </div>`;
       d.querySelector('.edit-log').onclick=()=>{
         current=x;selectedEspressoBeanId=x.beanId||resolveBeanForLog(x,'espresso')?.id||null;loadEspressoForm();renderEspressoTimeline();renderEspressoTimers();updateEspressoUI();showPage('edata')
       };
       d.querySelector('.delete-log').onclick=async()=>{
         if(!confirm('確定刪除呢杯 9Barista 紀錄？'))return;
-              if(current?.id===x.id){current=null;loadEspressoForm();renderEspressoTimeline();renderEspressoTimers();updateEspressoUI()}
-s();updateEspressoUI()
-        }
-        await rebuildMemory();await ren      const r=x.recipe||{};
+        await remove('sessions',x.id);
+        if(current?.id===x.id){current=null;loadEspressoForm();renderEspressoTimeline();renderEspressoTimers();updateEspressoUI()}
+        await rebuildMemory();await renderHistory()
+      };
+    }else{
+      const r=x.recipe||{};
       d.innerHTML=head+`
         <div class="history-title">${esc(x.beanSnapshot?.name||x.recipeName||'手沖')}</div>
         <div class="receipt-method">POUR OVER · ${esc(x.recipeName||'手沖')}</div>
@@ -12977,13 +12977,15 @@ s();updateEspressoUI()
         ${receiptRating(x.rating)}${x.taste?`<div class="receipt-taste">${esc(x.taste)}</div>`:''}${x.notes?`<div class="receipt-taste">${esc(x.notes)}</div>`:''}
         <details class="receipt-details"><summary>TECHNICAL DETAILS / 技術資料</summary><div class="detail">${receiptRow('BREWER',r.brewer)}${receiptRow('TEMP',r.temps)}${receiptRow('RECIPE',x.recipeName)}</div></details>
         ${foot}<div class="flex-actions"><button class="mini danger delete-pour-log" type="button">刪除</button></div>`;
-ype="button">刪除</button></div>`;
       d.querySelector('.delete-pour-log').onclick=async()=>{
         if(!confirm('確定刪除呢次手沖紀錄？'))return;
         await remove('pourLogs',x.id);await renderHistory()
       };
-    }$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.7',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
-revokeObjectURL(a.href),1000)});
+    }
+    box.appendChild(d);
+  });
+}
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.7',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
