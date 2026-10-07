@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v4.2</title>
+<title>Aroma Lab v5.0</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -5763,6 +5763,89 @@ dialog::backdrop,
   .grinder-last-setting{text-align:left}
 }
 
+
+/* =========================================================
+   Aroma Lab v5.0 — Video-style Design Foundation
+   Foundation only: cool canvas, soft spatial surfaces,
+   pastel glow language, squircle geometry and black pills.
+   No page-structure, navigation, feature or DB changes.
+   ========================================================= */
+:root{
+  --v5-bg:#f5f6f7;--v5-bg-soft:#f8f8f8;--v5-surface:#fbfbfb;--v5-white:#fff;
+  --v5-text:#171717;--v5-soft:#707277;--v5-faint:#9da0a4;--v5-line:rgba(28,28,30,.075);
+  --v5-peach:rgba(238,191,163,.34);--v5-blue:rgba(160,202,231,.34);--v5-rose:rgba(236,161,176,.30);--v5-mint:rgba(169,211,193,.24);
+  --v5-r-lg:30px;--v5-r-md:22px;--v5-r-sm:16px;--v5-pill:999px;
+  --v5-card:0 18px 46px rgba(31,35,39,.065),0 4px 14px rgba(31,35,39,.035),inset 0 1px 0 rgba(255,255,255,.95);
+  --v5-soft-shadow:0 10px 26px rgba(31,35,39,.05),inset 0 1px 0 rgba(255,255,255,.90);
+  --v5-black:#171717;--v5-black-press:#252525;
+}
+html{background:var(--v5-bg)}
+body{background:radial-gradient(circle at 14% 9%,rgba(255,255,255,.92),transparent 32rem),radial-gradient(circle at 86% 16%,rgba(205,222,235,.13),transparent 26rem),linear-gradient(180deg,var(--v5-bg-soft),var(--v5-bg));color:var(--v5-text)}
+body:before,body:after{content:"";position:fixed;pointer-events:none;z-index:-2;filter:blur(42px);opacity:.72;border-radius:50%}
+body:before{width:280px;height:280px;left:-170px;top:22vh;background:var(--v5-peach)}
+body:after{width:320px;height:320px;right:-190px;top:56vh;background:var(--v5-blue)}
+
+/* Header material only — structure comes later in v5.4 */
+.al-header{background:rgba(248,249,250,.84)!important;border-bottom:1px solid rgba(28,28,30,.055)!important;box-shadow:none!important;-webkit-backdrop-filter:blur(22px) saturate(1.06);backdrop-filter:blur(22px) saturate(1.06)}
+.al-brand-mark{box-shadow:0 5px 18px rgba(60,70,80,.08),inset 0 1px 0 rgba(255,255,255,.78)!important}
+.al-page-indicator{background:rgba(255,255,255,.72)!important;border:1px solid rgba(28,28,30,.065)!important;box-shadow:0 5px 16px rgba(31,35,39,.035)!important;color:var(--v5-soft)!important}
+.page{background:transparent!important;padding-top:6px}
+.al-page-head{border-bottom-color:rgba(28,28,30,.045)!important}.al-page-title{color:var(--v5-text)!important}
+.al-page-sub,.small-note,.hint,.muted,.subtle,.field label,.kicker,.eyebrow{color:var(--v5-soft)!important}
+.al-page-title:before,.section-title:before{opacity:.58!important;filter:saturate(.58) brightness(1.08)}
+
+/* Soft Spatial surfaces */
+.card,.learn-hero,.insight-hero,#page-espresso .al-brew-shell,.bean-card,.drink-card,.recipe-item,.history-item,.al-more-card,.chapter,.guide,.flow-case,.decision-step,.previous-best,.next-shot-card,.coach-card,.insight-stat,.insight-kpi,.bean-performance,.bean-detail-shell{background:linear-gradient(180deg,rgba(255,255,255,.93),rgba(251,251,251,.92))!important;border:1px solid var(--v5-line)!important;box-shadow:var(--v5-card)!important}
+.card,.learn-hero,.insight-hero,#page-espresso .al-brew-shell,.bean-card,.drink-card,.recipe-item,.history-item,.al-more-card,.bean-detail-shell{border-radius:var(--v5-r-lg)!important}
+.chapter,.guide,.flow-case,.decision-step,.previous-best,.next-shot-card,.coach-card,.insight-stat,.insight-kpi,.bean-performance{border-radius:var(--v5-r-md)!important}
+.receipt,.history-item.receipt,.learn-paper,.paper,.note-paper{background-color:#fbfbfa!important;border-color:rgba(28,28,30,.07)!important}
+
+/* Video-like glow foundation on prominent metric groups */
+#page-espresso .al-dial-grid>:nth-child(1),#page-insights .insight-kpi-grid>:nth-child(1){background:radial-gradient(circle at 50% 24%,var(--v5-peach),transparent 70%),rgba(255,255,255,.9)!important}
+#page-espresso .al-dial-grid>:nth-child(2),#page-insights .insight-kpi-grid>:nth-child(2){background:radial-gradient(circle at 50% 24%,var(--v5-blue),transparent 72%),rgba(255,255,255,.9)!important}
+#page-espresso .al-dial-grid>:nth-child(3),#page-insights .insight-kpi-grid>:nth-child(3){background:radial-gradient(circle at 50% 24%,var(--v5-rose),transparent 72%),rgba(255,255,255,.9)!important}
+#page-espresso .al-dial,#page-insights .insight-kpi{border:1px solid rgba(255,255,255,.84)!important;box-shadow:0 16px 38px rgba(31,35,39,.055),inset 0 1px 0 rgba(255,255,255,.95)!important}
+
+/* Primary anchor = black capsule */
+.btn,button.primary,.btn.primary,.primary-action,.use-bean,#startEspresso,#startPour,#savePourResult{border-radius:var(--v5-pill)!important}
+.btn.primary,button.primary,.primary-action,#startEspresso,#startPour,#savePourResult{background:var(--v5-black)!important;color:#fff!important;border:1px solid var(--v5-black)!important;box-shadow:0 10px 24px rgba(17,17,17,.14),inset 0 1px 0 rgba(255,255,255,.13)!important}
+.btn.primary:hover,button.primary:hover,.primary-action:hover,#startEspresso:hover,#startPour:hover,#savePourResult:hover{background:var(--v5-black-press)!important}
+.btn.secondary,button.secondary,.mini,.bean-filter,.bean-process,.bean-weight-btn,.insight-range-btn,.learn-tab,.tag-chip,.taste-tag{background:rgba(255,255,255,.74)!important;border-color:rgba(28,28,30,.075)!important;box-shadow:0 6px 16px rgba(31,35,39,.03)!important}
+.btn.danger,button.danger{border-radius:var(--v5-pill)!important;box-shadow:none!important}
+
+/* Clean controls */
+input,select,textarea{background:rgba(255,255,255,.82)!important;border:1px solid rgba(28,28,30,.085)!important;border-radius:var(--v5-r-sm)!important;box-shadow:0 5px 14px rgba(31,35,39,.025),inset 0 1px 0 rgba(255,255,255,.82)!important;color:var(--v5-text)!important}
+input::placeholder,textarea::placeholder{color:#a6a8ac!important}
+input:focus,select:focus,textarea:focus{background:#fff!important;border-color:rgba(75,101,122,.22)!important;box-shadow:0 0 0 4px rgba(162,201,226,.13),0 7px 18px rgba(31,35,39,.035)!important}
+.badge,.chip,.recipe-tag,.status-chip,.freshness-chip,.tag-chip,.taste-tag{border-radius:var(--v5-pill)!important;border-color:rgba(28,28,30,.065)!important;box-shadow:none!important}
+.badge,.status-chip,.freshness-chip{background:rgba(255,255,255,.78)!important;color:var(--v5-soft)!important}
+
+/* Personal grinder materials; interaction unchanged */
+.grinder-setting-panel,.pour-grinder-deck{background:radial-gradient(circle at 90% 8%,rgba(169,207,232,.16),transparent 7rem),rgba(255,255,255,.78)!important;border:1px solid rgba(28,28,30,.07)!important;border-radius:var(--v5-r-md)!important;box-shadow:var(--v5-soft-shadow)!important}
+.grinder-setting-display{background:rgba(255,255,255,.86)!important;border-color:rgba(28,28,30,.07)!important;border-radius:var(--v5-r-sm)!important}
+
+/* Image/card materials only — no carousel yet */
+.bean-card-photo,.bean-detail-photo,.al-drink-photo{border-radius:calc(var(--v5-r-lg) - 5px)!important}
+.bean-card{overflow:hidden}.bean-card:before,.drink-card:before,.recipe-item:before{filter:saturate(.64) brightness(1.06)!important;opacity:.72!important}
+
+/* Insights / More / Teaching shell only */
+#page-insights .insight-hero{background:radial-gradient(circle at 84% 12%,rgba(169,207,232,.16),transparent 18rem),radial-gradient(circle at 12% 100%,rgba(235,184,162,.14),transparent 16rem),rgba(255,255,255,.86)!important}
+#page-insights .rating-svg{filter:saturate(.65)}
+.al-more-card{box-shadow:var(--v5-soft-shadow)!important}
+.learn-tabs{background:rgba(255,255,255,.56)!important;border-color:rgba(28,28,30,.055)!important;border-radius:var(--v5-pill)!important;padding:4px!important}
+.learn-tab.active{background:#fff!important;color:var(--v5-text)!important;box-shadow:0 6px 18px rgba(31,35,39,.05)!important}
+
+/* Bottom dock material only — navigation structure unchanged */
+.tabs{background:rgba(249,249,250,.86)!important;border-top:1px solid rgba(28,28,30,.055)!important;box-shadow:0 -10px 34px rgba(31,35,39,.045)!important;-webkit-backdrop-filter:blur(24px) saturate(1.06);backdrop-filter:blur(24px) saturate(1.06)}
+.tab{border-radius:18px!important}.tab.active{background:rgba(255,255,255,.8)!important;color:var(--v5-text)!important;box-shadow:0 7px 18px rgba(31,35,39,.045)!important}
+
+.toast{background:rgba(24,24,24,.93)!important;color:#fff!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 16px 38px rgba(0,0,0,.18)!important;border-radius:var(--v5-pill)!important}
+dialog,.bean-dialog{background:rgba(250,250,250,.97)!important;border:1px solid rgba(28,28,30,.075)!important;border-radius:var(--v5-r-lg)!important;box-shadow:0 26px 70px rgba(20,24,28,.16)!important}
+.card,.al-more-card,.bean-card,.recipe-item,.history-item{margin-bottom:14px!important}.section-title{margin-top:22px!important;margin-bottom:10px!important}
+
+@media(max-width:520px){:root{--v5-r-lg:26px;--v5-r-md:20px}body:before{left:-210px;top:19vh}body:after{right:-230px;top:61vh}.card,#page-espresso .al-brew-shell,.bean-card,.drink-card,.recipe-item,.history-item{box-shadow:0 14px 34px rgba(31,35,39,.052),0 3px 10px rgba(31,35,39,.026),inset 0 1px 0 rgba(255,255,255,.94)!important}}
+@media(prefers-reduced-motion:reduce){body:before,body:after{filter:blur(30px)}}
+
 </style>
 </head>
 <body>
@@ -6442,7 +6525,7 @@ dialog::backdrop,
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon">◫</div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon">▤</div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
   </div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v4.2 · Data stays in your browser</div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.0 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -8319,7 +8402,7 @@ TOTAL     : ${x.startTs&&x.endTs?fmt(x.endTs-x.startTs):'—'}${x.rating?`<br>RA
     box.appendChild(d);
   });
 }
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'4.2',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.0',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
