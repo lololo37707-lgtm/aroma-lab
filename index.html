@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v5.7</title>
+<title>Aroma Lab v5.8</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -9747,6 +9747,97 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 .receipt-empty b{display:block;color:#464a50;font-size:16px;margin-bottom:7px}
 @media(max-width:365px){#historyList .history-item.receipt{padding:23px 17px 20px!important}.receipt .receipt-brand{font-size:20px!important}.receipt .receipt-metric strong{font-size:18px}.receipt .receipt-row{gap:8px;font-size:10px}}
 
+
+/* Aroma Lab v5.8 — Pour-over Redesign. Scoped UI only; IndexedDB v7 unchanged. */
+#page-pour{--pour-ink:#20242a;--pour-muted:#858b94;--pour-line:rgba(86,99,115,.10);--pour-paper:#f7f8fa;--pour-blue:#e4edf3;--pour-shadow:8px 12px 30px rgba(42,53,70,.065),-6px -6px 18px rgba(255,255,255,.86);color:var(--pour-ink)}
+#page-pour .al-page-head p{max-width:28em}
+#page-pour .card{border:1px solid rgba(255,255,255,.95)!important;border-radius:28px!important;background:linear-gradient(140deg,#fff,rgba(248,250,252,.96))!important;box-shadow:var(--pour-shadow)!important;padding:21px!important;margin:18px 0!important}
+#page-pour #pourSelectedBean{border:1px solid #fff!important;background:radial-gradient(ellipse at 100% 0,#e6eef1,transparent 80%),#f7f9fa!important;box-shadow:var(--pour-shadow)!important;margin-bottom:24px!important;border-radius:24px!important}
+#page-pour .pour-library-shell{padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
+#page-pour .pour-library-heading{padding:0 2px 14px;align-items:flex-start}
+#page-pour .pour-eyebrow{font-size:9px;font-weight:600;letter-spacing:.19em;color:var(--pour-muted);display:block;margin-bottom:6px}
+#page-pour .pour-library-heading h2{font-size:23px!important;letter-spacing:-.035em!important;font-weight:650!important}
+#page-pour #recipeList{display:grid!important;gap:17px!important;margin-top:8px!important;grid-template-columns:minmax(0,1fr)!important}
+#page-pour .recipe-item{position:relative;padding:23px!important;margin:0!important;border:1px solid #fff!important;border-radius:27px!important;background:radial-gradient(ellipse at 90% 0,rgba(223,233,239,.65),transparent 65%),linear-gradient(130deg,#fff,#f6f8fa)!important;box-shadow:var(--pour-shadow)!important;overflow:hidden!important}
+#page-pour .recipe-item:before,#page-pour .recipe-item:after{content:none!important}
+#page-pour .pour-recipe-head{display:flex;align-items:center;gap:14px;min-width:0;margin-bottom:19px}
+#page-pour .pour-recipe-head > div:last-child{min-width:0;flex:1}
+#page-pour .pour-brewer-orb{width:58px;height:58px;flex:0 0 58px;border-radius:21px;background:linear-gradient(145deg,#f9fcff,#e6edf2);box-shadow:inset 1px 1px 0 #fff,5px 5px 13px rgba(75,93,117,.10),-4px -4px 10px #fff;display:grid;place-items:center;color:#7b8c9c}
+#page-pour .pour-brewer-orb svg{width:38px;height:38px;filter:drop-shadow(0 3px 2px rgba(94,109,122,.13))}
+#page-pour .recipe-title{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:20px!important;font-weight:650!important;letter-spacing:-.035em!important;line-height:1.4!important;max-width:none!important;color:var(--pour-ink)!important;overflow-wrap:anywhere;margin:0!important}
+#page-pour .pour-recipe-brewer{font-size:10px;color:var(--pour-muted);letter-spacing:.055em;margin:0 0 5px}
+#page-pour .pour-params{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0 17px}
+#page-pour .pour-param{min-width:0;padding:13px 7px;text-align:center;border-radius:17px;background:rgba(238,242,246,.64);box-shadow:inset 2px 2px 5px rgba(63,79,101,.035),inset -2px -2px 5px #fff}
+#page-pour .pour-param small{display:block;color:var(--pour-muted);font-size:9px;letter-spacing:.04em}
+#page-pour .pour-param b{display:block;font-size:21px;font-weight:600;margin-top:5px;letter-spacing:-.045em;color:var(--pour-ink);overflow-wrap:anywhere}
+#page-pour .pour-param em{font-size:10px;font-style:normal;margin-left:3px;color:var(--pour-muted)}
+#page-pour .pour-recipe-sub{display:flex;justify-content:space-between;gap:12px;font-size:11px;color:var(--pour-muted);line-height:1.6;margin-bottom:15px}
+#page-pour .recipe-item .flex-actions{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:8px!important;padding:0!important;margin:0!important;border:0!important}
+#page-pour button.use,#page-pour #parseRecipe,#page-pour #saveRecipe,#page-pour #startPour,#page-pour #nextPour,#page-pour #savePourResult{background:#191b1f!important;color:#fff!important;border-color:#191b1f!important;border-radius:999px!important;box-shadow:0 7px 15px rgba(26,30,38,.10)!important;font-weight:600!important}
+#page-pour button.use,#page-pour button.edit{min-height:46px!important;padding:10px 17px!important;font-size:12px!important}
+#page-pour button.edit,#page-pour #finishPour,#page-pour #backPourLibrary{border:1px solid #e0e5eb!important;background:#f7f9fb!important;color:#636b77!important;border-radius:999px!important;box-shadow:none!important;font-weight:500!important}
+#page-pour button:disabled{opacity:.34!important;box-shadow:none!important}
+#page-pour .pour-recipe-detail{border-top:1px solid var(--pour-line)!important;margin:19px 0 0!important;padding:12px 0 0!important}
+#page-pour .pour-recipe-detail > summary,#page-pour .pour-raw > summary{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:38px;font-size:11px!important;font-weight:550!important;color:#777f8b!important}
+#page-pour .pour-recipe-detail > summary:after,#page-pour .pour-raw > summary:after{content:"+";font-size:19px;font-weight:400}
+#page-pour .pour-recipe-detail[open] > summary:after,#page-pour .pour-raw[open] > summary:after{content:"−"}
+#page-pour .pour-detail-params{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:11px;line-height:1.7;padding:14px 0 8px;color:#5e6874}
+#page-pour .pour-detail-params small{display:block;font-size:9px;letter-spacing:.08em;color:var(--pour-muted);margin-bottom:4px}
+#page-pour .stepslist{display:grid;gap:0;margin-top:13px}
+#page-pour .pour-detail-step{position:relative;display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;padding:0 0 22px;min-width:0}
+#page-pour .pour-step-dot{position:relative;display:grid;place-items:center;width:28px;height:28px;border-radius:10px;background:#e7eef3;font-size:11px;font-weight:600;color:#6c7f91}
+#page-pour .pour-detail-step:not(:last-child):before{content:"";position:absolute;left:13px;top:33px;bottom:5px;width:1px;background:#dae3ec}
+#page-pour .pour-detail-step h3{font-size:13px!important;font-weight:600!important;line-height:28px!important;margin:0}
+#page-pour .pour-detail-step .meta{font-size:10px;color:var(--pour-muted);margin:2px 0 7px;line-height:1.8}
+#page-pour .pour-detail-step .desc{font-size:12px;color:#697481;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere}
+#page-pour .pour-raw{border-top:1px solid var(--pour-line)!important;padding-bottom:0!important}
+#page-pour .pour-raw .detail{font-size:12px!important;line-height:1.85!important;white-space:pre-wrap;overflow-wrap:anywhere}
+#page-pour .source-link{color:#5f7e98!important;font-size:11px!important;overflow-wrap:anywhere}
+#page-pour .pour-import-card summary{display:flex;gap:12px;align-items:center;font-size:15px;font-weight:600}
+#page-pour .pour-import-plus{display:grid;place-items:center;width:35px;height:35px;border-radius:12px;background:#eaf0f5;color:#8193a4;font-weight:400;font-size:23px}
+#page-pour .pour-import-card details{border:0!important;padding:0!important}
+#page-pour .pour-import-card .hint{margin:12px 0 0;font-size:12px}
+#page-pour .pour-editor-step{border:1px solid var(--pour-line)!important;background:#f4f7fa!important;border-radius:19px!important;padding:15px!important;margin:12px 0!important}
+#page-pour input,#page-pour textarea,#page-pour select:not(.grinder-native-select){border:1px solid #e4e8ed!important;background:#fafcfe!important;box-shadow:inset 2px 3px 7px rgba(76,90,109,.035)!important;border-radius:16px!important;font-size:16px!important}
+#page-pour .pour-live-card{position:relative;overflow:hidden;background:radial-gradient(ellipse at 65% 19%,rgba(224,234,243,.74),transparent 42%),#fcfdfe!important}
+#page-pour .pour-live-heading{align-items:flex-start;margin-bottom:13px}
+#page-pour #pourRecipeName{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:20px!important;line-height:1.4!important;font-weight:650!important;letter-spacing:-.03em!important;min-width:0;overflow-wrap:anywhere}
+#page-pour #pourStepBadge{font-size:10px!important;flex:0 0 auto;background:#eff4f7!important;color:#728395!important;border-color:transparent!important;padding:7px 10px!important}
+#page-pour .pour-clock{position:relative;display:grid;place-content:center;min-height:232px;margin:14px auto 21px;width:232px;text-align:center;border-radius:50%;background:radial-gradient(circle,#fcfdff 49%,#f3f7fa 50%,#f6f9fc 59%,#eaf0f5 60%,#fafcfe 61%,#fafcfe 64%,#e7eef4 65%,#f8fafc 66%);box-shadow:14px 17px 35px rgba(74,92,118,.08),-12px -12px 28px #fff,inset 0 1px 1px #fff}
+#page-pour .pour-clock-label{font-size:8px;color:#96a1af;letter-spacing:.22em;margin:0 0 14px}
+#page-pour #pourTimer{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:40px!important;line-height:1.1!important;font-weight:500!important;letter-spacing:-.05em!important;margin:0!important;color:#333b46!important;white-space:nowrap}
+#page-pour #pourStepNo{font-size:10px!important;color:#929eac!important;margin-top:14px;letter-spacing:.03em}
+#page-pour .pour-live-stats{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:12px;margin:15px 0}
+#page-pour .pour-live-stat{min-width:0;text-align:center;border-radius:19px;padding:17px 9px;background:linear-gradient(145deg,#f6f9fc,#edf3f8);box-shadow:inset 1px 1px 1px #fff,3px 4px 10px rgba(84,101,123,.035)}
+#page-pour .pour-live-stat small{display:block;color:#8e9cab;font-size:9px;letter-spacing:.07em}
+#page-pour #pourTarget{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:31px!important;font-weight:600!important;letter-spacing:-.035em!important;line-height:1.3!important;margin:7px 0 0!important;color:#404e5e!important;overflow-wrap:anywhere}
+#page-pour #pourTemp{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:27px!important;font-weight:500!important;line-height:1.3!important;margin:7px 0 0!important;color:#65778a!important;min-height:35px}
+#page-pour #pourTemp:empty:after{content:"—"}
+#page-pour #pourMode{font-size:11px!important;font-weight:500!important;min-height:15px;margin:0 0 8px!important;color:#8a98a7!important;text-align:left!important;letter-spacing:.08em}
+#page-pour #pourDesc{border:0!important;border-radius:0!important;padding:0!important;background:none!important;box-shadow:none!important;font-size:13px!important;line-height:1.85!important;color:#6f7b88!important;margin:0!important;overflow-wrap:anywhere}
+#page-pour #pourDesc b{font-weight:550!important;color:#4e5d6e!important}
+#page-pour .pour-progress{display:flex;gap:5px;margin:16px 0 0}
+#page-pour .pour-progress span{height:4px;border-radius:5px;background:#e5ebf1;flex:1;min-width:0}
+#page-pour .pour-progress span.done{background:#a0b6c7}
+#page-pour .pour-progress span.active{background:#4f6b82}
+#page-pour .pour-next-preview{font-size:11px;color:#93a0ad;line-height:1.75;padding:12px 0 0;overflow-wrap:anywhere}
+#page-pour .pour-live-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:9px!important;margin-top:21px!important}
+#page-pour #startPour{grid-column:1/-1!important;min-height:51px!important}
+#page-pour #nextPour,#page-pour #finishPour{min-height:47px!important;font-size:12px!important}
+#page-pour .pour-preparation{border-top:1px solid var(--pour-line)!important;margin-top:24px;padding:16px 0 0!important}
+#page-pour .pour-preparation > summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:38px;color:#6f7b88;font-size:11px!important;font-weight:500!important}
+#page-pour .pour-preparation > summary:after{content:"⌄";font-size:18px;flex:0 0 auto}
+#page-pour .pour-preparation[open] > summary:after{content:"⌃"}
+#page-pour .pour-preparation #pourGrinderSummary{font-size:10px!important;text-align:right;min-width:0;overflow-wrap:anywhere;max-width:65%;white-space:normal!important}
+#page-pour .pour-preparation .pour-grinder-deck{padding:0!important;margin:15px 0 0!important;box-shadow:none!important;background:none!important;border:0!important}
+#page-pour .pour-preparation .grinder-choice-card{min-height:105px!important;border-radius:19px!important}
+#page-pour .pour-log-card h2,#page-pour #pourResultCard h2{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:18px!important;font-weight:600!important;letter-spacing:-.025em!important}
+#page-pour .timeline li{border-color:var(--pour-line)!important;color:#738092;font-size:12px!important;line-height:1.7}
+#page-pour .timeline .time{color:#8b9bac}
+#page-pour #pourResultCard{background:radial-gradient(ellipse at 100% 0,rgba(223,237,231,.5),transparent 60%),#fff!important}
+@media(min-width:700px){#page-pour #recipeList{grid-template-columns:repeat(2,minmax(0,1fr))!important}#page-pour .pour-live-card{max-width:550px;margin-left:auto!important;margin-right:auto!important}}
+@media(max-width:365px){#page-pour .card{padding:17px!important}#page-pour .recipe-item{padding:18px!important}#page-pour .recipe-title{font-size:18px!important}#page-pour .pour-brewer-orb{width:49px;height:49px;flex-basis:49px;border-radius:17px}#page-pour .pour-param b{font-size:19px}#page-pour .pour-clock{width:218px;min-height:218px}#page-pour .recipe-item .flex-actions{grid-template-columns:minmax(0,1fr) auto!important}#page-pour .recipe-item .mini{padding:10px 13px!important}#page-pour .pour-live-actions{grid-template-columns:1fr 1fr!important}}
+
 </style>
 </head>
 <body>
@@ -10446,7 +10537,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 </section>
 
 <section id="page-pour" class="page">
-  <div class="al-page-head"><div class="kicker">POUR OVER RECIPES</div><h1>手沖</h1><p>Explore, refine and repeat your brewing methods.</p></div>
+  <div class="al-page-head"><div class="kicker">POUR OVER RECIPES</div><h1>手沖</h1><p>由配方到每一注水，慢慢沖出你鍾意嘅味道。</p></div>
   <div id="pourSelectedBean" class="bean-selected-banner">
     <div class="kicker">SELECTED BEAN</div>
     <div id="pourSelectedBeanName" class="bean-selected-name">—</div>
@@ -10457,12 +10548,17 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     </div>
   </div>
   <div id="pourLibrary">
-    <div class="card">
-      <div class="row"><h2>新增手沖技法</h2><span class="badge">貼原文自動整理</span></div>
+    <div class="card pour-library-shell">
+      <div class="row pour-library-heading"><div><span class="pour-eyebrow">YOUR BREW METHODS</span><h2>配方庫</h2></div><span id="recipeCount" class="badge">0 個</span></div>
+      <div id="recipeList"><div class="hint">未有技法。</div></div>
+    </div>
+    <div class="card pour-import-card">
+      <details><summary><span class="pour-import-plus" aria-hidden="true">+</span>新增手沖配方</summary>
+      <div class="hint">貼上技法原文，自動整理後可以逐項修改。</div>
       <div class="form">
         <div class="field"><label>貼上網上技法原文</label><textarea id="rawRecipe" placeholder="例如：改良版粕谷哲 HARIO SWITCH 手法…"></textarea></div>
-        <button id="parseRecipe" class="btn primary" type="button">✨ 自動整理技法</button>
-      </div>
+        <button id="parseRecipe" class="btn primary" type="button">自動整理技法</button>
+      </div></details>
     </div>
 
     <div id="recipeEditorCard" class="card" style="display:none">
@@ -10480,20 +10576,27 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
       <div class="actions"><button id="saveRecipe" class="btn primary" type="button">✓ 儲存技法</button><button id="cancelRecipe" class="btn" type="button">取消</button><button id="deleteRecipe" class="btn danger" type="button" style="display:none">刪除技法</button></div>
     </div>
 
-    <div class="card">
-      <div class="row"><h2>已儲存技法</h2><span id="recipeCount" class="badge">0 個</span></div>
-      <div id="recipeList"><div class="hint">未有技法。</div></div>
-    </div>
+
   </div>
 
   <div id="pourBrew" class="pour-screen">
     <button id="backPourLibrary" class="mini" type="button">← 返回技法庫</button>
-    <div class="card">
-      <div class="row"><h2 id="pourRecipeName"></h2><span id="pourStepBadge" class="badge">準備</span></div>
+    <div class="card pour-live-card">
+      <span class="pour-eyebrow">LIVE BREW</span>
+      <div class="row pour-live-heading"><h2 id="pourRecipeName"></h2><span id="pourStepBadge" class="badge">準備</span></div>
+      <div id="pourBrewParams" class="pour-params"></div>
+      <div class="pour-clock"><div class="pour-clock-label">BREW TIME</div><div id="pourTimer" class="timer" role="timer" aria-label="手沖經過時間">00:00.0</div><div id="pourStepNo" class="pour-stepno">準備開始</div></div>
+      <div class="pour-live-stats"><div class="pour-live-stat"><small>目標累計水量</small><div id="pourTarget" class="pour-target">—</div></div><div class="pour-live-stat"><small>本步水溫</small><div id="pourTemp" class="pour-temp"></div></div></div>
+      <div id="pourMode" class="pour-mode"></div>
+      <div id="pourDesc" class="guide">按「開始手沖」之後逐步跟住操作。</div>
+      <div id="pourStepProgress" class="pour-progress" aria-label="沖煮步驟進度"></div>
+      <div id="pourNextPreview" class="pour-next-preview"></div>
+      <div class="actions pour-live-actions"><button id="startPour" class="btn primary" type="button">▶ 開始手沖</button><button id="nextPour" class="btn" type="button" disabled>下一步 →</button><button id="finishPour" class="btn" type="button" disabled>✓ 完成手沖</button></div>
+      <details id="pourPreparation" class="pour-preparation"><summary><span>磨豆機 / 本次設定</span><span id="pourGrinderSummary" class="grinder-last-setting"></span></summary>
       <div class="pour-grinder-deck grinder-instrument-deck">
         <div class="pour-grinder-title">
           <div><span class="kicker">MY GRINDER</span><b>Actual brew setting</b></div>
-          <span id="pourGrinderSummary" class="grinder-last-setting"></span>
+          <span class="hint">本次實際磨度</span>
         </div>
 
         <div class="grinder-choice-grid compact" data-grinder-choice-group="pour">
@@ -10551,17 +10654,11 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
           <div id="pourKinuGrindDisplay" class="grinder-setting-display grinder-setting-readout">—</div>
         </div>
       </div>
-      <div id="pourTimer" class="timer">00:00.0</div>
-      <div id="pourStepNo" class="pour-stepno">準備開始</div>
-      <div id="pourMode" class="pour-mode"></div>
-      <div id="pourTemp" class="pour-temp"></div>
-      <div id="pourTarget" class="pour-target">—</div>
-      <div id="pourDesc" class="guide">按「開始手沖」之後逐步跟住操作。</div>
-      <div class="actions"><button id="startPour" class="btn primary" type="button">▶ 開始手沖</button><button id="nextPour" class="btn" type="button" disabled>下一步 →</button><button id="finishPour" class="btn" type="button" disabled>✓ 完成手沖</button></div>
+      </details>
     </div>
-    <div class="card"><h2>實際時間記錄</h2><ul id="pourTimeline" class="timeline"><li><span class="time">—</span><span>未開始</span></li></ul></div>
+    <div class="card pour-log-card"><span class="pour-eyebrow">BREW TIMELINE</span><h2>實際時間記錄</h2><ul id="pourTimeline" class="timeline"><li><span class="time">—</span><span>未開始</span></li></ul></div>
     <div id="pourResultCard" class="card" style="display:none">
-      <h2>手沖結果</h2>
+      <span class="pour-eyebrow">TASTING NOTES</span><h2>手沖結果</h2>
       <div class="form"><div class="field"><label>評分</label><select id="pourRating"><option value="">未評分</option><option value="1">1 ★</option><option value="2">2 ★</option><option value="3">3 ★</option><option value="4">4 ★</option><option value="5">5 ★</option></select></div><div class="field"><label>味道</label><input id="pourTaste" placeholder="甜、酸、乾淨、厚、薄…"></div><div class="field"><label>備註</label><textarea id="pourNotes"></textarea></div><button id="savePourResult" class="btn primary" type="button">儲存結果</button></div>
     </div>
   </div>
@@ -10695,7 +10792,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
   </div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.7 · Data stays in your browser</div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.8 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -12985,7 +13082,7 @@ async function renderHistory(){
     box.appendChild(d);
   });
 }
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.7',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.8',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
@@ -13038,14 +13135,46 @@ async function seedDrinkRecipes(){
   }
   return changed;
 }
-async function renderRecipes(){const rs=(await getAll('pourRecipes')).sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0));$('recipeCount').textContent=rs.length+' 個';const box=$('recipeList');box.innerHTML='';if(!rs.length){box.innerHTML='<div class="hint">未有技法。</div>';return}rs.forEach(r=>{r.steps=(r.steps||[]).map(normalizeStep);const ratio=parseFloat(r.dose)>0&&parseFloat(r.water)>0?(parseFloat(r.water)/parseFloat(r.dose)).toFixed(1):'—';const d=document.createElement('div');d.className='recipe-item';const source=/^https?:\/\//i.test(r.source||'')?`<a class="source-link" href="${esc(r.source)}" target="_blank" rel="noopener">開啟來源 ↗</a>`:'';d.innerHTML=`<div class="recipe-title">${esc(r.name)}</div><div class="recipe-meta">${esc(r.brewer||'未指定器具')} · ${r.dose?esc(r.dose)+'g':'粉量未填'} / ${esc(r.water||'—')}g ${ratio!=='—'?`· 約 1:${ratio}`:''}<br>${esc(r.grind||'研磨未填')} · ${esc(r.temps||'水溫未填')}<br>${source}</div><div class="flex-actions"><button class="mini use" type="button">▶ 用此技法沖煮</button><button class="mini edit" type="button">編輯</button></div><details><summary>查看步驟</summary><div class="stepslist"></div></details><details><summary>查看原文</summary><div class="detail" style="white-space:pre-wrap">${esc(r.raw||'')}</div></details>`;const sl=d.querySelector('.stepslist');r.steps.forEach((s,i)=>sl.insertAdjacentHTML('beforeend',`<div class="step"><b>Step ${i+1} · ${esc(s.mode||'未指定')}</b><div class="meta">${esc(s.temp||'—')} · ${esc(s.target||'—')} · ${s.waitSec!=null?fmt(s.waitSec*1000):'時間未填'}</div><div class="desc">${esc(s.description||'')}</div></div>`));d.querySelector('.use').onclick=()=>openPourBrew(r);d.querySelector('.edit').onclick=()=>loadRecipeEditor(r,true);box.appendChild(d)})}
-function openPourBrew(r){pourRun={id:uid('p'),recipeId:r.id,recipeName:r.name,startTs:null,endTs:null,stepIndex:-1,events:[],createdAt:Date.now(),rating:'',taste:'',notes:'',recipe:JSON.parse(JSON.stringify(r))};if(selectedPourBean){pourRun.beanId=selectedPourBean.id;pourRun.beanSnapshot=beanSnapshotFromRecord(selectedPourBean)}hydratePourGrinder(grinderSeedData());syncPourGrinderToRun();$('pourLibrary').style.display='none';$('pourBrew').classList.add('show');$('pourRecipeName').textContent=r.name;$('pourTimer').textContent='00:00.0';$('pourStepBadge').textContent='準備';$('pourStepNo').textContent='準備開始';$('pourMode').textContent='';$('pourTemp').textContent='';$('pourTarget').textContent='—';$('pourDesc').textContent='按「開始手沖」之後逐步跟住操作。';$('startPour').disabled=false;$('nextPour').disabled=true;$('finishPour').disabled=true;$('pourResultCard').style.display='none';renderPourTimeline()}
-function showPourStep(){const steps=pourRun.recipe.steps||[],i=pourRun.stepIndex;if(i<0||i>=steps.length)return;const s=normalizeStep(steps[i]);$('pourStepBadge').textContent=`Step ${i+1}/${steps.length}`;$('pourStepNo').textContent=`Step ${i+1}`;$('pourMode').textContent=s.mode||'';$('pourTemp').textContent=s.temp||'';$('pourTarget').textContent=s.target||'—';$('pourDesc').innerHTML=`<b>目標時間：${s.waitSec!=null?fmt(s.waitSec*1000):'未指定'}</b>${s.description?`<br><br>${esc(s.description)}`:''}`;$('nextPour').disabled=i>=steps.length-1;$('finishPour').disabled=false}
+// v5.8 presentation helpers. No changes to recipes, logs or grinder storage.
+function pourParam(label,value,unit=''){return `<div class="pour-param"><small>${esc(label)}</small><b>${esc(value==null||value===''?'—':String(value))}${unit?`<em>${esc(unit)}</em>`:''}</b></div>`}
+function pourRecipeParams(r){const ratio=parseFloat(r.dose)>0&&parseFloat(r.water)>0?'1:'+(parseFloat(r.water)/parseFloat(r.dose)).toFixed(1):'—';return pourParam('粉量',r.dose,'g')+pourParam('總水量',r.water,'g')+pourParam('粉水比',ratio)}
+function pourBrewerMark(){return `<div class="pour-brewer-orb" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M10 10h28L29 31H19L10 10Z" fill="#f9fcff" stroke="currentColor" stroke-width="1.2"/><path d="M17 14l6 13M24 14v13M31 14l-6 13" stroke="#c3cfd9" stroke-width="1.1"/><path d="M12 34h23v5H12z" fill="#dde6ed" stroke="currentColor" stroke-width="1.1"/><path d="M35 34h3a2.5 2.5 0 0 1 0 5h-3" stroke="currentColor" stroke-width="1.1"/><ellipse cx="24" cy="10" rx="14" ry="3" fill="#f3f7fa" stroke="currentColor" stroke-width="1.2"/></svg></div>`}
+async function renderRecipes(){
+  const rs=(await getAll('pourRecipes')).sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0));
+  $('recipeCount').textContent=rs.length+' 個';const box=$('recipeList');box.innerHTML='';
+  if(!rs.length){box.innerHTML='<div class="card"><h3>你的第一個手沖配方</h3><p class="hint">喺下面貼上技法原文，整理成可以逐步跟住沖嘅配方。</p></div>';return}
+  rs.forEach(r=>{
+    r.steps=(r.steps||[]).map(normalizeStep);const d=document.createElement('div');d.className='recipe-item';
+    const source=/^https?:\/\//i.test(r.source||'')?`<a class="source-link" href="${esc(r.source)}" target="_blank" rel="noopener">開啟來源 ↗</a>`:'';
+    d.innerHTML=`<div class="pour-recipe-head">${pourBrewerMark()}<div><div class="pour-recipe-brewer">${esc(r.brewer||'未指定器具')}</div><div class="recipe-title">${esc(r.name||'未命名技法')}</div></div></div>
+      <div class="pour-params">${pourRecipeParams(r)}</div>
+      <div class="pour-recipe-sub"><span>${esc(r.temps||'水溫未填')}</span><span>${r.steps.length} 個步驟</span></div>
+      <div class="flex-actions"><button class="mini use" type="button">用此配方沖煮</button><button class="mini edit" type="button">編輯</button></div>
+      <details class="pour-recipe-detail"><summary>配方詳情 / 查看步驟</summary>
+      <div class="pour-detail-params"><div><small>GRIND / 研磨建議</small>${esc(r.grind||'未指定')}</div><div><small>TEMPERATURE / 水溫</small>${esc(r.temps||'未指定')}</div></div>
+      ${source}<div class="stepslist"></div>
+      <details class="pour-raw"><summary>查看完整原文</summary><div class="detail">${esc(r.raw||'未有原文。')}</div></details></details>`;
+    const sl=d.querySelector('.stepslist');
+    if(!r.steps.length)sl.innerHTML='<p class="hint">未有步驟，按「編輯」加入。</p>';
+    r.steps.forEach((s,i)=>sl.insertAdjacentHTML('beforeend',`<div class="pour-detail-step"><span class="pour-step-dot">${i+1}</span><div><h3>${esc(s.mode||'步驟 '+(i+1))}</h3><div class="meta">${esc(s.target||'水量未填')} · ${esc(s.temp||'水溫未填')} · ${s.waitSec!=null?fmt(s.waitSec*1000):'時間未填'}</div><div class="desc">${esc(s.description||'')}</div></div></div>`));
+    d.querySelector('.use').onclick=()=>openPourBrew(r);d.querySelector('.edit').onclick=()=>loadRecipeEditor(r,true);box.appendChild(d)
+  })
+}
+function renderPourBrewOverview(){
+  if(!pourRun)return;const r=pourRun.recipe||{},steps=r.steps||[],i=pourRun.stepIndex;
+  $('pourBrewParams').innerHTML=pourRecipeParams(r);
+  $('pourStepProgress').innerHTML=steps.map((_,n)=>`<span class="${pourRun.endTs||n<i?'done':n===i?'active':''}"></span>`).join('');
+  $('pourStepProgress').setAttribute('aria-label',pourRun.endTs?'沖煮完成':`已到步驟 ${Math.max(0,i+1)} / ${steps.length}`);
+  const next=steps[i+1];
+  $('pourNextPreview').textContent=pourRun.endTs?'已完成，喺下面記低今杯嘅味道。':i<0?`${steps.length} 個步驟 · 準備好咖啡豆、熱水同磨豆機後開始。`:next?`下一步 · ${next.mode||'Step '+(i+2)}${next.target?' / '+next.target:''}${next.temp?' / '+next.temp:''}`:'最後一步 · 完成滴濾後按「完成手沖」。';
+}
+function openPourBrew(r){pourRun={id:uid('p'),recipeId:r.id,recipeName:r.name,startTs:null,endTs:null,stepIndex:-1,events:[],createdAt:Date.now(),rating:'',taste:'',notes:'',recipe:JSON.parse(JSON.stringify(r))};if(selectedPourBean){pourRun.beanId=selectedPourBean.id;pourRun.beanSnapshot=beanSnapshotFromRecord(selectedPourBean)}hydratePourGrinder(grinderSeedData());syncPourGrinderToRun();$('pourLibrary').style.display='none';$('pourBrew').classList.add('show');$('pourRecipeName').textContent=r.name;$('pourTimer').textContent='00:00.0';$('pourStepBadge').textContent='準備';$('pourStepNo').textContent='準備開始';$('pourMode').textContent='';$('pourTemp').textContent='';$('pourTarget').textContent='—';$('pourDesc').textContent='按「開始手沖」之後逐步跟住操作。';$('startPour').disabled=false;$('nextPour').disabled=true;$('finishPour').disabled=true;$('pourResultCard').style.display='none';$('pourPreparation').open=true;renderPourTimeline();renderPourBrewOverview()}
+function showPourStep(){const steps=pourRun.recipe.steps||[],i=pourRun.stepIndex;if(i<0||i>=steps.length)return;const s=normalizeStep(steps[i]);$('pourStepBadge').textContent=`Step ${i+1}/${steps.length}`;$('pourStepNo').textContent=`Step ${i+1}`;$('pourMode').textContent=s.mode||'';$('pourTemp').textContent=s.temp||'';$('pourTarget').textContent=s.target||'—';$('pourDesc').innerHTML=`<b>目標時間：${s.waitSec!=null?fmt(s.waitSec*1000):'未指定'}</b>${s.description?`<br><br>${esc(s.description)}`:''}`;$('nextPour').disabled=i>=steps.length-1;$('finishPour').disabled=false;renderPourBrewOverview()}
 function pourLoop(){if(!pourRun?.startTs||pourRun.endTs)return;$('pourTimer').textContent=fmt(Date.now()-pourRun.startTs);pourRAF=requestAnimationFrame(pourLoop)}
 function renderPourTimeline(){const ul=$('pourTimeline');ul.innerHTML='';if(!pourRun?.events?.length){ul.innerHTML='<li><span class="time">—</span><span>未開始</span></li>';return}pourRun.events.forEach(e=>ul.insertAdjacentHTML('beforeend',`<li><span class="time">${fmt(e.offset)}</span><span>${esc(e.label)}</span></li>`))}
-$('startPour').addEventListener('click',()=>{if(!pourRun||!pourRun.recipe.steps?.length){toast('呢個技法未有 Step');return}pourRun.startTs=Date.now();pourRun.stepIndex=0;pourRun.events=[{offset:0,label:'▶ 開始手沖'}];$('startPour').disabled=true;showPourStep();renderPourTimeline();cancelAnimationFrame(pourRAF);pourLoop()});
+$('startPour').addEventListener('click',()=>{if(!pourRun||!pourRun.recipe.steps?.length){toast('呢個技法未有 Step');return}pourRun.startTs=Date.now();pourRun.stepIndex=0;pourRun.events=[{offset:0,label:'▶ 開始手沖'}];$('startPour').disabled=true;$('pourPreparation').open=false;showPourStep();renderPourTimeline();cancelAnimationFrame(pourRAF);pourLoop()});
 $('nextPour').addEventListener('click',()=>{if(!pourRun?.startTs)return;const next=pourRun.stepIndex+1;if(next>=pourRun.recipe.steps.length)return;pourRun.events.push({offset:Date.now()-pourRun.startTs,label:`完成 Step ${pourRun.stepIndex+1} → Step ${next+1}`});pourRun.stepIndex=next;showPourStep();renderPourTimeline()});
-$('finishPour').addEventListener('click',async()=>{if(!pourRun?.startTs)return;syncPourGrinderToRun();pourRun.endTs=Date.now();pourRun.events.push({offset:pourRun.endTs-pourRun.startTs,label:'✓ 手沖完成'});cancelAnimationFrame(pourRAF);$('pourTimer').textContent=fmt(pourRun.endTs-pourRun.startTs);$('pourStepBadge').textContent='完成';$('pourStepNo').textContent='完成手沖';$('pourMode').textContent='';$('pourTemp').textContent='';$('pourTarget').textContent='✓';$('pourDesc').innerHTML=`實際總時間：<b>${fmt(pourRun.endTs-pourRun.startTs)}</b>`;$('nextPour').disabled=true;$('finishPour').disabled=true;$('pourResultCard').style.display='block';await put('pourLogs',pourRun);await renderHistory();toast('手沖 Log 已保存')});
+$('finishPour').addEventListener('click',async()=>{if(!pourRun?.startTs)return;syncPourGrinderToRun();pourRun.endTs=Date.now();pourRun.events.push({offset:pourRun.endTs-pourRun.startTs,label:'✓ 手沖完成'});cancelAnimationFrame(pourRAF);$('pourTimer').textContent=fmt(pourRun.endTs-pourRun.startTs);$('pourStepBadge').textContent='完成';$('pourStepNo').textContent='完成手沖';$('pourMode').textContent='';$('pourTemp').textContent='';$('pourTarget').textContent='✓';$('pourDesc').innerHTML=`實際總時間：<b>${fmt(pourRun.endTs-pourRun.startTs)}</b>`;$('nextPour').disabled=true;$('finishPour').disabled=true;$('pourResultCard').style.display='block';renderPourBrewOverview();await put('pourLogs',pourRun);await renderHistory();toast('手沖 Log 已保存')});
 $('savePourResult').addEventListener('click',async()=>{if(!pourRun)return;syncPourGrinderToRun();pourRun.rating=$('pourRating').value;pourRun.taste=$('pourTaste').value.trim();pourRun.notes=$('pourNotes').value.trim();await put('pourLogs',pourRun);await renderHistory();toast('手沖結果已保存')});
 $('backPourLibrary').addEventListener('click',()=>{cancelAnimationFrame(pourRAF);$('pourBrew').classList.remove('show');$('pourLibrary').style.display='block';pourRun=null});
 $('pourGrinder').addEventListener('change',()=>{updatePourGrinderUI(true);syncPourGrinderToRun()});
