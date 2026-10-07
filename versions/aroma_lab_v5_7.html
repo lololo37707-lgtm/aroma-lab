@@ -9698,76 +9698,54 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 }
 
 
-/* =========================================================
-   Aroma Lab v5.7 — Receipt + Coffee Journal History
-   ========================================================= */
-#page-logs .journal-page-head h1{font-size:39px!important}
-#page-logs .journal-toolbar{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin:9px 1px 17px;padding:0 2px}
-#page-logs .journal-toolbar-title{display:flex;align-items:center;gap:9px;margin-top:4px}
-#page-logs .journal-toolbar-title h2{margin:0;font-family:var(--v51-display);font-size:24px!important;line-height:1.05!important;font-weight:710!important;letter-spacing:-.038em!important;color:#1e1f21!important}
-#page-logs .journal-filter{display:flex!important;gap:5px!important;margin:0!important;padding:4px!important;border-radius:999px!important;background:rgba(255,255,255,.60);border:1px solid rgba(28,28,30,.045)}
-#page-logs .journal-filter .filter{min-height:34px!important;padding:0 10px!important;border:0!important;border-radius:999px!important;background:transparent!important;box-shadow:none!important;font-size:8.5px!important;color:#96989d!important}
-#page-logs .journal-filter .filter.active{background:#fff!important;color:#242629!important;box-shadow:0 5px 14px rgba(31,35,39,.045)!important}
-#page-logs .journal-list{display:grid;gap:13px}
-#page-logs .journal-receipt-card{position:relative;margin:0;filter:drop-shadow(0 14px 20px rgba(31,35,39,.055))}
-#page-logs .journal-receipt-card:nth-child(3n+2){transform:rotate(.18deg)}
-#page-logs .journal-receipt-card:nth-child(3n){transform:rotate(-.15deg)}
-#page-logs .journal-receipt-open{position:relative;width:100%;min-height:0!important;display:block!important;padding:18px 17px 16px!important;overflow:hidden;border-radius:4px 4px 13px 13px!important;border:1px solid rgba(84,77,68,.08)!important;background:radial-gradient(circle at 22% 18%,rgba(0,0,0,.012) 0 1px,transparent 1.3px) 0 0/11px 11px,linear-gradient(180deg,#fffefa,#fbfaf6)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.98),inset 0 0 38px rgba(102,93,82,.018)!important;color:#2d2b28!important;text-align:left!important}
-#page-logs .journal-receipt-open:before,#page-logs .journal-receipt-open:after{content:"";position:absolute;left:0;right:0;height:7px;pointer-events:none}
-#page-logs .journal-receipt-open:before{top:0;background:linear-gradient(135deg,transparent 0 5px,#fffefa 5px) 0 0/10px 7px repeat-x;opacity:.45}
-#page-logs .journal-receipt-open:after{bottom:0;background:linear-gradient(45deg,transparent 0 5px,#fbfaf6 5px) 0 0/10px 7px repeat-x;opacity:.35}
-#page-logs .journal-receipt-head{display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--v51-mono);font-size:7px;line-height:1.2;font-weight:700;letter-spacing:.11em;color:#8a867f}
-#page-logs .journal-receipt-title{margin-top:15px;font-family:var(--v51-mono)!important;font-size:17px!important;line-height:1.12!important;font-weight:800!important;letter-spacing:-.035em!important;color:#252421!important}
-#page-logs .journal-receipt-roaster{margin-top:4px;font-family:var(--v51-mono);font-size:8.5px;line-height:1.35;color:#817d76}
-#page-logs .journal-receipt-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px;padding:12px 0;border-top:1px dashed rgba(67,62,56,.17);border-bottom:1px dashed rgba(67,62,56,.17)}
-#page-logs .journal-receipt-metrics span{display:block;font-family:var(--v51-mono);font-size:6px;line-height:1;font-weight:700;letter-spacing:.09em;color:#99958e}
-#page-logs .journal-receipt-metrics b{display:block;margin-top:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--v51-mono);font-size:12px;line-height:1.05;font-weight:800;letter-spacing:-.03em;color:#3a3834}
-#page-logs .journal-receipt-foot{display:grid;grid-template-columns:1fr auto;align-items:end;gap:12px;margin-top:13px}
-#page-logs .journal-receipt-foot>div:last-child{text-align:right}
-#page-logs .journal-receipt-foot b{display:block;font-family:var(--v51-mono);font-size:8px;color:#4c4944}
-#page-logs .journal-receipt-foot span{display:block;margin-top:3px;font-family:var(--v51-mono);font-size:6.5px;color:#9a958f}
-#page-logs .journal-receipt-view{margin-top:12px;text-align:right;font-family:var(--v51-ui);font-size:8px;font-weight:670;color:#85827c}
-#page-logs .journal-empty{min-height:290px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:26px;border-radius:29px;background:rgba(255,255,255,.66);border:1px solid rgba(28,28,30,.05);text-align:center;color:#96989d}
-#page-logs .journal-empty-mark{width:58px;height:58px;display:grid;place-items:center;margin-bottom:3px;border-radius:50%;background:rgba(255,255,255,.82);border:1px solid rgba(28,28,30,.055);box-shadow:0 10px 24px rgba(31,35,39,.045);font-family:var(--v51-mono);font-size:11px;font-weight:800;letter-spacing:.08em;color:#67696d}
-#page-logs .journal-empty b{font-family:var(--v51-display);font-size:16px;color:#44464a}
-#page-logs .journal-empty span{font-size:9px}
-#page-logs .journal-backup{margin:16px 0 5px;padding:0!important;border:1px solid rgba(28,28,30,.05)!important;border-radius:22px!important;background:rgba(255,255,255,.58)!important;box-shadow:0 9px 24px rgba(31,35,39,.03)!important;overflow:hidden}
-#page-logs .journal-backup>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 15px}
-#page-logs .journal-backup>summary>span:first-child{display:flex;flex-direction:column;gap:2px}
-#page-logs .journal-backup>summary b{font-size:10.5px;color:#55585d}
-#page-logs .journal-backup>summary small{font-size:7.5px;color:#a0a2a6}
-#page-logs .journal-backup-plus{font-size:17px;font-weight:300;color:#919398;transition:transform .2s ease}
-#page-logs .journal-backup[open] .journal-backup-plus{transform:rotate(45deg)}
-#page-logs .journal-backup-body{padding:14px;border-top:1px solid rgba(28,28,30,.045)}
-.receipt-barcode{height:31px;display:flex;align-items:flex-end;gap:1px;overflow:hidden}.receipt-barcode.compact{height:15px}.receipt-barcode i{display:block;flex:0 0 auto;background:#2b2926}.receipt-barcode.compact i{background:#6f6b65}
-.receipt-dialog{width:100%;max-width:none!important;height:100%;max-height:none!important;margin:0!important;padding:calc(18px + env(safe-area-inset-top)) max(13px,env(safe-area-inset-right)) calc(18px + env(safe-area-inset-bottom)) max(13px,env(safe-area-inset-left))!important;border:0!important;border-radius:0!important;background:rgba(238,240,242,.86)!important;box-shadow:none!important;-webkit-backdrop-filter:blur(24px) saturate(.85);backdrop-filter:blur(24px) saturate(.85)}
-.receipt-dialog::backdrop{background:rgba(226,229,232,.72);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
-.receipt-dialog-shell{width:min(430px,100%);max-height:100%;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:12px;overflow:auto;overscroll-behavior:contain;scrollbar-width:none}.receipt-dialog-shell::-webkit-scrollbar{display:none}
-.receipt-paper{position:relative;width:100%;padding:29px 22px 31px;overflow:hidden;border-radius:4px 4px 14px 14px;background:radial-gradient(circle at 18% 11%,rgba(0,0,0,.012) 0 1px,transparent 1.4px) 0 0/9px 9px,linear-gradient(180deg,#fffefa,#fbfaf5);border:1px solid rgba(84,77,68,.08);box-shadow:0 28px 60px rgba(37,39,41,.15),0 8px 20px rgba(37,39,41,.06),inset 0 1px 0 rgba(255,255,255,.98),inset 0 0 50px rgba(93,83,70,.018);color:#2c2a27;font-family:var(--v51-mono)!important;transform-origin:50% 0}
-.receipt-paper.receipt-reveal{animation:v57ReceiptReveal .42s cubic-bezier(.18,.78,.24,1)}@keyframes v57ReceiptReveal{from{opacity:0;transform:translateY(-20px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-.receipt-paper:before,.receipt-paper:after{content:"";position:absolute;left:0;right:0;height:8px;pointer-events:none}.receipt-paper:before{top:0;background:linear-gradient(135deg,transparent 0 5px,#fffefa 5px) 0 0/10px 8px repeat-x;opacity:.44}.receipt-paper:after{bottom:0;background:linear-gradient(45deg,transparent 0 5px,#fbfaf5 5px) 0 0/10px 8px repeat-x;opacity:.34}
-.receipt-paper-head{text-align:center}.receipt-brand{font-size:18px;line-height:1;font-weight:900;letter-spacing:.08em}.receipt-subbrand{margin-top:5px;font-size:7px;line-height:1;font-weight:700;letter-spacing:.22em;color:#7f7a73}
-.receipt-date-row,.receipt-number-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;font-size:7.5px;line-height:1.2;font-weight:700;letter-spacing:.06em;color:#6e6a64}.receipt-number-row{margin-top:4px;color:#97928b}
-.receipt-rule{height:1px;margin:16px 0;background:#3d3934;opacity:.24}.receipt-rule.dotted{background:none;border-top:1px dashed rgba(61,57,52,.28)}
-.receipt-bean-name{font-size:18px;line-height:1.12;font-weight:900;letter-spacing:-.04em;overflow-wrap:anywhere}.receipt-roaster{margin-top:5px;font-size:8.5px;line-height:1.35;color:#77726b}
-.receipt-main-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin-top:18px}
-.receipt-main-grid span,.receipt-grinder-line span,.receipt-taste-block>span,.receipt-notes>span,.receipt-event-list>span{display:block;font-size:6.5px;line-height:1;font-weight:700;letter-spacing:.12em;color:#9a958e}
-.receipt-main-grid b{display:block;margin-top:5px;font-size:14px;line-height:1;font-weight:800;color:#302e2a}
-.receipt-grinder-line{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:17px}.receipt-grinder-line b{max-width:68%;text-align:right;font-size:8.5px;line-height:1.35;color:#57534e}
-.receipt-taste-block b{display:block;margin-top:7px;font-size:11px;line-height:1.45;color:#45423d}.receipt-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.receipt-tags i{padding:4px 6px;border:1px solid rgba(59,55,50,.14);border-radius:999px;font-style:normal;font-size:7px;color:#69655f}.receipt-rating{margin-top:8px;font-size:9px;font-weight:800;color:#4c4944}
-.receipt-photo-wrap{margin-top:15px;padding:5px;border:1px solid rgba(62,58,53,.10);background:#f5f3ee}.receipt-photo-wrap img{display:block;width:100%;max-height:260px;object-fit:cover;filter:saturate(.84) contrast(.96)}
-.receipt-tech-details{margin-top:15px!important;padding:0!important;border-top:1px dashed rgba(61,57,52,.24)!important;border-bottom:0!important}.receipt-tech-details>summary{display:flex;align-items:center;justify-content:space-between;padding:13px 0 5px;font-family:var(--v51-mono)!important;font-size:8px;line-height:1.2;font-weight:800;letter-spacing:.05em;color:#67635d}.receipt-tech-details>summary span{transition:transform .18s ease}.receipt-tech-details[open]>summary span{transform:rotate(45deg)}
-.receipt-tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;padding-top:5px}.receipt-tech-grid>div{min-width:0;padding:8px 0;border-bottom:1px dotted rgba(61,57,52,.13)}.receipt-tech-grid span{display:block;font-size:6.5px;color:#9b968f}.receipt-tech-grid b{display:block;margin-top:3px;overflow-wrap:anywhere;font-size:8px;line-height:1.35;font-weight:700;color:#55514c}
-.receipt-notes{margin-top:12px}.receipt-notes p{margin:6px 0 0;font-size:8.5px;line-height:1.5;color:#625e58}.receipt-event-list{margin-top:12px}.receipt-event-list>div{display:grid;grid-template-columns:65px 1fr;gap:8px;padding:6px 0;border-bottom:1px dotted rgba(61,57,52,.12)}.receipt-event-list time{font-size:7px;color:#97928b}.receipt-event-list b{font-size:7.5px;line-height:1.35;font-weight:650;color:#64605a}
-.receipt-barcode-wrap{margin-top:18px;text-align:center}.receipt-barcode-wrap .receipt-barcode{justify-content:center;height:32px}.receipt-serial{margin-top:5px;font-size:7px;letter-spacing:.14em;color:#6f6b65}
-.receipt-stamp{width:max-content;margin:20px auto 0;padding:7px 12px 6px;border:2px solid rgba(98,79,71,.40);border-radius:3px;transform:rotate(-2.5deg);font-size:12px;line-height:1;font-weight:900;letter-spacing:.16em;color:rgba(98,79,71,.58)}
-.receipt-thanks{margin-top:17px;text-align:center;font-size:6.5px;line-height:1.2;font-weight:700;letter-spacing:.15em;color:#aaa49d}
-.receipt-dialog-actions{position:sticky;bottom:0;width:100%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;padding:8px;border-radius:21px;background:rgba(247,248,249,.89);border:1px solid rgba(28,28,30,.06);box-shadow:0 15px 40px rgba(31,35,39,.11);-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px)}
-.receipt-dialog-actions .btn{min-height:45px!important;border-radius:15px!important;font-size:9px!important}.receipt-dialog-actions #receiptCloseBtn{background:#1b1b1c!important;border-color:#1b1b1c!important;color:#fff!important}
-@media(min-width:680px){#page-logs .journal-list{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){#page-logs .journal-toolbar{align-items:flex-start;flex-direction:column}#page-logs .journal-filter{width:100%}#page-logs .journal-filter .filter{flex:1 1 0}}
-@media(max-width:390px){.receipt-paper{padding-left:18px;padding-right:18px}.receipt-main-grid{gap:11px 13px}.receipt-dialog-actions{grid-template-columns:1fr 1fr}.receipt-dialog-actions #receiptCloseBtn{grid-column:1/-1}}
-@media(prefers-reduced-motion:reduce){.receipt-paper.receipt-reveal{animation:none!important}#page-logs .journal-receipt-card{transform:none!important}}
+/* Aroma Lab v5.7 — Thermal Receipt / Coffee Journal.
+   Presentation only. IndexedDB v7, stores, timers and grinder preferences unchanged. */
+#page-logs > .card:first-of-type{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+#page-logs .al-page-head{padding-bottom:8px!important}
+#page-logs .history-filter{gap:8px;margin:20px 0 25px!important}
+#page-logs .filter{min-height:44px!important;padding:9px 17px!important;background:#f4f5f7!important;color:#64686e!important;border:1px solid rgba(255,255,255,.95)!important;box-shadow:5px 5px 12px rgba(42,49,63,.06),-4px -4px 10px #fff!important}
+#page-logs .filter.active{background:#18191b!important;color:#fff!important;border-color:#18191b!important;box-shadow:0 5px 12px rgba(20,22,26,.12)!important}
+#historyList{display:grid!important;grid-template-columns:minmax(0,1fr);gap:28px!important;max-width:510px;margin:20px auto 30px!important;color:#242426!important}
+#historyList .history-item.receipt{position:relative!important;isolation:isolate;padding:26px 23px 24px!important;margin:0!important;border:0!important;border-radius:2px!important;overflow:visible!important;background:repeating-linear-gradient(0deg,rgba(46,45,40,.014) 0,rgba(46,45,40,.014) 1px,transparent 1px,transparent 4px),linear-gradient(100deg,#fdfcf7,#fffefa 45%,#faf9f3)!important;box-shadow:0 3px 5px rgba(35,39,44,.035),0 13px 28px rgba(35,39,44,.09)!important;font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace!important;color:#292927!important}
+#historyList .receipt:before{content:none!important}
+#historyList .receipt:after{content:""!important;position:absolute!important;inset:auto 0 -7px!important;height:8px!important;border:0!important;border-radius:0!important;background:linear-gradient(135deg,#faf9f3 5px,transparent 0) 0 0/10px 10px repeat-x,linear-gradient(225deg,#faf9f3 5px,transparent 0) 0 0/10px 10px repeat-x!important;pointer-events:none}
+.receipt .receipt-head{text-align:center;padding:0 0 18px;border-bottom:1px dashed #bbb9b0}
+.receipt .receipt-brand{font-family:inherit!important;font-size:22px!important;letter-spacing:.19em!important;font-weight:800!important;color:#282824!important}
+.receipt .receipt-sub{font-size:9px;letter-spacing:.2em;margin-top:7px;color:#6b6a61}
+.receipt .receipt-number{display:flex;justify-content:space-between;gap:12px;font-size:9px;color:#74736b;margin:13px 0 17px;letter-spacing:.035em}
+#historyList .receipt .history-title{font-family:inherit!important;font-size:18px!important;line-height:1.5!important;font-weight:700!important;letter-spacing:-.025em!important;color:#292927!important;overflow-wrap:anywhere;margin:0 0 7px!important}
+.receipt .receipt-method{font-size:10px;letter-spacing:.11em;color:#75746b;margin-bottom:16px}
+.receipt .receipt-row{display:grid;grid-template-columns:minmax(78px,.8fr) minmax(0,1.7fr);gap:15px;font-size:11px;line-height:1.7;margin:7px 0}
+.receipt .receipt-row span{color:#76756c;letter-spacing:.055em}
+.receipt .receipt-row b{font-weight:500;text-align:right;overflow-wrap:anywhere;white-space:pre-wrap}
+.receipt .receipt-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:17px 0;margin:18px 0 10px;border-top:1px dashed #bbb9b0;border-bottom:1px dashed #bbb9b0}
+.receipt .receipt-metric{text-align:center}
+.receipt .receipt-metric small{display:block;font-size:8px;letter-spacing:.12em;color:#76756c}
+.receipt .receipt-metric strong{display:block;font-size:20px;font-weight:600;letter-spacing:-.04em;margin-top:6px;overflow-wrap:anywhere}
+.receipt .receipt-metric em{font-size:9px;font-style:normal;font-weight:400;margin-left:3px;letter-spacing:0}
+.receipt .receipt-rating{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;font-size:11px}
+.receipt .receipt-stars{font-size:15px;letter-spacing:.14em}
+.receipt .receipt-taste{font-size:11px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0 12px}
+.receipt .receipt-tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 13px}
+.receipt .receipt-tag{font-size:10px;border:1px solid #ccc9bd;padding:4px 8px;border-radius:2px}
+.receipt .receipt-photo{display:block!important;width:100%!important;height:auto!important;max-height:230px;object-fit:cover!important;margin:16px 0!important;border-radius:2px!important;border:5px solid #fff!important;box-shadow:0 2px 8px rgba(40,40,35,.09);filter:saturate(.88)}
+.receipt .receipt-details{border-top:1px dashed #bbb9b0!important;padding:14px 0!important;margin-top:15px}
+.receipt .receipt-details summary{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:10px!important;letter-spacing:.06em;font-weight:500!important;min-height:32px}
+.receipt .receipt-details summary:after{content:"+";font-size:17px}
+.receipt .receipt-details[open] summary:after{content:"−"}
+.receipt .receipt-details .detail{font-family:inherit!important;color:#515149!important;font-size:11px!important}
+.receipt .receipt-foot{border-top:1px dashed #bbb9b0;padding-top:19px;margin-top:5px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.receipt .receipt-code{min-width:0;flex:1;text-align:center}
+.receipt .receipt-barcode{display:block;width:100%;height:33px;color:#34342f}
+.receipt .receipt-id{font-size:8px;color:#79786f;letter-spacing:.06em;margin-top:5px;overflow-wrap:anywhere}
+.receipt .receipt-stamp{flex:0 0 auto;border:2px solid #858f87;border-radius:4px;padding:7px 9px;transform:rotate(-8deg);font-size:11px;letter-spacing:.1em;color:#69776d;box-shadow:inset 0 0 0 2px #faf9f3,inset 0 0 0 3px #a5ada6}
+#historyList .receipt .flex-actions{border-top:1px dashed #bbb9b0!important;display:grid!important;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding-top:16px!important;margin-top:20px!important}
+#historyList .receipt button{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;min-height:44px!important;border-radius:999px!important;font-size:12px!important}
+#historyList .receipt .edit-log{background:#191a1c!important;color:#fff!important;border-color:#191a1c!important;box-shadow:0 3px 8px rgba(25,26,28,.10)!important}
+#historyList .receipt .danger{background:transparent!important;border:1px solid #ddd9ce!important;color:#95615b!important;box-shadow:none!important;padding:8px 17px!important}
+.receipt-empty{padding:40px 20px;text-align:center;border:1px dashed #d2d5db;border-radius:24px;background:rgba(255,255,255,.5)}
+.receipt-empty b{display:block;color:#464a50;font-size:16px;margin-bottom:7px}
+@media(max-width:365px){#historyList .history-item.receipt{padding:23px 17px 20px!important}.receipt .receipt-brand{font-size:20px!important}.receipt .receipt-metric strong{font-size:18px}.receipt .receipt-row{gap:8px;font-size:10px}}
 
 </style>
 </head>
@@ -10452,35 +10430,19 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
   </div>
 </section>
 
-<section id="page-logs" class="page">
-  <div class="al-page-head journal-page-head">
-    <div class="kicker">MY COFFEE JOURNAL</div>
-    <h1>Coffee Journal</h1>
-    <p>Every brew, kept like a small paper memory.</p>
+<section id="page-logs" class="page"  <div class="al-page-head"><div class="kicker">MY COFFEE JOURNAL</div><h1>Coffee Journal</h1><p>每杯咖啡，一張屬於你嘅紀錄。</p></div>
+>
+  <div class="card">
+    <div class="row"><h2>咖啡紀錄</h2><span id="logCount" class="badge">0 筆</span></div>
+    <div class="history-filter"><button class="mini filter active" data-filter="all" type="button">全部</button><button class="mini filter" data-filter="espresso" type="button">9Barista</button><button class="mini filter" data-filter="pour" type="button">手沖</button></div>
+    <div id="historyList" class="hint" style="margin-top:8px">未有紀錄。</div>
   </div>
-  <div class="journal-toolbar">
-    <div class="journal-toolbar-copy">
-      <span class="kicker">BREW ARCHIVE</span>
-      <div class="journal-toolbar-title"><h2>Your receipts.</h2><span id="logCount" class="badge">0 Brews</span></div>
-    </div>
-    <div class="history-filter journal-filter">
-      <button class="mini filter active" data-filter="all" type="button">All</button>
-      <button class="mini filter" data-filter="espresso" type="button">9Barista</button>
-      <button class="mini filter" data-filter="pour" type="button">Pour-over</button>
-    </div>
+  <div class="card">
+    <h2>備份 / 還原</h2>
+    <div class="hint">會一併備份 9Barista Log、手沖技法、手沖 Log、特調配方同豆庫。</div>
+    <div class="backup" style="margin-top:10px"><button id="exportJson" class="btn" type="button">匯出 JSON</button><label class="btn" style="display:flex;align-items:center;justify-content:center;text-align:center">還原 JSON<input id="importJson" type="file" accept="application/json" hidden></label></div>
+    <div class="warn">正式長期使用建議固定同一個 GitHub Pages 網址 + 同一個瀏覽器。IndexedDB 係按瀏覽器同網址 origin 分開。</div>
   </div>
-  <div id="historyList" class="journal-list"><div class="journal-empty">未有紀錄。</div></div>
-  <details class="journal-backup">
-    <summary><span><b>Backup & Restore</b><small>JSON · browser-local data</small></span><span class="journal-backup-plus">＋</span></summary>
-    <div class="journal-backup-body">
-      <div class="hint">會一併備份 9Barista Log、手沖技法、手沖 Log、特調配方同豆庫。</div>
-      <div class="backup">
-        <button id="exportJson" class="btn" type="button">匯出 JSON</button>
-        <label class="btn" style="display:flex;align-items:center;justify-content:center;text-align:center">還原 JSON<input id="importJson" type="file" accept="application/json" hidden></label>
-      </div>
-      <div class="warn">長期使用建議固定同一個 GitHub Pages 網址 + 同一個瀏覽器。IndexedDB 會按 browser / origin 分開。</div>
-    </div>
-  </details>
 </section>
 
 <section id="page-pour" class="page">
@@ -10732,8 +10694,8 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button class="al-more-card beans" data-open-page="beans" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 4.8c2.2 2.2 1.3 7.1-2 10.4-3.3 3.3-8.2 4.2-10.4 2-2.2-2.2-1.3-7.1 2-10.4 3.3-3.3 8.2-4.2 10.4-2Z"/><path d="M7.1 17.4c1.2-2.7 2.8-4.2 5.1-5.7 2.1-1.35 3.6-3 5.1-6"/></svg></div><b>豆庫</b><p>記錄買過嘅咖啡豆、剩餘重量、烘焙資料、價錢、店舖同咖啡袋相片。</p></button>
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
-  </div>
   <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.7 · Data stays in your browser</div>
+er</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -11244,17 +11206,6 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 
 </section>
 
-<dialog id="receiptDialog" class="receipt-dialog" aria-label="Coffee receipt">
-  <div class="receipt-dialog-shell">
-    <div id="receiptPaper" class="receipt-paper"></div>
-    <div class="receipt-dialog-actions">
-      <button id="receiptCloseBtn" class="btn" type="button">Done</button>
-      <button id="receiptEditBtn" class="btn" type="button">Edit Brew</button>
-      <button id="receiptDeleteBtn" class="btn danger" type="button">Delete</button>
-    </div>
-  </div>
-</dialog>
-
 <div id="toast" class="toast"></div>
 
 <script>
@@ -11265,7 +11216,7 @@ const remembered=['grind','dose','water','yield','tds','roaster','beans','origin
 const GRINDER_X64='Mahlkönig X64 SD',GRINDER_KINU='Kinu M47 Titan',GRINDER_PREF_KEY='aroma_lab_grinder_prefs_v1';
 const validGrinders=[GRINDER_X64,GRINDER_KINU];
 const tasteTagOptions=['酸','苦','甜','薄','厚','乾澀','平衡','清晰','空洞'];
-let db=null,current=null,eRAF=0,eSaveTimer=0,memory={},historyFilter='all',receiptCurrent=null;
+let db=null,current=null,eRAF=0,eSaveTimer=0,memory={},historyFilter='all';
 let recipeDraft=null,pourRun=null,pourRAF=0;
 const defaults=[
 {id:'kasuya-switch-improved',name:'改良版粕谷哲 HARIO SWITCH 手法',brewer:'HARIO SWITCH',source:'',dose:'20',water:'300',grind:'粗一點',temps:'92°C / 70°C',raw:'改良版粕谷哲 HARIO SWITCH 手法\n20g 咖啡豆研磨度粗一點\n準備92度C及70度C的水\n第一注（浸泡）：92度水沖40~50g，浸泡40秒後打開開關\n第二注（滴濾）：沖到120g，等到1分30秒\n第三注（滴濾）：沖到200g，等到2分10秒\n第四注（浸泡）：70度水注水到300g，浸泡到2分45秒打開開關滴完',steps:[{mode:'浸泡',temp:'92°C',target:'40–50g',waitSec:40,description:'92°C 水沖至 40–50g，浸泡至 0:40 後打開 Switch。'},{mode:'滴濾',temp:'92°C',target:'120g',waitSec:90,description:'沖到累計 120g，保持滴濾，等到 1:30。'},{mode:'滴濾',temp:'92°C',target:'200g',waitSec:130,description:'沖到累計 200g，保持滴濾，等到 2:10。'},{mode:'浸泡',temp:'70°C',target:'300g',waitSec:165,description:'關閉 Switch，用 70°C 水注至累計 300g，浸泡到 2:45，打開 Switch 後滴完。'}]},
@@ -12930,7 +12881,7 @@ async function saveEspresso(quiet=true){if(!current)return;current.data=readEspr
 function queueEspressoSave(){calcRatio();updateBeanGuide();updateHeroYield();if(!current)return;clearTimeout(eSaveTimer);eSaveTimer=setTimeout(()=>saveEspresso(true).catch(()=>toast('儲存失敗')),300)}
 $('startEspresso').addEventListener('click',async()=>{if(current&&!current.endTs)return;const n=Date.now(),linked=beanById(selectedEspressoBeanId),grinderSeed=grinderSeedData();const beanData=linked?{machine:'9Barista Mk2 Pro',...grinderSeed,roaster:linked.roaster||'',beans:linked.name||'',roast:linked.roast||'',roastStyle:linked.roastStyle||'',roastDate:linked.roastDate||'',processing:linked.processing||'',origin:linked.origin||'',variety:linked.variety||'',altitude:linked.altitude||'',roasterNotes:linked.tastingNotes||''}:{machine:'9Barista Mk2 Pro',...grinderSeed};current={id:uid('e'),createdAt:n,updatedAt:n,startTs:n,extractStartTs:null,endTs:null,events:[{ts:n,label:'🔥 開始加熱 / 開始 Session'}],data:beanData,photo:null,tasteTags:[]};if(linked){current.beanId=linked.id;current.beanSnapshot=espressoBeanSnapshot(beanData,linked)}loadEspressoForm();renderEspressoTimeline();updateEspressoUI();cancelAnimationFrame(eRAF);espressoLoop();await put('sessions',current);await renderHistory()});
 $('markExtract').addEventListener('click',async()=>{if(!current||current.endTs||current.extractStartTs)return;current.extractStartTs=Date.now();current.events.push({ts:current.extractStartTs,label:'☕ 開始出咖啡 / 開始萃取'});renderEspressoTimeline();updateEspressoUI();await saveEspresso(true)});
-$('finishEspresso').addEventListener('click',async()=>{if(!current||current.endTs||!current.extractStartTs)return;current.endTs=Date.now();current.events.push({ts:current.endTs,label:'✓ 萃取完成'});cancelAnimationFrame(eRAF);renderEspressoTimers();renderEspressoTimeline();updateEspressoUI();await saveEspresso(true);await renderPreviousBest();renderNextShotTarget();await renderDialInCoach();await renderHistory();toast('完成，Dial-in Coach 已更新');openReceipt({...current,_type:'espresso'})});
+$('finishEspresso').addEventListener('click',async()=>{if(!current||current.endTs||!current.extractStartTs)return;current.endTs=Date.now();current.events.push({ts:current.endTs,label:'✓ 萃取完成'});cancelAnimationFrame(eRAF);renderEspressoTimers();renderEspressoTimeline();updateEspressoUI();await saveEspresso(true);await renderPreviousBest();renderNextShotTarget();await renderDialInCoach();toast('完成，Dial-in Coach 已更新')});
 $('goData').addEventListener('click',()=>showPage('edata'));
 espressoFields.forEach(id=>{$(id).addEventListener('input',()=>{queueEspressoSave();if(remembered.includes(id))showSuggestions(id)});$(id).addEventListener('change',queueEspressoSave)});
 $$('[data-grinder-target]').forEach(btn=>{
@@ -12956,103 +12907,83 @@ remembered.forEach(id=>$(id).addEventListener('focus',()=>showSuggestions(id)));
 $('photoInput').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;if(!current){toast('請先建立一筆 9Barista 紀錄');e.target.value='';return}try{toast('處理圖片中…');current.photo=await compressImage(f);renderPhoto();await saveEspresso(true);toast('圖片已保存')}catch(err){toast(err.message)}e.target.value=''});
 $('removePhoto').addEventListener('click',async()=>{if(!current)return;current.photo=null;renderPhoto();await saveEspresso(true);toast('圖片已移除')});
 
-$('.filter').forEach(b=>b.addEventListener('click',()=>{historyFilter=b.dataset.filter;$('.filter').forEach(x=>x.classList.toggle('active',x===b));renderHistory()}));
-function receiptHash(value){
-  let h=2166136261;
-  const str=String(value||'AROMA');
-  for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}
-  return Math.abs(h>>>0);
+$$('.filter').forEach(b=>b.addEventListener('click',()=>{historyFilter=b.dataset.filter;$$('.filter').forEach(x=>x.classList.toggle('act// v5.7: pure display helpers. No new fields or storage writes.
+function receiptRow(label,value){return `<div class="receipt-row"><span>${esc(label)}</span><b>${esc(value==null||value===''?'—':String(value))}</b></div>`}
+function receiptMetric(label,value,unit=''){return `<div class="receipt-metric"><small>${esc(label)}</small><strong>${esc(String(value??'—'))}${unit?`<em>${esc(unit)}</em>`:''}</strong></div>`}
+function receiptBarcode(id){
+  // Decorative journal identifier, not a machine-readable barcode standard.
+  const text=String(id||'brew');let seed=2166136261;
+  for(const ch of text)seed=Math.imul(seed^ch.charCodeAt(0),16777619)>>>0;
+  let bars='',pos=8;
+  for(let i=0;i<48;i++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const w=1+(seed%3);bars+=`<rect x="${pos}" y="0" width="${w}" height="32"/>`;pos+=w+1+((seed>>>8)%2)}
+  return `<svg class="receipt-barcode" viewBox="0 0 ${pos+8} 32" preserveAspectRatio="none" aria-hidden="true" fill="currentColor">${bars}</svg>`
 }
-function receiptSerial(x){return 'AL-'+String(receiptHash(x?.id||x?.createdAt)%1000000).padStart(6,'0')}
-function receiptCupNo(x){return String(receiptHash((x?.id||'')+'cup')%999+1).padStart(3,'0')}
-function receiptDateParts(ts){
-  const d=new Date(ts||Date.now());
-  return {
-    date:d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}).toUpperCase(),
-    time:d.toLocaleTimeString('en-GB',{hour12:false,hour:'2-digit',minute:'2-digit'})
-  };
+function receiptRating(value){
+  const n=Number(value),valid=Number.isFinite(n)&&n>0&&n<=5;
+  return `<div class="receipt-rating"><span>RATING</span>${valid?`<span><span class="receipt-stars" aria-hidden="true">${'★'.repeat(Math.round(n))}${'☆'.repeat(5-Math.round(n))}</span> &nbsp;${esc(String(value))}/5</span>`:'<span>未評分</span>'}</div>`
 }
-function receiptBarcodeHTML(seed,compact=false){
-  const str=String(seed||'AROMA-LAB');let bars='';const count=compact?32:46;
-  for(let i=0;i<count;i++){const code=str.charCodeAt(i%str.length)||65,w=1+((code+i*7)%3),tall=compact?12:((code+i)%4===0?30:24);bars+=`<i style="width:${w}px;height:${tall}px"></i>`}
-  return `<div class="receipt-barcode ${compact?'compact':''}" aria-hidden="true">${bars}</div>`;
-}
-function receiptBeanTitle(x){
-  if(x?._type==='espresso'){const d=x.data||{};return d.beans||x.beanSnapshot?.name||'9Barista Brew'}
-  return x?.beanSnapshot?.name||x?.recipeName||'Pour-over Brew';
-}
-function receiptRoaster(x){
-  if(x?._type==='espresso')return x.data?.roaster||x.beanSnapshot?.roaster||'';
-  return x?.beanSnapshot?.roaster||'';
-}
-function receiptRating(x){return x?._type==='espresso'?(x.data?.rating||''):(x?.rating||'')}
-function receiptTaste(x){return x?._type==='espresso'?(x.data?.taste||''):(x?.taste||'')}
-function receiptNotes(x){return x?._type==='espresso'?(x.data?.notes||''):(x?.notes||'')}
-function receiptTechnicalRows(x){
-  if(x?._type==='espresso'){
-    const d=x.data||{},rd=roastDays(d.roastDate),warm=x.extractStartTs?fmt(x.extractStartTs-x.startTs):'—',ext=x.extractStartTs&&x.endTs?fmt(x.endTs-x.extractStartTs):'—',total=x.startTs&&x.endTs?fmt(x.endTs-x.startTs):'—';
-    const dose=parseFloat(d.dose),yieldG=parseFloat(d.yield),ratio=Number.isFinite(dose)&&dose>0&&Number.isFinite(yieldG)&&yieldG>0?(yieldG/dose).toFixed(2):'',ey=d.tds&&dose>0&&yieldG>0?(yieldG*parseFloat(d.tds)/dose).toFixed(1):'';
-    return [
-      ['Machine',d.machine||'9Barista Mk2 Pro'],['Grinder',grinderSummary(d)||'—'],['Dose',d.dose?`${d.dose} g`:'—'],['Water',d.water?`${d.water} g`:'—'],['Yield',d.yield?`${d.yield} g`:'—'],['Ratio',ratio?`1:${ratio}`:'—'],['Warm-up',warm],['Extraction',ext],['Total session',total],['TDS',d.tds?`${d.tds} %`:'—'],['EY',ey?`${ey} %`:'—'],['Roast',[d.roast,rd!=null&&rd>=0?`Day ${rd}`:''].filter(Boolean).join(' · ')||'—'],['Process',d.processing||'—'],['Origin',d.origin||'—'],['Variety',d.variety||'—'],['Altitude',d.altitude||'—'],['Heat source',d.heatSource||'—'],['Heat',d.heat||'—']
-    ];
-  }
-  const total=x?.startTs&&x?.endTs?fmt(x.endTs-x.startTs):'—';
-  return [['Method','Pour-over'],['Recipe',x?.recipeName||'—'],['Bean',x?.beanSnapshot?.name||'—'],['Roaster',x?.beanSnapshot?.roaster||'—'],['Grinder',grinderSummary(x)||'—'],['Total brew',total]];
-}
-function receiptMainMetrics(x){
-  if(x?._type==='espresso'){
-    const d=x.data||{},ext=x.extractStartTs&&x.endTs?fmt(x.endTs-x.extractStartTs):'—',dose=parseFloat(d.dose),yieldG=parseFloat(d.yield),ratio=Number.isFinite(dose)&&dose>0&&Number.isFinite(yieldG)&&yieldG>0?(yieldG/dose).toFixed(1):'—';
-    return [['DOSE',d.dose?`${esc(d.dose)}g`:'—'],['YIELD',d.yield?`${esc(d.yield)}g`:'—'],['EXTRACT',ext],['RATIO',ratio!=='—'?`1:${ratio}`:'—']];
-  }
-  const total=x?.startTs&&x?.endTs?fmt(x.endTs-x.startTs):'—';
-  return [['METHOD','POUR'],['TOTAL',total],['RATING',receiptRating(x)?`★ ${esc(receiptRating(x))}`:'—'],['GRINDER',grinderSettingText(x)||'—']];
-}
-function receiptFullHTML(x){
-  const {date,time}=receiptDateParts(x?.createdAt),serial=receiptSerial(x),title=receiptBeanTitle(x),roaster=receiptRoaster(x),rating=receiptRating(x),taste=receiptTaste(x),notes=receiptNotes(x),tags=x?._type==='espresso'&&Array.isArray(x.tasteTags)?x.tasteTags:[],metrics=receiptMainMetrics(x),tech=receiptTechnicalRows(x),type=x?._type==='espresso'?'9BARISTA':'POUR-OVER',grinder=x?._type==='espresso'?grinderSummary(x.data||{}):grinderSummary(x),photo=x?._type==='espresso'?x.photo:null;
-  return `
-    <div class="receipt-paper-head"><div class="receipt-brand">AROMA LAB</div><div class="receipt-subbrand">COFFEE JOURNAL</div><div class="receipt-date-row"><span>${esc(date)}</span><span>${esc(time)}</span></div><div class="receipt-number-row"><span>${type}</span><span>CUP ${receiptCupNo(x)}</span></div></div>
-    <div class="receipt-rule"></div>
-    <div class="receipt-bean-block"><div class="receipt-bean-name">${esc(title)}</div>${roaster?`<div class="receipt-roaster">${esc(roaster)}</div>`:''}</div>
-    <div class="receipt-main-grid">${metrics.map(([k,v])=>`<div><span>${k}</span><b>${v}</b></div>`).join('')}</div>
-    ${grinder?`<div class="receipt-grinder-line"><span>GRINDER</span><b>${esc(grinder)}</b></div>`:''}
-    <div class="receipt-rule dotted"></div>
-    <div class="receipt-taste-block"><span>TASTE</span><b>${taste?esc(taste):(tags.length?tags.map(esc).join(' · '):'Not rated yet')}</b>${tags.length?`<div class="receipt-tags">${tags.map(t=>`<i>${esc(t)}</i>`).join('')}</div>`:''}${rating?`<div class="receipt-rating">★ ${esc(rating)} / 5</div>`:''}</div>
-    ${photo?`<div class="receipt-photo-wrap"><img src="${photo}" alt="Brew photo"></div>`:''}
-    <details class="receipt-tech-details"><summary>Technical details <span>＋</span></summary><div class="receipt-tech-grid">${tech.map(([k,v])=>`<div><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('')}</div>${notes?`<div class="receipt-notes"><span>NOTES</span><p>${esc(notes)}</p></div>`:''}${x?.coachResult?.action?`<div class="receipt-notes"><span>COACH</span><p>${esc(x.coachResult.action)}</p></div>`:''}${x?.events?.length?`<div class="receipt-event-list"><span>SESSION EVENTS</span>${x.events.map(e=>`<div><time>${esc(stamp(e.ts))}</time><b>${esc(e.label||'')}</b></div>`).join('')}</div>`:''}</details>
-    <div class="receipt-rule dotted"></div>
-    <div class="receipt-barcode-wrap">${receiptBarcodeHTML(serial,false)}<div class="receipt-serial">${serial}</div></div>
-    <div class="receipt-stamp">LOGGED</div><div class="receipt-thanks">GOOD COFFEE BRINGS US CLOSER</div>`;
-}
-function receiptPreviewHTML(x){
-  const {date}=receiptDateParts(x?.createdAt),type=x?._type==='espresso'?'9BARISTA':'POUR-OVER',title=receiptBeanTitle(x),roaster=receiptRoaster(x),rating=receiptRating(x),metrics=receiptMainMetrics(x).slice(0,3),serial=receiptSerial(x);
-  return `<button class="journal-receipt-open" type="button" aria-label="Open ${esc(title)} receipt"><div class="journal-receipt-head"><span>${type}</span><span>${esc(date)}</span></div><div class="journal-receipt-title">${esc(title)}</div>${roaster?`<div class="journal-receipt-roaster">${esc(roaster)}</div>`:''}<div class="journal-receipt-metrics">${metrics.map(([k,v])=>`<div><span>${k}</span><b>${v}</b></div>`).join('')}</div><div class="journal-receipt-foot"><div>${receiptBarcodeHTML(serial,true)}</div><div>${rating?`<b>★ ${esc(rating)}</b>`:'<b>UNRATED</b>'}<span>${serial}</span></div></div><div class="journal-receipt-view">View receipt →</div></button>`;
-}
-function showReceiptDialog(){const dlg=$('receiptDialog');if(!dlg)return;if(typeof dlg.showModal==='function'){if(!dlg.open)dlg.showModal()}else dlg.setAttribute('open','')}
-function closeReceiptDialog(){const dlg=$('receiptDialog');if(!dlg)return;if(typeof dlg.close==='function'&&dlg.open)dlg.close();else dlg.removeAttribute('open');receiptCurrent=null}
-function openReceipt(x){if(!x)return;receiptCurrent=x;$('receiptPaper').innerHTML=receiptFullHTML(x);$('receiptEditBtn').style.display=x._type==='espresso'?'inline-flex':'none';showReceiptDialog();requestAnimationFrame(()=>$('receiptPaper')?.classList.add('receipt-reveal'))}
-async function deleteReceiptCurrent(){
-  const x=receiptCurrent;if(!x)return;const label=x._type==='espresso'?'9Barista':'手沖';if(!confirm(`確定刪除呢杯 ${label} 紀錄？`))return;
-  if(x._type==='espresso'){await remove('sessions',x.id);if(current?.id===x.id){current=null;loadEspressoForm();renderEspressoTimeline();renderEspressoTimers();updateEspressoUI()}await rebuildMemory()}else await remove('pourLogs',x.id);
-  closeReceiptDialog();await renderHistory();toast('紀錄已刪除');
-}
-function editReceiptCurrent(){const x=receiptCurrent;if(!x||x._type!=='espresso')return;current=x;selectedEspressoBeanId=x.beanId||resolveBeanForLog(x,'espresso')?.id||null;loadEspressoForm();renderEspressoTimeline();renderEspressoTimers();updateEspressoUI();closeReceiptDialog();showPage('edata')}
+ive',x===b));renderHistory()}));
 async function renderHistory(){
   if(!db)return;
   const es=await getAll('sessions'),ps=await getAll('pourLogs');
-  const list=[...es.map(x=>({...x,_type:'espresso'})),...ps.map(x=>({...x,_type:'pour'}))].sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
+  const list=[...es.map(x=>({...x,_type:'espresso'})),...ps.map(x=>({...x,_type:'pour'}))]
+    .sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
   const filtered=list.filter(x=>historyFilter==='all'||x._type===historyFilter);
-  $('logCount').textContent=`${list.length} Brews`;
-  const box=$('historyList');box.innerHTML='';
-  if(!filtered.length){box.innerHTML=`<div class="journal-empty"><div class="journal-empty-mark">AL</div><b>No receipts yet.</b><span>Your completed brews will appear here.</span></div>`;return}
-  filtered.slice(0,200).forEach((x,i)=>{const d=document.createElement('article');d.className='journal-receipt-card';d.style.setProperty('--receipt-index',String(i));d.innerHTML=receiptPreviewHTML(x);d.querySelector('.journal-receipt-open').onclick=()=>openReceipt(x);box.appendChild(d)});
-}
+  $('logCount').textContent=list.length+' 筆';
+  const box=$(  if(!filtered.length){box.innerHTML='<div class="receipt-empty"><b>下一杯，值得記住。</b><div class="hint">'+(list.length?'呢個分類暫時未有紀錄。':'完成 9Barista 或手沖後，紀錄會出現喺呢度。')+'</div></div>';return}
+ass="hint">未有紀錄。</div>';return}
 
-$('receiptCloseBtn')?.addEventListener('click',closeReceiptDialog);
-$('receiptEditBtn')?.addEventListener('click',editReceiptCurrent);
-$('receiptDeleteBtn')?.addEventListener('click',()=>deleteReceiptCurrent().catch(e=>toast('刪除失敗：'+e.message)));
-$('receiptDialog')?.addEventListener('click',e=>{if(e.target===$('receiptDialog'))closeReceiptDialog()});
-
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.7',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+  fi    const d=document.createElement('div');d.className='history-item receipt';
+    const number=String(list.findIndex(item=>item._type===x._type&&item.id===x.id)+1).padStart(4,'0');
+    const head=`<div class="receipt-head"><div class="receipt-brand">AROMA LAB</div><div class="receipt-sub">PERSONAL COFFEE JOURNAL</div></div><div class="receipt-number"><span>BREW / ${number}</span><span>${esc(x.endTs?'COMPLETED':'IN PROGRESS')}</span></div>`;
+    const foot=`<div class="receipt-foot"><div class="receipt-code">${receiptBarcode(x.id)}<div class="receipt-id">${esc(String(x.id||''))}</div></div><div class="receipt-stamp">LOGGED</div></div>`;
+iv');d.className='history-item      const data=x.data||{},warm=x.extractStartTs?fmt(x.extractStartTs-x.startTs):'—',ext=x.extractStartTs&&x.endTs?fmt(x.endTs-x.extractStartTs):'—',rd=roastDays(data.roastDate),ey=data.tds&&parseFloat(data.dose)>0&&parseFloat(data.yield)>0?(parseFloat(data.yield)*parseFloat(data.tds)/parseFloat(data.dose)).toFixed(1):'';
+      const tags=Array.isArray(x.tasteTags)?x.tasteTags:[];
+      d.innerHTML=head+`
+Fixed(1):'';
+      d.innerHTML=`
+        <div class="history-title">${esc(data.beans||x.beanSn        <div class="receipt-method">9BARISTA MK2 PRO · ESPRESSO</div>
+        ${receiptRow('DATE',dateLabel(x.createdAt))}${receiptRow('ROASTER',data.roaster||x.beanSnapshot?.roaster)}
+        ${receiptRow('GRINDER',grinderSummary(data))}
+        <div class="receipt-metrics">${receiptMetric('DOSE',data.dose||'—','g')}${receiptMetric('YIELD',data.yield||'—','g')}${receiptMetric('EXTRACT',ext)}</div>
+        ${receiptRating(data.rating)}
+        ${tags.length?`<div class="receipt-tags">${tags.map(t=>`<span class="receipt-tag">${esc(t)}</span>`).join('')}</div>`:''}
+        ${data.taste?`<div class="receipt-taste">${esc(data.taste)}</div>`:''}
+        ${data.notes?`<div class="receipt-taste">${esc(data.notes)}</div>`:''}
+        ${x.photo?`<img class="thumb receipt-photo" src="${esc(x.photo)}" alt="咖啡成品圖片" loading="lazy">`:''}
+        <details class="receipt-details"><summary>TECHNICAL DETAILS / 技術資料</summary><div class="detail">
+        ${receiptRow('WARM-UP',warm)}${receiptRow('TDS',data.tds?data.tds+' %':'')}${receiptRow('EY',ey?ey+' %':'')}
+        ${receiptRow('ROAST',data.roast)}${rd!=null&&rd>=0?receiptRow('ROAST AGE','Day '+rd):''}${receiptRow('ROAST DATE',data.roastDate)}
+        ${receiptRow('WATER',data.water?data.water+' g':'')}${receiptRow('HEAT SOURCE',data.heatSource)}${receiptRow('HEAT',data.heat)}${receiptRow('PROCESS',data.processing)}${receiptRow('ORIGIN',data.origin)}${receiptRow('VARIETY',data.variety)}${receiptRow('ALTITUDE',data.altitude)}${receiptRow('ROASTER NOTES',data.roasterNotes)}${receiptRow('COACH',x.coachResult?.action)}
+        </div></details>${foot}
+        <div class="flex-actions"><button class="mini edit-log" type="button">查看 / 編輯</button><button class="mini danger delete-log" type="button">刪除</button></div>`;
+on">刪除</button>
+        </div>`;
+      d.querySelector('.edit-log').onclick=()=>{
+        current=x;selectedEspressoBeanId=x.beanId||resolveBeanForLog(x,'espresso')?.id||null;loadEspressoForm();renderEspressoTimeline();renderEspressoTimers();updateEspressoUI();showPage('edata')
+      };
+      d.querySelector('.delete-log').onclick=async()=>{
+        if(!confirm('確定刪除呢杯 9Barista 紀錄？'))return;
+              if(current?.id===x.id){current=null;loadEspressoForm();renderEspressoTimeline();renderEspressoTimers();updateEspressoUI()}
+s();updateEspressoUI()
+        }
+        await rebuildMemory();await ren      const r=x.recipe||{};
+      d.innerHTML=head+`
+        <div class="history-title">${esc(x.beanSnapshot?.name||x.recipeName||'手沖')}</div>
+        <div class="receipt-method">POUR OVER · ${esc(x.recipeName||'手沖')}</div>
+        ${receiptRow('DATE',dateLabel(x.createdAt))}${receiptRow('BEAN',x.beanSnapshot?.name?`${x.beanSnapshot.roaster||''} · ${x.beanSnapshot.name}`:'')}
+        ${receiptRow('GRINDER',grinderSummary(x))}
+        <div class="receipt-metrics">${receiptMetric('DOSE',r.dose||'—','g')}${receiptMetric('WATER',r.water||'—','g')}${receiptMetric('TOTAL',x.startTs&&x.endTs?fmt(x.endTs-x.startTs):'—')}</div>
+        ${receiptRating(x.rating)}${x.taste?`<div class="receipt-taste">${esc(x.taste)}</div>`:''}${x.notes?`<div class="receipt-taste">${esc(x.notes)}</div>`:''}
+        <details class="receipt-details"><summary>TECHNICAL DETAILS / 技術資料</summary><div class="detail">${receiptRow('BREWER',r.brewer)}${receiptRow('TEMP',r.temps)}${receiptRow('RECIPE',x.recipeName)}</div></details>
+        ${foot}<div class="flex-actions"><button class="mini danger delete-pour-log" type="button">刪除</button></div>`;
+ype="button">刪除</button></div>`;
+      d.querySelector('.delete-pour-log').onclick=async()=>{
+        if(!confirm('確定刪除呢次手沖紀錄？'))return;
+        await remove('pourLogs',x.id);await renderHistory()
+      };
+    }$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.7',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
@@ -13113,7 +13044,7 @@ function renderPourTimeline(){const ul=$('pourTimeline');ul.innerHTML='';if(!pou
 $('startPour').addEventListener('click',()=>{if(!pourRun||!pourRun.recipe.steps?.length){toast('呢個技法未有 Step');return}pourRun.startTs=Date.now();pourRun.stepIndex=0;pourRun.events=[{offset:0,label:'▶ 開始手沖'}];$('startPour').disabled=true;showPourStep();renderPourTimeline();cancelAnimationFrame(pourRAF);pourLoop()});
 $('nextPour').addEventListener('click',()=>{if(!pourRun?.startTs)return;const next=pourRun.stepIndex+1;if(next>=pourRun.recipe.steps.length)return;pourRun.events.push({offset:Date.now()-pourRun.startTs,label:`完成 Step ${pourRun.stepIndex+1} → Step ${next+1}`});pourRun.stepIndex=next;showPourStep();renderPourTimeline()});
 $('finishPour').addEventListener('click',async()=>{if(!pourRun?.startTs)return;syncPourGrinderToRun();pourRun.endTs=Date.now();pourRun.events.push({offset:pourRun.endTs-pourRun.startTs,label:'✓ 手沖完成'});cancelAnimationFrame(pourRAF);$('pourTimer').textContent=fmt(pourRun.endTs-pourRun.startTs);$('pourStepBadge').textContent='完成';$('pourStepNo').textContent='完成手沖';$('pourMode').textContent='';$('pourTemp').textContent='';$('pourTarget').textContent='✓';$('pourDesc').innerHTML=`實際總時間：<b>${fmt(pourRun.endTs-pourRun.startTs)}</b>`;$('nextPour').disabled=true;$('finishPour').disabled=true;$('pourResultCard').style.display='block';await put('pourLogs',pourRun);await renderHistory();toast('手沖 Log 已保存')});
-$('savePourResult').addEventListener('click',async()=>{if(!pourRun)return;syncPourGrinderToRun();pourRun.rating=$('pourRating').value;pourRun.taste=$('pourTaste').value.trim();pourRun.notes=$('pourNotes').value.trim();await put('pourLogs',pourRun);await renderHistory();toast('手沖結果已保存');openReceipt({...pourRun,_type:'pour'})});
+$('savePourResult').addEventListener('click',async()=>{if(!pourRun)return;syncPourGrinderToRun();pourRun.rating=$('pourRating').value;pourRun.taste=$('pourTaste').value.trim();pourRun.notes=$('pourNotes').value.trim();await put('pourLogs',pourRun);await renderHistory();toast('手沖結果已保存')});
 $('backPourLibrary').addEventListener('click',()=>{cancelAnimationFrame(pourRAF);$('pourBrew').classList.remove('show');$('pourLibrary').style.display='block';pourRun=null});
 $('pourGrinder').addEventListener('change',()=>{updatePourGrinderUI(true);syncPourGrinderToRun()});
 $('pourGrind').addEventListener('input',()=>{syncPourGrinderToRun();renderGrinderLastSettings()});
