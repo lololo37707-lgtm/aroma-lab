@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v5.5</title>
+<title>Aroma Lab v5.6</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -8177,7 +8177,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 
 
 /* =========================================================
-   Aroma Lab v5.5 — 9Barista Brew Experience
+   Aroma Lab v5.6 — 9Barista Brew Experience
    Scope:
    - calmer instrument-like brew cockpit
    - Dose / Yield / Brew Time glow cards
@@ -8851,6 +8851,57 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
   }
 }
 
+
+/* =========================================================
+   Aroma Lab v5.6 — Personal Grinder Instrument UI
+   ========================================================= */
+#page-espresso .brew-grinder-context{position:relative;z-index:2;display:grid;grid-template-columns:38px minmax(0,1fr) auto;align-items:center;gap:10px;margin-top:9px;padding:10px 11px;border-radius:19px;background:radial-gradient(circle at 87% 10%,rgba(171,207,228,.13),transparent 7rem),rgba(255,255,255,.64);border:1px solid rgba(28,28,30,.045)}
+#page-espresso .brew-grinder-context-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:14px;background:rgba(255,255,255,.78);border:1px solid rgba(28,28,30,.045);color:#667c87}
+#page-espresso .brew-grinder-context-icon .ui-icon-svg{width:19px;height:19px}
+#page-espresso .brew-grinder-context-copy{min-width:0;display:flex;flex-direction:column;gap:2px}
+#page-espresso .brew-grinder-context-copy>span{font-size:6.5px;line-height:1;font-weight:800;letter-spacing:.14em;color:#a0a2a6}
+#page-espresso .brew-grinder-context-copy>b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10.5px;line-height:1.2;font-weight:680;color:#4e5156}
+#page-espresso .brew-grinder-context-copy>small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--v51-mono);font-size:8.5px;line-height:1.2;color:#8f9297}
+#page-espresso .brew-grinder-edit{min-height:34px!important;padding:0 11px!important;border-radius:999px!important;background:#fff!important;border-color:rgba(28,28,30,.055)!important;color:#55585d!important}
+#page-edata .grinder-instrument-field{margin-top:7px;padding:16px;border-radius:26px;background:radial-gradient(circle at 88% 8%,rgba(170,207,228,.13),transparent 11rem),rgba(255,255,255,.69);border:1px solid rgba(28,28,30,.052);box-shadow:0 12px 30px rgba(31,35,39,.032)}
+#page-edata .grinder-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+#page-edata .grinder-section-head h3{margin:4px 0 0;font-family:var(--v51-display)!important;font-size:22px!important;line-height:1.05!important;font-weight:700!important;letter-spacing:-.035em!important;color:#1e1f21!important}
+#page-edata .grinder-section-head .grinder-personal-note{max-width:46%;text-align:right;font-size:8px!important;line-height:1.4!important;color:#9a9ca0!important}
+.grinder-native-select{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+.grinder-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:13px}
+.grinder-choice-card{position:relative;min-width:0;min-height:100px!important;display:flex!important;flex-direction:column;align-items:flex-start!important;justify-content:flex-end!important;padding:13px!important;border-radius:22px!important;background:radial-gradient(circle at 83% 15%,rgba(255,255,255,.97),transparent 7rem),rgba(247,248,249,.87)!important;border:1px solid rgba(28,28,30,.055)!important;box-shadow:0 9px 22px rgba(31,35,39,.027),inset 0 1px 0 rgba(255,255,255,.94)!important;color:#72757a!important;text-align:left!important}
+.grinder-choice-card:before{content:"";position:absolute;top:13px;right:13px;width:12px;height:12px;border-radius:50%;border:1px solid #c9ccd0;background:#fff;box-shadow:inset 0 0 0 3px #fff}
+.grinder-choice-card.active{background:radial-gradient(circle at 83% 15%,rgba(178,210,229,.18),transparent 8rem),rgba(255,255,255,.94)!important;border-color:rgba(90,117,132,.18)!important;box-shadow:0 15px 30px rgba(76,98,110,.07),inset 0 1px 0 rgba(255,255,255,.98)!important;color:#242629!important}
+.grinder-choice-card.active:before{border-color:#78909c;background:#78909c}
+.grinder-choice-model{display:block;margin-bottom:5px;font-size:7px;line-height:1;font-weight:800;letter-spacing:.15em;color:#a0a2a7}
+.grinder-choice-card b{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--v51-display);font-size:15px;line-height:1.05;font-weight:690;letter-spacing:-.027em}
+.grinder-choice-card small{display:block;width:100%;margin-top:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--v51-mono);font-size:7.5px;line-height:1.2;color:#96999d}
+.grinder-choice-grid.compact .grinder-choice-card{min-height:86px!important;border-radius:19px!important;padding:11px!important}
+.grinder-instrument-zone{margin:10px 0 12px}
+.grinder-instrument-panel,.grinder-instrument-deck{overflow:hidden;border-radius:28px!important;background:radial-gradient(circle at 88% 5%,rgba(177,211,230,.14),transparent 12rem),rgba(250,250,250,.92)!important;border:1px solid rgba(28,28,30,.055)!important;box-shadow:0 16px 38px rgba(31,35,39,.04),inset 0 1px 0 rgba(255,255,255,.95)!important}
+.grinder-instrument-panel{padding:16px!important}
+.grinder-setting-head{display:flex!important;align-items:flex-start!important;justify-content:space-between!important;gap:12px!important}.grinder-setting-head>div{min-width:0}
+.grinder-setting-head b{display:block;margin-top:4px;font-family:var(--v51-display);font-size:17px!important;line-height:1.05;font-weight:690;letter-spacing:-.03em;color:#303236}
+.grinder-instrument-status{flex:0 0 auto;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(28,28,30,.045);font-size:6.5px;font-weight:800;letter-spacing:.12em;color:#92959a}
+.x64-instrument{max-width:280px;margin:18px auto 5px}.x64-dial-ring{position:relative;width:190px;height:190px;margin:0 auto;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle at 50% 44%,#fff 0 53%,#f6f7f8 54% 65%,#e9eef1 66% 100%);border:1px solid rgba(95,117,129,.16);box-shadow:0 0 0 9px rgba(224,233,238,.40),0 18px 38px rgba(80,104,116,.10),inset 0 1px 0 rgba(255,255,255,.98)}
+.x64-tick-ring{position:absolute;inset:12px;border-radius:50%;background:repeating-conic-gradient(from -90deg,rgba(101,119,129,.58) 0deg 1deg,transparent 1deg 8deg);-webkit-mask:radial-gradient(circle,transparent 0 69%,#000 70% 77%,transparent 78%);mask:radial-gradient(circle,transparent 0 69%,#000 70% 77%,transparent 78%);opacity:.55}
+.x64-dial-core{position:relative;z-index:1;width:128px;height:128px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,.84);border:1px solid rgba(28,28,30,.045);box-shadow:inset 0 1px 0 rgba(255,255,255,.98),0 7px 17px rgba(31,35,39,.035)}
+.x64-dial-core>span,.x64-dial-core>small{font-size:6.5px;line-height:1;font-weight:800;letter-spacing:.15em;color:#a0a2a6}.x64-value-wrap{width:92px;margin:7px 0 5px}
+.x64-value-wrap input{width:100%!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;text-align:center;font-family:var(--v51-display)!important;font-size:31px!important;line-height:1!important;font-weight:700!important;letter-spacing:-.055em!important;color:#232528!important}
+.x64-scale-labels{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;margin-top:13px;font-size:6.5px;font-weight:800;letter-spacing:.12em;color:#a1a3a7}.x64-scale-labels i{height:1px;background:linear-gradient(90deg,#9eafb8,#d7dfe3,#9eafb8)}
+.kinu-instrument-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:300px;margin:18px auto 12px}.kinu-control-dial{--kinu-progress:0deg;position:relative;min-height:154px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;border-radius:50%;background:radial-gradient(circle at 50% 44%,rgba(255,255,255,.98) 0 57%,rgba(243,246,247,.96) 58% 69%,rgba(220,230,235,.62) 70% 100%);border:1px solid rgba(95,117,129,.14);box-shadow:0 0 0 7px rgba(225,233,237,.32),0 14px 30px rgba(80,104,116,.08),inset 0 1px 0 rgba(255,255,255,.98)}
+.kinu-control-dial .kinu-ring{position:absolute;inset:8px;border-radius:50%;background:conic-gradient(from -90deg,#819ba8 0 var(--kinu-progress),transparent var(--kinu-progress) 360deg);-webkit-mask:radial-gradient(circle,transparent 0 77%,#000 78% 82%,transparent 83%);mask:radial-gradient(circle,transparent 0 77%,#000 78% 82%,transparent 83%);opacity:.58}
+.kinu-control-dial>span{position:relative;z-index:1;font-size:6.5px;font-weight:800;letter-spacing:.13em;color:#a0a2a6}.kinu-control-dial input{position:relative;z-index:1;width:76px!important;margin-top:8px;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;text-align:center;font-family:var(--v51-display)!important;font-size:32px!important;line-height:1!important;font-weight:700!important;letter-spacing:-.055em!important;color:#25272a!important}.kinu-control-dial>small{position:relative;z-index:1;margin-top:5px;font-size:7px;color:#9ea0a5}
+.kinu-control-dial.compact{min-height:126px}.kinu-instrument-grid.compact{max-width:260px}
+.grinder-setting-readout{max-width:320px;margin:5px auto 0!important;padding:10px 13px!important;border-radius:17px!important;background:#202123!important;border-color:#202123!important;color:#fff!important;box-shadow:0 9px 22px rgba(23,24,26,.12)!important;text-align:center;font-family:var(--v51-mono)!important;font-size:11px!important;font-weight:650!important;letter-spacing:-.015em!important}
+.grinder-setting-note{margin-top:12px!important;font-size:8.5px!important;line-height:1.5!important;color:#96989d!important;text-align:center}.grinder-ratio-readout{min-height:47px;display:flex;align-items:center;padding:0 13px!important;border-radius:16px!important;background:rgba(255,255,255,.74)!important;border:1px solid rgba(28,28,30,.055)!important;font-family:var(--v51-mono)!important;color:#63666b!important}
+#page-pour .grinder-instrument-deck{margin:13px 0 17px!important;padding:14px!important}#page-pour .pour-grinder-title{display:flex!important;align-items:flex-end!important;justify-content:space-between!important;gap:10px!important}#page-pour .pour-grinder-title>div{min-width:0;display:flex;flex-direction:column;gap:3px}#page-pour .pour-grinder-title b{font-family:var(--v51-display);font-size:15px;font-weight:680;letter-spacing:-.025em;color:#3e4145}#page-pour #pourGrinderSummary{max-width:52%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--v51-mono);font-size:7.5px;color:#919499}
+#page-pour .x64-pour-instrument{margin-top:11px;padding:13px;border-radius:20px;background:rgba(255,255,255,.62);border:1px solid rgba(28,28,30,.045)}#page-pour .x64-pour-scale{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;font-size:6px;font-weight:800;letter-spacing:.11em;color:#a1a3a7}#page-pour .x64-mini-ruler{height:10px;background:repeating-linear-gradient(90deg,rgba(104,122,132,.55) 0 1px,transparent 1px 9px);-webkit-mask:linear-gradient(#000 0 0) center/100% 8px no-repeat;mask:linear-gradient(#000 0 0) center/100% 8px no-repeat}
+#page-pour .x64-pour-input{margin-top:8px;text-align:center}#page-pour .x64-pour-input small{display:block;margin-bottom:4px;font-size:6.5px;font-weight:800;letter-spacing:.13em;color:#a0a2a6}#page-pour .x64-pour-input input{max-width:150px;padding:5px 8px!important;border:0!important;background:transparent!important;box-shadow:none!important;text-align:center;font-family:var(--v51-display)!important;font-size:28px!important;line-height:1!important;font-weight:700!important;letter-spacing:-.05em!important;color:#242629!important}
+#page-espresso .grinder-context-pill{display:inline-flex;align-items:center;max-width:100%;padding:6px 9px;margin-bottom:7px;border-radius:999px;background:rgba(225,235,240,.66);border:1px solid rgba(100,130,145,.11);font-family:var(--v51-mono);font-size:8px;line-height:1.2;color:#667d88}#page-espresso .best-shot-metrics{display:block}#page-espresso .coach-grinder-context{margin-top:9px!important;padding:8px 10px!important;border-radius:15px!important;background:rgba(226,236,241,.55)!important;border:1px solid rgba(100,130,145,.09)!important;font-family:var(--v51-mono)!important;font-size:8px!important;color:#6d838e!important}
+@media(max-width:390px){.grinder-choice-card{min-height:92px!important;padding:11px!important}.grinder-choice-card b{font-size:13.5px}.x64-dial-ring{width:172px;height:172px}.x64-dial-core{width:116px;height:116px}.x64-value-wrap input{font-size:28px!important}.kinu-control-dial{min-height:138px}.kinu-control-dial input{font-size:29px!important}#page-edata .grinder-section-head{align-items:flex-start;flex-direction:column}#page-edata .grinder-section-head .grinder-personal-note{max-width:none;text-align:left}}
+@media(max-width:340px){.grinder-choice-grid{grid-template-columns:1fr}.kinu-instrument-grid{grid-template-columns:1fr;max-width:180px}.kinu-control-dial{min-height:154px}#page-espresso .brew-grinder-context{grid-template-columns:34px minmax(0,1fr) auto}}
+
 </style>
 </head>
 <body>
@@ -8958,6 +9009,22 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
       <span>WARM-UP</span>
       <b id="warmTimer">—</b>
       <small>first espresso appearance ends warm-up</small>
+    </div>
+
+    <div id="brewGrinderContext" class="brew-grinder-context">
+      <div class="brew-grinder-context-icon">
+        <svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="6.8"/>
+          <circle cx="12" cy="12" r="2.1"/>
+          <path d="M12 5.2v1.6M18.8 12h-1.6M12 18.8v-1.6M5.2 12h1.6"/>
+        </svg>
+      </div>
+      <div class="brew-grinder-context-copy">
+        <span>MY GRINDER</span>
+        <b id="brewGrinderName">Not selected</b>
+        <small id="brewGrinderSetting">Set in Brew Details</small>
+      </div>
+      <button class="mini brew-grinder-edit" data-open-page="edata" type="button">Set</button>
     </div>
 
     <div class="al-stage brew-stage-track" aria-label="Brew progress">
@@ -9338,38 +9405,93 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <div class="row"><h2>萃取資料</h2><span class="badge">自動儲存</span></div>
     <div class="form">
       <div class="field"><label>咖啡機</label><select id="machine"><option>9Barista Mk2 Pro</option></select></div>
-      <div class="field grinder-selector-field">
-        <label>磨豆機 <span class="my-gear-label">MY GEAR</span></label>
-        <select id="grinder">
+      <div class="field grinder-selector-field grinder-instrument-field">
+        <div class="grinder-section-head">
+          <div>
+            <span class="kicker">MY GEAR</span>
+            <h3>Choose grinder.</h3>
+          </div>
+          <span class="grinder-personal-note">Each grinder remembers its last setting.</span>
+        </div>
+
+        <div class="grinder-choice-grid" data-grinder-choice-group="espresso">
+          <button class="grinder-choice-card" data-grinder-target="grinder" data-grinder-value="Mahlkönig X64 SD" type="button">
+            <span class="grinder-choice-model">X64 SD</span>
+            <b>Mahlkönig</b>
+            <small id="x64LastSetting">未有紀錄</small>
+          </button>
+          <button class="grinder-choice-card" data-grinder-target="grinder" data-grinder-value="Kinu M47 Titan" type="button">
+            <span class="grinder-choice-model">M47 TITAN</span>
+            <b>Kinu</b>
+            <small id="kinuLastSetting">未有紀錄</small>
+          </button>
+        </div>
+
+        <select id="grinder" class="grinder-native-select" aria-label="磨豆機">
           <option value="">選擇磨豆機</option>
           <option value="Mahlkönig X64 SD">Mahlkönig X64 SD</option>
           <option value="Kinu M47 Titan">Kinu M47 Titan</option>
         </select>
-        <div class="grinder-personal-note">只顯示你自己使用嘅兩部磨豆機；App 會分別記住最近一次設定。</div>
       </div>
-      <div class="pair">
-        <div class="field">
-          <label>磨度</label>
-          <div id="x64GrindPanel" class="grinder-setting-panel">
-            <div class="grinder-setting-head"><b>Mahlkönig X64 SD</b><span id="x64LastSetting" class="grinder-last-setting"></span></div>
-            <div class="suggest-wrap"><input id="grind" autocomplete="off" inputmode="decimal" placeholder="例如 1.15"><div id="suggest-grind" class="suggestions"></div></div>
-            <div class="grinder-setting-note">以 X64 SD 數字刻度記錄。</div>
+
+      <div class="grinder-instrument-zone">
+        <div id="x64GrindPanel" class="grinder-setting-panel grinder-instrument-panel x64-instrument-panel">
+          <div class="grinder-setting-head">
+            <div><span class="kicker">STEPPLESS DIAL</span><b>Mahlkönig X64 SD</b></div>
+            <span class="grinder-instrument-status">PRECISION</span>
           </div>
-          <div id="kinuGrindPanel" class="grinder-setting-panel" style="display:none">
-            <div class="grinder-setting-head"><b>Kinu M47 Titan</b><span id="kinuLastSetting" class="grinder-last-setting"></span></div>
-            <div class="kinu-setting-grid">
-              <div><span>圈數</span><input id="grindTurns" type="number" min="0" step="1" inputmode="numeric" placeholder="1"></div>
-              <div><span>格數</span><input id="grindClicks" type="number" min="0" max="49" step="1" inputmode="numeric" placeholder="12"></div>
+
+          <div class="x64-instrument">
+            <div class="x64-dial-ring">
+              <div class="x64-tick-ring"></div>
+              <div class="x64-dial-core">
+                <span>GRIND</span>
+                <div class="suggest-wrap x64-value-wrap">
+                  <input id="grind" autocomplete="off" inputmode="decimal" placeholder="1.15" aria-label="X64 SD 磨度">
+                  <div id="suggest-grind" class="suggestions"></div>
+                </div>
+                <small>SETTING</small>
+              </div>
             </div>
-            <div id="kinuGrindDisplay" class="grinder-setting-display">—</div>
-            <div class="grinder-setting-note">以「圈 + 格」記錄；每圈 50 格。</div>
+            <div class="x64-scale-labels"><span>FINER</span><i></i><span>COARSER</span></div>
           </div>
+
+          <div class="grinder-setting-note">直接輸入 X64 SD 實際刻度。數字保持原樣記錄，唔會自行四捨五入。</div>
         </div>
+
+        <div id="kinuGrindPanel" class="grinder-setting-panel grinder-instrument-panel kinu-instrument-panel" style="display:none">
+          <div class="grinder-setting-head">
+            <div><span class="kicker">50 CLICKS / TURN</span><b>Kinu M47 Titan</b></div>
+            <span class="grinder-instrument-status">MANUAL</span>
+          </div>
+
+          <div class="kinu-instrument-grid">
+            <div class="kinu-control-dial">
+              <div class="kinu-ring"></div>
+              <span>ROUNDS</span>
+              <input id="grindTurns" type="number" min="0" step="1" inputmode="numeric" placeholder="1" aria-label="Kinu 圈數">
+              <small>圈</small>
+            </div>
+            <div class="kinu-control-dial kinu-click-dial" id="kinuClickDial">
+              <div class="kinu-ring"></div>
+              <span>CLICKS</span>
+              <input id="grindClicks" type="number" min="0" max="49" step="1" inputmode="numeric" placeholder="12" aria-label="Kinu 格數">
+              <small>/ 49</small>
+            </div>
+          </div>
+
+          <div id="kinuGrindDisplay" class="grinder-setting-display grinder-setting-readout">—</div>
+          <div class="grinder-setting-note">以「圈 + 格」記錄；每圈 50 格。格數會限制喺 0–49。</div>
+        </div>
+      </div>
+
+      <div class="pair">
         <div class="field"><label>粉量 (g)</label><div class="suggest-wrap"><input id="dose" autocomplete="off" inputmode="decimal" placeholder="18.0"><div id="suggest-dose" class="suggestions"></div></div></div>
+        <div class="field"><label>入水量 (g)</label><div class="suggest-wrap"><input id="water" autocomplete="off" inputmode="decimal" placeholder="120"><div id="suggest-water" class="suggestions"></div></div></div>
       </div>
       <div class="pair">
-        <div class="field"><label>入水量 (g)</label><div class="suggest-wrap"><input id="water" autocomplete="off" inputmode="decimal" placeholder="120"><div id="suggest-water" class="suggestions"></div></div></div>
-        <div class="field"><label>出杯量 (g)</label><div class="suggest-wrap"><input id="yield" autocomplete="off" inputmode="decimal" placeholder="40"><div id="suggest-yield" class="suggestions"></div></div><div id="ratio" class="metric">Ratio：—</div></div>
+        <div class="field"><label>出杯量 (g)</label><div class="suggest-wrap"><input id="yield" autocomplete="off" inputmode="decimal" placeholder="40"><div id="suggest-yield" class="suggestions"></div></div></div>
+        <div class="field"><label>Ratio</label><div id="ratio" class="metric grinder-ratio-readout">Ratio：—</div></div>
       </div>
       <div class="pair">
         <div class="field">
@@ -9518,24 +9640,59 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button id="backPourLibrary" class="mini" type="button">← 返回技法庫</button>
     <div class="card">
       <div class="row"><h2 id="pourRecipeName"></h2><span id="pourStepBadge" class="badge">準備</span></div>
-      <div class="pour-grinder-deck">
-        <div class="pour-grinder-title"><span class="kicker">MY GRINDER</span><span id="pourGrinderSummary" class="grinder-last-setting"></span></div>
-        <div class="field">
-          <select id="pourGrinder">
-            <option value="">選擇磨豆機</option>
-            <option value="Mahlkönig X64 SD">Mahlkönig X64 SD</option>
-            <option value="Kinu M47 Titan">Kinu M47 Titan</option>
-          </select>
+      <div class="pour-grinder-deck grinder-instrument-deck">
+        <div class="pour-grinder-title">
+          <div><span class="kicker">MY GRINDER</span><b>Actual brew setting</b></div>
+          <span id="pourGrinderSummary" class="grinder-last-setting"></span>
         </div>
-        <div id="pourX64GrindPanel" class="pour-grinder-setting">
-          <input id="pourGrind" autocomplete="off" inputmode="decimal" placeholder="X64 SD 磨度，例如 4.20">
+
+        <div class="grinder-choice-grid compact" data-grinder-choice-group="pour">
+          <button class="grinder-choice-card" data-grinder-target="pourGrinder" data-grinder-value="Mahlkönig X64 SD" type="button">
+            <span class="grinder-choice-model">X64 SD</span>
+            <b>Mahlkönig</b>
+            <small id="pourX64LastSetting">未有紀錄</small>
+          </button>
+          <button class="grinder-choice-card" data-grinder-target="pourGrinder" data-grinder-value="Kinu M47 Titan" type="button">
+            <span class="grinder-choice-model">M47 TITAN</span>
+            <b>Kinu</b>
+            <small id="pourKinuLastSetting">未有紀錄</small>
+          </button>
         </div>
-        <div id="pourKinuGrindPanel" class="pour-grinder-setting" style="display:none">
-          <div class="kinu-setting-grid">
-            <div><span>圈數</span><input id="pourGrindTurns" type="number" min="0" step="1" inputmode="numeric" placeholder="2"></div>
-            <div><span>格數</span><input id="pourGrindClicks" type="number" min="0" max="49" step="1" inputmode="numeric" placeholder="10"></div>
+
+        <select id="pourGrinder" class="grinder-native-select" aria-label="手沖磨豆機">
+          <option value="">選擇磨豆機</option>
+          <option value="Mahlkönig X64 SD">Mahlkönig X64 SD</option>
+          <option value="Kinu M47 Titan">Kinu M47 Titan</option>
+        </select>
+
+        <div id="pourX64GrindPanel" class="pour-grinder-setting x64-pour-instrument">
+          <div class="x64-pour-scale">
+            <span>FINER</span>
+            <div class="x64-mini-ruler"></div>
+            <span>COARSER</span>
           </div>
-          <div id="pourKinuGrindDisplay" class="grinder-setting-display">—</div>
+          <div class="x64-pour-input">
+            <small>X64 SD SETTING</small>
+            <input id="pourGrind" autocomplete="off" inputmode="decimal" placeholder="4.20" aria-label="手沖 X64 SD 磨度">
+          </div>
+        </div>
+
+        <div id="pourKinuGrindPanel" class="pour-grinder-setting" style="display:none">
+          <div class="kinu-instrument-grid compact">
+            <div class="kinu-control-dial compact">
+              <div class="kinu-ring"></div>
+              <span>ROUNDS</span>
+              <input id="pourGrindTurns" type="number" min="0" step="1" inputmode="numeric" placeholder="2" aria-label="手沖 Kinu 圈數">
+              <small>圈</small>
+            </div>
+            <div class="kinu-control-dial compact kinu-click-dial" id="pourKinuClickDial">
+              <div class="kinu-ring"></div>
+              <span>CLICKS</span>
+              <input id="pourGrindClicks" type="number" min="0" max="49" step="1" inputmode="numeric" placeholder="10" aria-label="手沖 Kinu 格數">
+              <small>/ 49</small>
+            </div>
+          </div>
+          <div id="pourKinuGrindDisplay" class="grinder-setting-display grinder-setting-readout">—</div>
         </div>
       </div>
       <div id="pourTimer" class="timer">00:00.0</div>
@@ -9682,7 +9839,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
   </div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.5 · Data stays in your browser</div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.6 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -10326,10 +10483,45 @@ function grinderSeedData(){
   }
   return d;
 }
+function grinderSettingFromPrefs(g){
+  const p=readGrinderPrefs();
+  if(g===GRINDER_X64)return p.x64?.grind?String(p.x64.grind):'';
+  if(g===GRINDER_KINU&&Number.isFinite(Number(p.kinu?.turns))&&Number.isFinite(Number(p.kinu?.clicks)))return `${p.kinu.turns}圈 + ${p.kinu.clicks}格`;
+  return '';
+}
+function syncGrinderChoiceCards(selectId){
+  const sel=$(selectId),value=validGrinder(sel?.value);
+  $('[data-grinder-target="'+selectId+'"]').forEach(btn=>btn.classList.toggle('active',btn.dataset.grinderValue===value));
+}
+function updateGrinderInstrumentVisuals(){
+  const ec=Number($('grindClicks')?.value);
+  const pc=Number($('pourGrindClicks')?.value);
+  if($('kinuClickDial'))$('kinuClickDial').style.setProperty('--kinu-progress',`${Number.isFinite(ec)?Math.max(0,Math.min(49,ec))/50*360:0}deg`);
+  if($('pourKinuClickDial'))$('pourKinuClickDial').style.setProperty('--kinu-progress',`${Number.isFinite(pc)?Math.max(0,Math.min(49,pc))/50*360:0}deg`);
+}
+function renderBrewGrinderContext(){
+  const p=readGrinderPrefs();
+  let data=current?.data||null;
+  let g=validGrinder(data?.grinder)||validGrinder($('grinder')?.value)||validGrinder(p.lastGrinder);
+  let setting='';
+  if(data&&validGrinder(data.grinder)===g)setting=grinderSettingText(data);
+  if(!setting&&validGrinder($('grinder')?.value)===g){
+    const temp=syncGrinderFieldsToData({},g,$('grind')?.value||'',$('grindTurns')?.value||'',$('grindClicks')?.value||'');
+    setting=grinderSettingText(temp);
+  }
+  if(!setting)setting=grinderSettingFromPrefs(g);
+  if($('brewGrinderName'))$('brewGrinderName').textContent=g||'Not selected';
+  if($('brewGrinderSetting'))$('brewGrinderSetting').textContent=setting||'Set in Brew Details';
+}
 function renderGrinderLastSettings(){
   const p=readGrinderPrefs();
-  if($('x64LastSetting'))$('x64LastSetting').textContent=p.x64?.grind?`上次 ${p.x64.grind}`:'未有紀錄';
-  if($('kinuLastSetting'))$('kinuLastSetting').textContent=Number.isFinite(Number(p.kinu?.turns))&&Number.isFinite(Number(p.kinu?.clicks))?`上次 ${p.kinu.turns}圈 + ${p.kinu.clicks}格`:'未有紀錄';
+  const x=p.x64?.grind?`Last ${p.x64.grind}`:'No setting yet';
+  const k=Number.isFinite(Number(p.kinu?.turns))&&Number.isFinite(Number(p.kinu?.clicks))?`Last ${p.kinu.turns}圈 + ${p.kinu.clicks}格`:'No setting yet';
+  if($('x64LastSetting'))$('x64LastSetting').textContent=x;
+  if($('kinuLastSetting'))$('kinuLastSetting').textContent=k;
+  if($('pourX64LastSetting'))$('pourX64LastSetting').textContent=x;
+  if($('pourKinuLastSetting'))$('pourKinuLastSetting').textContent=k;
+  renderBrewGrinderContext();
 }
 function normalizeKinuValues(turnId,clickId){
   const t=$(turnId),c=$(clickId);if(!t||!c)return;
@@ -10355,7 +10547,10 @@ function updateEspressoGrinderUI(fill=false){
   $('x64GrindPanel').style.display=g===GRINDER_KINU?'none':'block';
   $('kinuGrindPanel').style.display=g===GRINDER_KINU?'block':'none';
   updateKinuDisplay('grindTurns','grindClicks','kinuGrindDisplay');
+  syncGrinderChoiceCards('grinder');
+  updateGrinderInstrumentVisuals();
   renderGrinderLastSettings();
+  renderBrewGrinderContext();
 }
 function hydrateEspressoGrinder(data){
   const g=validGrinder(data?.grinder);$('grinder').value=g;
@@ -10393,7 +10588,10 @@ function updatePourGrinderUI(fill=false){
   $('pourKinuGrindPanel').style.display=g===GRINDER_KINU?'block':'none';
   updateKinuDisplay('pourGrindTurns','pourGrindClicks','pourKinuGrindDisplay');
   const temp=syncGrinderFieldsToData({},g,$('pourGrind').value,$('pourGrindTurns').value,$('pourGrindClicks').value);
-  $('pourGrinderSummary').textContent=grinderSummary(temp)||'未選擇';
+  $('pourGrinderSummary').textContent=grinderSummary(temp)||'Not selected';
+  syncGrinderChoiceCards('pourGrinder');
+  updateGrinderInstrumentVisuals();
+  renderGrinderLastSettings();
 }
 function syncPourGrinderToRun(){
   if(!pourRun)return;
@@ -10493,7 +10691,7 @@ function showPage(name){
     target.classList.remove('al-page-enter');
     requestAnimationFrame(()=>target.classList.add('al-page-enter'));
   }
-  if(name==='learn')updateBeanGuide();if(name==='logs')renderHistory();if(name==='insights')renderInsights();if(name==='beans')refreshBeans();if(name==='pour')renderSelectedPourBean();if(name==='espresso'){updateHeroYield();renderPreviousBest()}
+  if(name==='learn')updateBeanGuide();if(name==='logs')renderHistory();if(name==='insights')renderInsights();if(name==='beans')refreshBeans();if(name==='pour')renderSelectedPourBean();if(name==='espresso'){updateHeroYield();renderBrewGrinderContext();renderPreviousBest()}
   window.scrollTo({top:0,behavior:'smooth'});
 }
 $$('.tab').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
@@ -11103,12 +11301,15 @@ async function renderPreviousBest(){
   if(!best){card.classList.remove('show');return}
   const d=best.data||{},sec=espressoExtractSec(best),r=logRating(best,'espresso');
   $('previousBestTitle').textContent=`${bean.name||'Bean'} · ★ ${r?.toFixed(1)}`;
-  $('previousBestMeta').textContent=[
-    grinderSummary(d),
-    d.dose?`${d.dose}g → ${d.yield||'—'}g`:'',
-    Number.isFinite(sec)?`${sec.toFixed(1)}s`:'',
-    dateLabel(best.createdAt)
-  ].filter(Boolean).join(' · ');
+  const gs=grinderSummary(d);
+  $('previousBestMeta').innerHTML=[
+    gs?`<span class="grinder-context-pill">${esc(gs)}</span>`:'',
+    `<span class="best-shot-metrics">${[
+      d.dose?`${esc(d.dose)}g → ${esc(d.yield||'—')}g`:'',
+      Number.isFinite(sec)?`${sec.toFixed(1)}s`:'',
+      dateLabel(best.createdAt)
+    ].filter(Boolean).join(' · ')}</span>`
+  ].filter(Boolean).join('');
   card.classList.add('show');
 }
 function renderInsightKpis(allLogs,es){
@@ -11799,9 +12000,15 @@ $('markExtract').addEventListener('click',async()=>{if(!current||current.endTs||
 $('finishEspresso').addEventListener('click',async()=>{if(!current||current.endTs||!current.extractStartTs)return;current.endTs=Date.now();current.events.push({ts:current.endTs,label:'✓ 萃取完成'});cancelAnimationFrame(eRAF);renderEspressoTimers();renderEspressoTimeline();updateEspressoUI();await saveEspresso(true);await renderPreviousBest();renderNextShotTarget();await renderDialInCoach();toast('完成，Dial-in Coach 已更新')});
 $('goData').addEventListener('click',()=>showPage('edata'));
 espressoFields.forEach(id=>{$(id).addEventListener('input',()=>{queueEspressoSave();if(remembered.includes(id))showSuggestions(id)});$(id).addEventListener('change',queueEspressoSave)});
+$('[data-grinder-target]').forEach(btn=>btn.addEventListener('click',()=>{
+  const select=$(btn.dataset.grinderTarget);
+  if(!select)return;
+  select.value=btn.dataset.grinderValue||'';
+  select.dispatchEvent(new Event('change',{bubbles:true}));
+}));
 $('grinder').addEventListener('change',()=>{updateEspressoGrinderUI(true);rememberGrinderData(readEspressoForm());queueEspressoSave()});
-$('grind').addEventListener('input',()=>{rememberGrinderData(readEspressoForm());renderGrinderLastSettings()});
-['grindTurns','grindClicks'].forEach(id=>{$(id).addEventListener('input',()=>{updateKinuDisplay('grindTurns','grindClicks','kinuGrindDisplay');rememberGrinderData(readEspressoForm());queueEspressoSave()});$(id).addEventListener('blur',()=>{normalizeKinuValues('grindTurns','grindClicks');updateKinuDisplay('grindTurns','grindClicks','kinuGrindDisplay');rememberGrinderData(readEspressoForm());queueEspressoSave()})});
+$('grind').addEventListener('input',()=>{rememberGrinderData(readEspressoForm());renderGrinderLastSettings();renderBrewGrinderContext()});
+['grindTurns','grindClicks'].forEach(id=>{$(id).addEventListener('input',()=>{updateKinuDisplay('grindTurns','grindClicks','kinuGrindDisplay');updateGrinderInstrumentVisuals();rememberGrinderData(readEspressoForm());renderBrewGrinderContext();queueEspressoSave()});$(id).addEventListener('blur',()=>{normalizeKinuValues('grindTurns','grindClicks');updateKinuDisplay('grindTurns','grindClicks','kinuGrindDisplay');updateGrinderInstrumentVisuals();rememberGrinderData(readEspressoForm());renderBrewGrinderContext();queueEspressoSave()})});
 $$('[data-taste-tag]').forEach(btn=>btn.addEventListener('click',async()=>{
   if(!current){toast('請先建立或打開一筆 9Barista Log');return}
   const set=new Set(Array.isArray(current.tasteTags)?current.tasteTags:[]);
@@ -11880,7 +12087,7 @@ TOTAL     : ${x.startTs&&x.endTs?fmt(x.endTs-x.startTs):'—'}${x.rating?`<br>RA
     box.appendChild(d);
   });
 }
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.5',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.6',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
@@ -11944,8 +12151,8 @@ $('finishPour').addEventListener('click',async()=>{if(!pourRun?.startTs)return;s
 $('savePourResult').addEventListener('click',async()=>{if(!pourRun)return;syncPourGrinderToRun();pourRun.rating=$('pourRating').value;pourRun.taste=$('pourTaste').value.trim();pourRun.notes=$('pourNotes').value.trim();await put('pourLogs',pourRun);await renderHistory();toast('手沖結果已保存')});
 $('backPourLibrary').addEventListener('click',()=>{cancelAnimationFrame(pourRAF);$('pourBrew').classList.remove('show');$('pourLibrary').style.display='block';pourRun=null});
 $('pourGrinder').addEventListener('change',()=>{updatePourGrinderUI(true);syncPourGrinderToRun()});
-$('pourGrind').addEventListener('input',syncPourGrinderToRun);
-['pourGrindTurns','pourGrindClicks'].forEach(id=>{$(id).addEventListener('input',()=>{updateKinuDisplay('pourGrindTurns','pourGrindClicks','pourKinuGrindDisplay');syncPourGrinderToRun()});$(id).addEventListener('blur',()=>{normalizeKinuValues('pourGrindTurns','pourGrindClicks');updateKinuDisplay('pourGrindTurns','pourGrindClicks','pourKinuGrindDisplay');syncPourGrinderToRun()})});
+$('pourGrind').addEventListener('input',()=>{syncPourGrinderToRun();renderGrinderLastSettings()});
+['pourGrindTurns','pourGrindClicks'].forEach(id=>{$(id).addEventListener('input',()=>{updateKinuDisplay('pourGrindTurns','pourGrindClicks','pourKinuGrindDisplay');updateGrinderInstrumentVisuals();syncPourGrinderToRun()});$(id).addEventListener('blur',()=>{normalizeKinuValues('pourGrindTurns','pourGrindClicks');updateKinuDisplay('pourGrindTurns','pourGrindClicks','pourKinuGrindDisplay');updateGrinderInstrumentVisuals();syncPourGrinderToRun()})});
 
 
 function setLearnPanel(name){
