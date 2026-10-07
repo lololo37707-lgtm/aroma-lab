@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v5.3</title>
+<title>Aroma Lab v5.4</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -7622,20 +7622,424 @@ button,
   }
 }
 
+
+/* =========================================================
+   Aroma Lab v5.4 — Header + Navigation
+   Scope:
+   - compact video-style app header
+   - Aroma Lab home action always returns to Bean Home
+   - contextual center title / right-side action
+   - floating five-tab bottom dock (same five tabs)
+   - lightweight page transition
+   - no sixth Bean tab; Bean Home is accessed through brand/home
+   No DB/data-model change.
+   ========================================================= */
+
+/* Compact, spatial top bar */
+.al-header-v54{
+  position:sticky!important;
+  top:0;
+  z-index:90;
+  min-height:64px!important;
+  display:grid!important;
+  grid-template-columns:minmax(92px,1fr) minmax(110px,1.25fr) minmax(44px,1fr);
+  align-items:center!important;
+  gap:8px;
+  padding:
+    calc(9px + env(safe-area-inset-top))
+    max(13px,calc(11px + env(safe-area-inset-right)))
+    9px
+    max(13px,calc(11px + env(safe-area-inset-left)))!important;
+  background:rgba(247,248,249,.82)!important;
+  border-bottom:1px solid rgba(28,28,30,.045)!important;
+  box-shadow:none!important;
+  -webkit-backdrop-filter:blur(28px) saturate(1.08);
+  backdrop-filter:blur(28px) saturate(1.08);
+}
+
+/* Old page badge remains in DOM for compatibility but is visually retired */
+.al-page-indicator-hidden{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0 0 0 0)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+
+/* Home / brand */
+.al-header-home{
+  min-width:0;
+  min-height:42px!important;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:8px;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:#1d1e20!important;
+  text-align:left;
+}
+
+.al-header-home-icon{
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:rgba(255,255,255,.76);
+  border:1px solid rgba(28,28,30,.05);
+  box-shadow:0 7px 18px rgba(31,35,39,.035);
+  color:#4b4e53;
+}
+
+.al-header-home-icon .ui-icon-svg{
+  width:17px;
+  height:17px;
+  stroke-width:1.7;
+}
+
+.al-header-brand-copy{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:1px;
+}
+
+.al-header-brand-copy b{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-family:var(--v51-display);
+  font-size:12px;
+  line-height:1.1;
+  font-weight:690;
+  letter-spacing:-.025em;
+  color:#26272a;
+}
+
+.al-header-brand-copy small{
+  font-size:6.5px;
+  line-height:1;
+  font-weight:780;
+  letter-spacing:.14em;
+  color:#aaa;
+}
+
+/* Context center */
+.al-header-context{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+  text-align:center;
+}
+
+.al-header-context span{
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:6.5px;
+  line-height:1.05;
+  font-weight:780;
+  letter-spacing:.14em;
+  color:#aaa;
+}
+
+.al-header-context b{
+  width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-family:var(--v51-display);
+  font-size:13px;
+  line-height:1.15;
+  font-weight:690;
+  letter-spacing:-.022em;
+  color:#242528;
+}
+
+/* Context action */
+.al-header-action{
+  justify-self:end;
+  min-width:42px!important;
+  width:auto;
+  height:38px;
+  min-height:38px!important;
+  display:grid;
+  place-items:center;
+  padding:0 12px!important;
+  border-radius:999px!important;
+  background:#1b1b1c!important;
+  border:1px solid #1b1b1c!important;
+  box-shadow:0 8px 20px rgba(15,15,16,.12)!important;
+  color:#fff!important;
+}
+
+.al-header-action span{
+  font-size:10.5px;
+  line-height:1;
+  font-weight:650;
+  letter-spacing:-.015em;
+}
+
+.al-header-action span:only-child{
+  white-space:nowrap;
+}
+
+/* Page heads now sit beneath app chrome instead of competing with it */
+.al-header-v54 + .al-nav-v54 + .page .al-page-head,
+.al-nav-v54 + .page .al-page-head{
+  padding-top:12px!important;
+}
+
+/* Floating bottom dock */
+.al-nav-v54{
+  position:fixed!important;
+  left:0!important;
+  right:0!important;
+  bottom:0!important;
+  z-index:95;
+  padding:
+    0
+    max(10px,env(safe-area-inset-right))
+    calc(9px + env(safe-area-inset-bottom))
+    max(10px,env(safe-area-inset-left))!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  pointer-events:none;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+}
+
+.al-nav-dock{
+  width:min(520px,100%);
+  min-height:64px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:3px;
+  padding:5px;
+  border-radius:24px;
+  background:rgba(249,249,250,.90);
+  border:1px solid rgba(28,28,30,.06);
+  box-shadow:
+    0 18px 50px rgba(29,33,37,.12),
+    0 4px 14px rgba(29,33,37,.05),
+    inset 0 1px 0 rgba(255,255,255,.92);
+  -webkit-backdrop-filter:blur(28px) saturate(1.08);
+  backdrop-filter:blur(28px) saturate(1.08);
+  pointer-events:auto;
+}
+
+.al-nav-v54 .tab{
+  min-width:0;
+  min-height:54px!important;
+  padding:6px 3px 5px!important;
+  display:flex!important;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+  border:0!important;
+  border-radius:19px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:#9b9da1!important;
+}
+
+.al-nav-v54 .tab .nav-icon{
+  width:23px!important;
+  height:23px!important;
+  color:#9b9da1!important;
+  transition:transform .18s ease,color .18s ease;
+}
+
+.al-nav-v54 .tab span:last-child{
+  margin:1px 0 0!important;
+  font-size:8.5px!important;
+  line-height:1!important;
+  font-weight:590!important;
+  color:#999ba0!important;
+}
+
+.al-nav-v54 .tab.active{
+  background:#fff!important;
+  box-shadow:
+    0 7px 17px rgba(31,35,39,.055),
+    inset 0 1px 0 rgba(255,255,255,.96)!important;
+  color:#1d1e20!important;
+}
+
+.al-nav-v54 .tab.active .nav-icon{
+  transform:translateY(-1px);
+  color:#222326!important;
+}
+
+.al-nav-v54 .tab.active span:last-child{
+  color:#313337!important;
+  font-weight:690!important;
+}
+
+/* Space for floating dock */
+body{
+  padding-bottom:calc(86px + env(safe-area-inset-bottom))!important;
+}
+
+/* Lightweight page entry */
+.page.al-page-enter.active{
+  animation:v54PageIn .25s cubic-bezier(.2,.7,.25,1);
+}
+
+@keyframes v54PageIn{
+  from{opacity:.72;transform:translateX(8px)}
+  to{opacity:1;transform:translateX(0)}
+}
+
+/* Bean Detail already has an internal top row; make it secondary to global header */
+#page-beans .bean-detail-topbar{
+  margin-top:0!important;
+}
+#page-beans .bean-detail-topbar > span{
+  opacity:.58;
+}
+
+/* Hide repeated page title only on Bean Home, where header + hero carry identity */
+#page-beans .bean-home-page-head{
+  padding-top:7px!important;
+}
+#page-beans .bean-home-page-head .kicker{
+  display:none;
+}
+
+/* Touch / active feedback */
+.al-header-home:active,
+.al-header-action:active,
+.al-nav-v54 .tab:active{
+  transform:scale(.97);
+}
+
+@media(max-width:430px){
+  .al-header-v54{
+    grid-template-columns:minmax(74px,.9fr) minmax(96px,1.15fr) minmax(42px,.9fr);
+    padding-left:max(10px,env(safe-area-inset-left))!important;
+    padding-right:max(10px,env(safe-area-inset-right))!important;
+  }
+
+  .al-header-home-icon{
+    width:32px;
+    height:32px;
+    flex-basis:32px;
+  }
+
+  .al-header-brand-copy small{
+    display:none;
+  }
+
+  .al-header-brand-copy b{
+    font-size:10.5px;
+  }
+
+  .al-header-context b{
+    font-size:12px;
+  }
+
+  .al-header-context span{
+    font-size:6px;
+    letter-spacing:.11em;
+  }
+
+  .al-header-action{
+    min-width:38px!important;
+    height:36px;
+    min-height:36px!important;
+    padding:0 10px!important;
+  }
+
+  .al-nav-dock{
+    min-height:62px;
+    border-radius:22px;
+  }
+
+  .al-nav-v54 .tab{
+    min-height:52px!important;
+  }
+}
+
+@media(max-width:350px){
+  .al-header-brand-copy{
+    display:none;
+  }
+
+  .al-header-v54{
+    grid-template-columns:42px 1fr 42px;
+  }
+
+  .al-header-context b{
+    font-size:11.5px;
+  }
+
+  .al-nav-v54 .tab span:last-child{
+    font-size:8px!important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .page.al-page-enter.active{
+    animation:none!important;
+  }
+
+  .al-header-home:active,
+  .al-header-action:active,
+  .al-nav-v54 .tab:active,
+  .al-nav-v54 .tab.active .nav-icon{
+    transform:none!important;
+  }
+}
+
 </style>
 </head>
 <body>
-<header class="al-header">
-  <div class="al-brand"><div class="al-brand-name">Aroma Lab</div><div class="al-brand-sub">GOOD COFFEE BRINGS US CLOSER</div></div>
-  <div id="alPageIndicator" class="al-page-indicator">9B</div>
+<header class="al-header al-header-v54">
+  <button id="alHomeButton" class="al-header-home" type="button" aria-label="返回 Coffee Collection">
+    <span class="al-header-home-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M4.5 10.2 12 4l7.5 6.2v8.3a1.5 1.5 0 0 1-1.5 1.5H6a1.5 1.5 0 0 1-1.5-1.5v-8.3Z"/>
+  <path d="M9.5 20v-5.7h5V20"/>
+</svg></span>
+    <span class="al-header-brand-copy">
+      <b>Aroma Lab</b>
+      <small>COFFEE LAB</small>
+    </span>
+  </button>
+
+  <div class="al-header-context" aria-live="polite">
+    <span id="alHeaderKicker">COFFEE COLLECTION</span>
+    <b id="alHeaderTitle">Your coffee.</b>
+  </div>
+
+  <button id="alHeaderAction" class="al-header-action" type="button" aria-label="頁面操作">
+    <span id="alHeaderActionText">＋</span>
+  </button>
+
+  <span id="alPageIndicator" class="al-page-indicator al-page-indicator-hidden" aria-hidden="true">豆庫</span>
 </header>
-<nav class="tabs" aria-label="Aroma Lab 主導航">
+<nav class="tabs al-nav-v54" aria-label="Aroma Lab 主導航"><div class="al-nav-dock">
   <button class="tab active" data-page="espresso" type="button"><span class="nav-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7.25"/><circle cx="12" cy="12" r="2.25"/><path d="M12 2.75v2.1M12 19.15v2.1M2.75 12h2.1M19.15 12h2.1"/></svg></span><span>9Barista</span></button>
   <button class="tab" data-page="pour" type="button"><span class="nav-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.2 5.2h11.6l-2.2 12.1a2.1 2.1 0 0 1-2.07 1.72h-3.06A2.1 2.1 0 0 1 8.4 17.3L6.2 5.2Z"/><path d="M9 8.2h6M10.1 12h3.8"/></svg></span><span>手沖</span></button>
   <button class="tab" data-page="mix" type="button"><span class="nav-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l1.35 4.1 4.1 1.35-4.1 1.35L12 14.1 10.65 10 6.55 8.65l4.1-1.35L12 3.2Z"/><path d="M18.2 13.4l.8 2.4 2.4.8-2.4.8-.8 2.4-.8-2.4-2.4-.8 2.4-.8.8-2.4Z"/></svg></span><span>特調</span></button>
   <button class="tab" data-page="logs" type="button"><span class="nav-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="5.2" y="4.2" width="13.6" height="15.6" rx="2.2"/><path d="M8.3 8h7.4M8.3 11.5h7.4M8.3 15h5"/></svg></span><span>紀錄</span></button>
   <button class="tab" data-page="more" type="button"><span class="nav-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.25" class="ui-icon-fill"/><circle cx="12" cy="12" r="1.25" class="ui-icon-fill"/><circle cx="18.5" cy="12" r="1.25" class="ui-icon-fill"/></svg></span><span>更多</span></button>
-</nav>
+</div></nav>
 
 <section id="page-espresso" class="page active">
   <div class="al-page-head"><div class="kicker">PRECISION BREWING</div><h1>9Barista</h1><p>Dial in. Brew. Refine.</p></div>
@@ -8343,7 +8747,7 @@ button,
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
   </div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.3 · Data stays in your browser</div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.4 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -9095,17 +9499,59 @@ function st(name,mode='readonly'){return db.transaction(name,mode).objectStore(n
 function getAll(name){return new Promise((res,rej)=>{const q=st(name).getAll();q.onsuccess=()=>res(q.result||[]);q.onerror=()=>rej(q.error)})}
 function put(name,o){return new Promise((res,rej)=>{const q=st(name,'readwrite').put(o);q.onsuccess=()=>res(o);q.onerror=()=>rej(q.error)})}
 function remove(name,id){return new Promise((res,rej)=>{const q=st(name,'readwrite').delete(id);q.onsuccess=()=>res();q.onerror=()=>rej(q.error)})}
-const alPageNames={espresso:'9B',pour:'手沖',mix:'特調',logs:'紀錄',more:'更多',insights:'分析',beans:'豆庫',edata:'資料',learn:'教學'};
+const alPageNames={espresso:'9Barista',pour:'手沖',mix:'特調',logs:'紀錄',more:'更多',insights:'Insights',beans:'Coffee Collection',edata:'Brew Details',learn:'教學'};
+const alHeaderMeta={
+  beans:{kicker:'COFFEE COLLECTION',title:'Your coffee.',action:'＋',actionLabel:'新增咖啡豆'},
+  espresso:{kicker:'PRECISION BREWING',title:'9Barista',action:'Log',actionLabel:'查看咖啡紀錄'},
+  pour:{kicker:'POUR-OVER',title:'Hand brew',action:'Log',actionLabel:'查看咖啡紀錄'},
+  mix:{kicker:'SPECIALTY DRINKS',title:'Specialty',action:'',actionLabel:''},
+  logs:{kicker:'COFFEE JOURNAL',title:'Journal',action:'',actionLabel:''},
+  more:{kicker:'AROMA LAB',title:'More',action:'',actionLabel:''},
+  insights:{kicker:'COFFEE INTELLIGENCE',title:'Insights',action:'',actionLabel:''},
+  edata:{kicker:'BREW DETAILS',title:'Details',action:'Log',actionLabel:'查看咖啡紀錄'},
+  learn:{kicker:'LEARNING',title:'Guide',action:'',actionLabel:''}
+};
+function updateAppHeader(name){
+  const meta=alHeaderMeta[name]||{kicker:'AROMA LAB',title:alPageNames[name]||'Aroma Lab',action:'',actionLabel:''};
+  if($('alHeaderKicker'))$('alHeaderKicker').textContent=meta.kicker;
+  if($('alHeaderTitle'))$('alHeaderTitle').textContent=meta.title;
+  const action=$('alHeaderAction'),txt=$('alHeaderActionText');
+  if(action&&txt){
+    txt.textContent=meta.action||'';
+    action.style.visibility=meta.action?'visible':'hidden';
+    action.disabled=!meta.action;
+    action.setAttribute('aria-label',meta.actionLabel||'頁面操作');
+    action.dataset.headerPage=name;
+  }
+}
 function updateHeroYield(){const v=$('yield')?.value;if($('heroYield'))$('heroYield').textContent=v?`${v}g`:'—'}
 function showPage(name){
-  $$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+name));
+  const target=$('page-'+name);
+  $$('.page').forEach(p=>p.classList.toggle('active',p===target));
   const nav=(name==='insights'||name==='beans'||name==='edata'||name==='learn')?'more':name;
   $$('.tab').forEach(b=>b.classList.toggle('active',b.dataset.page===nav));
   if($('alPageIndicator'))$('alPageIndicator').textContent=alPageNames[name]||'A';
+  updateAppHeader(name);
+  if(target){
+    target.classList.remove('al-page-enter');
+    requestAnimationFrame(()=>target.classList.add('al-page-enter'));
+  }
   if(name==='learn')updateBeanGuide();if(name==='logs')renderHistory();if(name==='insights')renderInsights();if(name==='beans')refreshBeans();if(name==='pour')renderSelectedPourBean();if(name==='espresso'){updateHeroYield();renderPreviousBest()}
   window.scrollTo({top:0,behavior:'smooth'});
 }
 $$('.tab').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+$('alHomeButton')?.addEventListener('click',()=>{
+  beanDetailCurrent=null;
+  showPage('beans');
+  if($('beanLibraryView'))$('beanLibraryView').style.display='block';
+  if($('beanEditorView'))$('beanEditorView').style.display='none';
+  if($('beanDetailView'))$('beanDetailView').style.display='none';
+});
+$('alHeaderAction')?.addEventListener('click',()=>{
+  const name=$('alHeaderAction')?.dataset.headerPage||'';
+  if(name==='beans'){openBeanEditor();return}
+  if(name==='espresso'||name==='pour'||name==='edata'){showPage('logs');return}
+});
 $$('[data-open-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.openPage)));
 $('yield')?.addEventListener('input',updateHeroYield);
 
@@ -9833,6 +10279,10 @@ async function renderInsights(){
 }
 async function openBeanDetail(bean){
   beanDetailCurrent=bean;
+  if($('alHeaderKicker'))$('alHeaderKicker').textContent='COFFEE BEAN';
+  if($('alHeaderTitle'))$('alHeaderTitle').textContent=bean.name||'Coffee Bean';
+  if($('alHeaderAction')){$('alHeaderAction').style.visibility='visible';$('alHeaderAction').disabled=false;$('alHeaderAction').dataset.headerPage='beans';$('alHeaderAction').setAttribute('aria-label','新增咖啡豆')}
+  if($('alHeaderActionText'))$('alHeaderActionText').textContent='＋';
   $('beanLibraryView').style.display='none';
   $('beanEditorView').style.display='none';
   $('beanDetailView').style.display='block';
@@ -10401,7 +10851,7 @@ TOTAL     : ${x.startTs&&x.endTs?fmt(x.endTs-x.startTs):'—'}${x.rating?`<br>RA
     box.appendChild(d);
   });
 }
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.3',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.4',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
