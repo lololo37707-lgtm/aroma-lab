@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v5.4.1</title>
+<title>Aroma Lab v5.5</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -8016,66 +8016,839 @@ body{
    - top app header could disappear in iOS browser/WebView
    No feature, navigation destination, data or DB schema changes.
    ========================================================= */
-html{overflow-x:clip!important}
+
+/* Do not turn BODY into a horizontal scroll container.
+   `clip` prevents horizontal painting without breaking sticky/fixed behavior. */
+html{
+  overflow-x:clip!important;
+}
 body{
   overflow-x:clip!important;
   padding-top:calc(64px + env(safe-area-inset-top))!important;
-  padding-bottom:calc(86px + env(safe-area-inset-bottom))!important
+  padding-bottom:calc(86px + env(safe-area-inset-bottom))!important;
 }
+
+/* Make the app header deterministic on iPhone/Safari/WebView. */
 .al-header.al-header-v54{
-  position:fixed!important;top:0!important;left:0!important;right:0!important;
-  width:100%!important;max-width:none!important;
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  width:100%!important;
+  max-width:none!important;
   min-height:calc(64px + env(safe-area-inset-top))!important;
-  margin:0!important;transform:none!important;box-sizing:border-box!important;
-  z-index:1000!important;display:grid!important;
+  margin:0!important;
+  transform:none!important;
+  box-sizing:border-box!important;
+  z-index:1000!important;
+  display:grid!important;
   grid-template-columns:minmax(92px,1fr) minmax(110px,1.25fr) minmax(44px,1fr)!important;
-  align-items:center!important;gap:8px!important;
-  padding:calc(9px + env(safe-area-inset-top)) max(13px,calc(11px + env(safe-area-inset-right))) 9px max(13px,calc(11px + env(safe-area-inset-left)))!important;
-  overflow:visible!important
+  align-items:center!important;
+  gap:8px!important;
+  padding:
+    calc(9px + env(safe-area-inset-top))
+    max(13px,calc(11px + env(safe-area-inset-right)))
+    9px
+    max(13px,calc(11px + env(safe-area-inset-left)))!important;
+  overflow:visible!important;
 }
+
+/* Critical reset: the old .tabs selector still imposed:
+   display:grid, five columns, left:50% and translateX(-50%).
+   v5.4 wraps the 5 buttons in one .al-nav-dock, so the root MUST be a plain shell. */
 nav.tabs.al-nav-v54{
-  position:fixed!important;top:auto!important;left:0!important;right:0!important;bottom:0!important;
-  width:100%!important;max-width:none!important;height:auto!important;margin:0!important;
-  transform:none!important;display:block!important;
-  grid-template-columns:none!important;grid-template-rows:none!important;gap:0!important;
-  padding:0 max(10px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))!important;
-  border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;
-  overflow:visible!important;z-index:1001!important;pointer-events:none!important;
-  -webkit-backdrop-filter:none!important;backdrop-filter:none!important
+  position:fixed!important;
+  top:auto!important;
+  left:0!important;
+  right:0!important;
+  bottom:0!important;
+  width:100%!important;
+  max-width:none!important;
+  height:auto!important;
+  margin:0!important;
+  transform:none!important;
+  display:block!important;
+  grid-template-columns:none!important;
+  grid-template-rows:none!important;
+  gap:0!important;
+  padding:
+    0
+    max(10px,env(safe-area-inset-right))
+    calc(9px + env(safe-area-inset-bottom))
+    max(10px,env(safe-area-inset-left))!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+  z-index:1001!important;
+  pointer-events:none!important;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
 }
+
 nav.tabs.al-nav-v54 > .al-nav-dock{
-  position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;
-  width:min(520px,100%)!important;max-width:520px!important;min-height:64px!important;
-  margin:0 auto!important;transform:none!important;display:grid!important;
-  grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-template-rows:1fr!important;
-  gap:3px!important;padding:5px!important;box-sizing:border-box!important;pointer-events:auto!important
+  position:relative!important;
+  left:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:min(520px,100%)!important;
+  max-width:520px!important;
+  min-height:64px!important;
+  margin:0 auto!important;
+  transform:none!important;
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  grid-template-rows:1fr!important;
+  gap:3px!important;
+  padding:5px!important;
+  box-sizing:border-box!important;
+  pointer-events:auto!important;
 }
+
+/* Five navigation buttons must always remain inside the dock. */
 nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
-  position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
-  width:100%!important;max-width:none!important;min-width:0!important;margin:0!important;transform:none
+  position:relative!important;
+  left:auto!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  transform:none;
 }
-#page-beans .bean-home-add{display:none!important}
-.page{scroll-margin-top:calc(72px + env(safe-area-inset-top))}
-#page-beans,#page-espresso,#page-pour,#page-mix,#page-logs,#page-more,#page-insights,#page-edata,#page-learn{transform:none}
+
+/* Bean Home now uses the global header + action, so avoid a duplicate giant + button. */
+#page-beans .bean-home-add{
+  display:none!important;
+}
+
+/* The first visible page content starts below fixed app chrome. */
+.page{
+  scroll-margin-top:calc(72px + env(safe-area-inset-top));
+}
+
+/* Keep Bean Home / all pages from inheriting accidental nav/header horizontal offsets. */
+#page-beans,
+#page-espresso,
+#page-pour,
+#page-mix,
+#page-logs,
+#page-more,
+#page-insights,
+#page-edata,
+#page-learn{
+  transform:none;
+}
+
+/* Mobile-specific deterministic sizing. */
 @media(max-width:430px){
   .al-header.al-header-v54{
     grid-template-columns:minmax(72px,.9fr) minmax(92px,1.15fr) minmax(42px,.9fr)!important;
     padding-left:max(10px,env(safe-area-inset-left))!important;
-    padding-right:max(10px,env(safe-area-inset-right))!important
+    padding-right:max(10px,env(safe-area-inset-right))!important;
   }
+
   nav.tabs.al-nav-v54{
     padding-left:max(8px,env(safe-area-inset-left))!important;
-    padding-right:max(8px,env(safe-area-inset-right))!important
+    padding-right:max(8px,env(safe-area-inset-right))!important;
   }
+
   nav.tabs.al-nav-v54 > .al-nav-dock{
-    width:100%!important;max-width:none!important;min-height:62px!important
+    width:100%!important;
+    max-width:none!important;
+    min-height:62px!important;
   }
 }
+
 @media(max-width:350px){
-  .al-header.al-header-v54{grid-template-columns:42px 1fr 42px!important}
+  .al-header.al-header-v54{
+    grid-template-columns:42px 1fr 42px!important;
+  }
 }
+
 @media(prefers-reduced-motion:reduce){
-  nav.tabs.al-nav-v54 > .al-nav-dock > .tab{transition:none!important}
+  nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
+    transition:none!important;
+  }
+}
+
+
+/* =========================================================
+   Aroma Lab v5.5 — 9Barista Brew Experience
+   Scope:
+   - calmer instrument-like brew cockpit
+   - Dose / Yield / Brew Time glow cards
+   - Ready → Heating → Extracting → Complete state language
+   - one dominant black pill command at each stage
+   - existing timestamp/session persistence kept intact
+   - grinder editing remains for v5.6
+   No DB/data-model change.
+   ========================================================= */
+
+#page-espresso .espresso-page-head{
+  padding-bottom:7px!important;
+}
+
+#page-espresso .espresso-page-head h1{
+  font-size:38px!important;
+}
+
+#page-espresso .brew-experience-v55{
+  position:relative;
+  overflow:hidden;
+  padding:18px!important;
+  border-radius:34px!important;
+  background:
+    radial-gradient(circle at 13% 9%,rgba(255,255,255,.98),transparent 14rem),
+    radial-gradient(circle at 90% 22%,rgba(177,209,229,.14),transparent 14rem),
+    linear-gradient(180deg,rgba(255,255,255,.92),rgba(248,249,250,.88))!important;
+  border:1px solid rgba(28,28,30,.05)!important;
+  box-shadow:
+    0 30px 68px rgba(31,35,39,.075),
+    0 6px 18px rgba(31,35,39,.035),
+    inset 0 1px 0 rgba(255,255,255,.98)!important;
+}
+
+#page-espresso .brew-experience-v55:before{
+  content:"";
+  position:absolute;
+  width:240px;
+  height:240px;
+  left:-135px;
+  bottom:24%;
+  border-radius:50%;
+  background:rgba(236,192,169,.10);
+  filter:blur(30px);
+  pointer-events:none;
+}
+
+#page-espresso .al-brew-top{
+  position:relative;
+  z-index:2;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:12px!important;
+}
+
+#page-espresso .brew-machine-identity{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+
+#page-espresso .brew-machine-dot{
+  width:9px;
+  height:9px;
+  flex:0 0 9px;
+  border-radius:50%;
+  background:#252628;
+  box-shadow:0 0 0 5px rgba(37,38,40,.055);
+}
+
+#page-espresso .brew-machine-identity > div{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+#page-espresso .brew-machine-identity small{
+  font-size:7px;
+  line-height:1;
+  font-weight:780;
+  letter-spacing:.14em;
+  color:#aaa;
+}
+
+#page-espresso .brew-machine-identity b{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:10.5px;
+  line-height:1.25;
+  font-weight:670;
+  color:#51545a;
+}
+
+#page-espresso .brew-session-badge{
+  min-height:29px!important;
+  padding:6px 10px 6px 21px!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.72)!important;
+  border-color:rgba(28,28,30,.055)!important;
+  color:#595c61!important;
+}
+
+#page-espresso .brew-session-badge:before{
+  left:9px!important;
+  width:6px!important;
+  height:6px!important;
+  background:#8fa5b1!important;
+  box-shadow:0 0 0 3px rgba(143,165,177,.11)!important;
+}
+
+/* Calm live instruction block */
+#page-espresso .brew-live-copy{
+  position:relative;
+  z-index:2;
+  margin:24px 2px 4px;
+  text-align:center;
+}
+
+#page-espresso .brew-live-copy > span{
+  display:block;
+  font-size:7.5px;
+  line-height:1.2;
+  font-weight:800;
+  letter-spacing:.18em;
+  color:#9ea0a4;
+}
+
+#page-espresso .brew-live-copy h2{
+  margin:6px 0 0;
+  font-family:var(--v51-display)!important;
+  font-size:25px!important;
+  line-height:1.02!important;
+  font-weight:710!important;
+  letter-spacing:-.04em!important;
+  color:#1f2022!important;
+}
+
+#page-espresso .brew-live-copy p{
+  max-width:390px;
+  margin:8px auto 0;
+  font-size:10px;
+  line-height:1.55;
+  color:#8d9095;
+}
+
+/* Main timer */
+#page-espresso .brew-main-timer{
+  position:relative;
+  z-index:2;
+  width:214px!important;
+  height:214px!important;
+  margin:23px auto 25px!important;
+  display:flex!important;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%!important;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(255,255,255,.98) 0 52%,rgba(249,250,251,.96) 53% 66%,rgba(229,238,243,.64) 67% 100%)!important;
+  border:1px solid rgba(176,200,214,.28)!important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.88),
+    0 0 0 11px rgba(219,232,239,.34),
+    0 0 0 12px rgba(172,200,216,.12),
+    0 22px 46px rgba(86,115,132,.12),
+    0 0 56px rgba(164,202,224,.16),
+    inset 0 1px 0 rgba(255,255,255,.98)!important;
+}
+
+#page-espresso .brew-main-timer:before{
+  content:"";
+  position:absolute;
+  inset:17px;
+  border-radius:50%;
+  border:1px dashed rgba(142,164,177,.29);
+}
+
+#page-espresso .brew-main-timer:after{
+  content:"";
+  position:absolute;
+  width:6px;
+  height:6px;
+  bottom:28px;
+  border-radius:50%;
+  background:#879eaa;
+  box-shadow:0 0 13px rgba(135,158,170,.35);
+}
+
+#page-espresso .brew-main-timer small{
+  position:relative;
+  z-index:1;
+  margin:0!important;
+  font-size:7.5px!important;
+  line-height:1.1!important;
+  font-weight:780!important;
+  letter-spacing:.18em!important;
+  color:#a1a3a7!important;
+}
+
+#page-espresso .brew-main-timer .timer{
+  position:relative;
+  z-index:1;
+  margin:9px 0 0!important;
+  font-family:var(--v51-display)!important;
+  font-size:43px!important;
+  line-height:.96!important;
+  font-weight:680!important;
+  letter-spacing:-.055em!important;
+  color:#202124!important;
+}
+
+#page-espresso .brew-main-timer > span{
+  position:relative;
+  z-index:1;
+  margin-top:8px;
+  font-size:8.5px;
+  font-weight:620;
+  color:#92959a;
+}
+
+/* Three video-style metric cards */
+#page-espresso .brew-metric-grid{
+  position:relative;
+  z-index:2;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:9px!important;
+  margin:0!important;
+}
+
+#page-espresso .brew-metric-card{
+  position:relative;
+  min-width:0;
+  min-height:143px!important;
+  display:flex!important;
+  flex-direction:column;
+  align-items:flex-start!important;
+  justify-content:flex-end!important;
+  padding:13px!important;
+  overflow:hidden;
+  border-radius:24px!important;
+  border:1px solid rgba(255,255,255,.82)!important;
+  box-shadow:
+    0 16px 38px rgba(31,35,39,.05),
+    inset 0 1px 0 rgba(255,255,255,.96)!important;
+}
+
+#page-espresso .brew-metric-card:before{
+  content:"";
+  position:absolute;
+  width:110px;
+  height:110px;
+  right:-37px;
+  top:-34px;
+  border-radius:50%;
+  filter:blur(11px);
+  opacity:.7;
+}
+
+#page-espresso .brew-metric-card.peach{
+  background:
+    radial-gradient(circle at 75% 17%,rgba(237,193,166,.33),transparent 7rem),
+    rgba(255,255,255,.88)!important;
+}
+#page-espresso .brew-metric-card.blue{
+  background:
+    radial-gradient(circle at 75% 17%,rgba(167,205,229,.33),transparent 7rem),
+    rgba(255,255,255,.88)!important;
+}
+#page-espresso .brew-metric-card.pink{
+  background:
+    radial-gradient(circle at 75% 17%,rgba(236,171,185,.28),transparent 7rem),
+    rgba(255,255,255,.88)!important;
+}
+
+#page-espresso .brew-metric-card .al-dial-icon{
+  position:absolute;
+  left:12px;
+  top:12px;
+  width:31px!important;
+  height:31px!important;
+  margin:0!important;
+  border-radius:12px!important;
+  background:rgba(255,255,255,.58)!important;
+  border:1px solid rgba(28,28,30,.035)!important;
+  color:#7c7f84!important;
+}
+
+#page-espresso .brew-metric-card .al-dial-icon .ui-icon-svg{
+  width:17px;
+  height:17px;
+}
+
+#page-espresso .brew-metric-card small{
+  position:relative;
+  z-index:1;
+  font-size:7px!important;
+  line-height:1.1!important;
+  font-weight:800!important;
+  letter-spacing:.14em!important;
+  color:#9a9da2!important;
+}
+
+#page-espresso .brew-metric-card strong{
+  position:relative;
+  z-index:1;
+  display:block;
+  max-width:100%;
+  margin-top:7px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-family:var(--v51-display)!important;
+  font-size:24px!important;
+  line-height:1!important;
+  font-weight:700!important;
+  letter-spacing:-.045em!important;
+  color:#25272a!important;
+}
+
+#page-espresso .brew-metric-card > span{
+  position:relative;
+  z-index:1;
+  margin-top:4px;
+  font-size:7.5px;
+  color:#a0a2a6;
+}
+
+/* Warm-up stays visible without competing with core metrics */
+#page-espresso .brew-warmup-strip{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:auto auto 1fr;
+  align-items:center;
+  gap:8px;
+  margin-top:10px;
+  padding:9px 11px;
+  border-radius:17px;
+  background:rgba(255,255,255,.58);
+  border:1px solid rgba(28,28,30,.045);
+}
+
+#page-espresso .brew-warmup-strip > span{
+  font-size:7px;
+  font-weight:800;
+  letter-spacing:.13em;
+  color:#a0a2a6;
+}
+
+#page-espresso .brew-warmup-strip > b{
+  font-family:var(--v51-display);
+  font-size:11px;
+  font-weight:680;
+  color:#55585d;
+}
+
+#page-espresso .brew-warmup-strip > small{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  text-align:right;
+  font-size:7.5px;
+  color:#aaa;
+}
+
+/* 4-step spatial stage track */
+#page-espresso .brew-stage-track{
+  position:relative;
+  z-index:2;
+  display:grid!important;
+  grid-template-columns:repeat(4,1fr)!important;
+  gap:0!important;
+  margin:20px 1px 14px!important;
+}
+
+#page-espresso .brew-stage-track:before{
+  content:"";
+  position:absolute;
+  top:14px;
+  left:12.5%;
+  right:12.5%;
+  height:1px;
+  background:#e1e3e5;
+  z-index:0;
+}
+
+#page-espresso .brew-stage-track .al-stage-item{
+  position:relative;
+  z-index:1;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  gap:6px!important;
+  min-width:0;
+  font-size:8px!important;
+  color:#a0a2a7!important;
+}
+
+#page-espresso .brew-stage-track .al-stage-dot{
+  width:29px!important;
+  height:29px!important;
+  display:grid!important;
+  place-items:center!important;
+  border-radius:50%!important;
+  background:#f2f3f4!important;
+  border:1px solid rgba(28,28,30,.055)!important;
+  box-shadow:0 3px 9px rgba(31,35,39,.025)!important;
+  color:#a1a3a7!important;
+  font-size:8px!important;
+  font-weight:700!important;
+}
+
+#page-espresso .brew-stage-track .al-stage-item.active{
+  color:#303236!important;
+  font-weight:680!important;
+}
+
+#page-espresso .brew-stage-track .al-stage-item.active .al-stage-dot{
+  background:#202123!important;
+  border-color:#202123!important;
+  color:#fff!important;
+  box-shadow:0 7px 18px rgba(24,25,27,.16)!important;
+}
+
+#page-espresso .brew-stage-track .al-stage-item.done .al-stage-dot{
+  background:#eef3f5!important;
+  border-color:#dce5e9!important;
+  color:#66808d!important;
+  box-shadow:none!important;
+}
+
+/* Command deck */
+#page-espresso .brew-command-deck{
+  position:relative;
+  z-index:2;
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:8px!important;
+  margin-top:4px!important;
+}
+
+#page-espresso .brew-command-deck .btn{
+  margin:0!important;
+  width:100%!important;
+  border-radius:999px!important;
+  min-height:49px!important;
+  font-size:11px!important;
+  font-weight:680!important;
+  letter-spacing:-.01em!important;
+}
+
+#page-espresso .brew-command-deck .brew-primary-command{
+  grid-column:1/-1;
+  min-height:55px!important;
+  background:#19191a!important;
+  border-color:#19191a!important;
+  color:#fff!important;
+  box-shadow:
+    0 12px 26px rgba(16,16,17,.15),
+    inset 0 1px 0 rgba(255,255,255,.13)!important;
+}
+
+#page-espresso .brew-command-deck .brew-secondary-command{
+  background:rgba(255,255,255,.76)!important;
+  border-color:rgba(28,28,30,.065)!important;
+  color:#3a3d41!important;
+  box-shadow:0 7px 18px rgba(31,35,39,.032)!important;
+}
+
+#page-espresso .brew-command-deck .brew-secondary-command:disabled,
+#page-espresso .brew-command-deck .brew-primary-command:disabled{
+  opacity:.36!important;
+  box-shadow:none!important;
+}
+
+#page-espresso .brew-command-deck #markExtract:not(:disabled){
+  background:#1c1d1f!important;
+  border-color:#1c1d1f!important;
+  color:#fff!important;
+}
+
+#page-espresso .brew-command-deck #finishEspresso:not(:disabled){
+  background:#1c1d1f!important;
+  border-color:#1c1d1f!important;
+  color:#fff!important;
+}
+
+/* The currently actionable command visually dominates.
+   Start is dominant pre-session, Start Extraction during heat,
+   Finish during extraction. */
+#page-espresso .brew-command-deck #startEspresso:disabled{
+  display:none!important;
+}
+#page-espresso .brew-command-deck #startEspresso:disabled ~ #markExtract:not(:disabled){
+  grid-column:1/-1;
+  min-height:55px!important;
+}
+#page-espresso .brew-command-deck #markExtract:disabled ~ #finishEspresso:not(:disabled){
+  grid-column:1/-1;
+  min-height:55px!important;
+}
+
+#page-espresso .brew-timestamp-note{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  margin-top:10px;
+  font-size:7.5px;
+  line-height:1.35;
+  text-align:center;
+  color:#a1a3a7;
+}
+
+#page-espresso .brew-note-pulse{
+  width:5px;
+  height:5px;
+  flex:0 0 5px;
+  border-radius:50%;
+  background:#96aab4;
+}
+
+/* Reference / coach / timeline stay secondary beneath the live cockpit */
+#page-espresso .espresso-reference-grid{
+  margin-top:14px!important;
+}
+
+#page-espresso .brew-timeline-card{
+  margin-top:12px!important;
+  padding:17px!important;
+  border-radius:27px!important;
+}
+
+#page-espresso .brew-timeline-card h2{
+  margin:3px 0 0!important;
+  font-family:var(--v51-display)!important;
+  font-size:22px!important;
+  line-height:1.05!important;
+  font-weight:700!important;
+  letter-spacing:-.035em!important;
+}
+
+#page-espresso #goData{
+  min-height:52px!important;
+  margin-top:12px!important;
+  border-radius:999px!important;
+}
+
+/* Hide the duplicated older visual dot pseudo-element from pre-v5.5 styles */
+#page-espresso .brew-main-timer:after{
+  content:""!important;
+}
+
+/* Medium / wide screens */
+@media(min-width:700px){
+  #page-espresso .brew-experience-v55{
+    padding:23px!important;
+  }
+
+  #page-espresso .brew-main-timer{
+    width:236px!important;
+    height:236px!important;
+  }
+
+  #page-espresso .brew-main-timer .timer{
+    font-size:48px!important;
+  }
+
+  #page-espresso .brew-metric-card{
+    min-height:154px!important;
+  }
+
+  #page-espresso .espresso-reference-grid{
+    grid-template-columns:1fr 1fr!important;
+  }
+}
+
+/* Small iPhone */
+@media(max-width:390px){
+  #page-espresso .brew-experience-v55{
+    padding:15px!important;
+    border-radius:30px!important;
+  }
+
+  #page-espresso .brew-live-copy{
+    margin-top:20px;
+  }
+
+  #page-espresso .brew-live-copy h2{
+    font-size:23px!important;
+  }
+
+  #page-espresso .brew-main-timer{
+    width:192px!important;
+    height:192px!important;
+    margin-top:21px!important;
+    margin-bottom:22px!important;
+  }
+
+  #page-espresso .brew-main-timer .timer{
+    font-size:39px!important;
+  }
+
+  #page-espresso .brew-metric-grid{
+    gap:6px!important;
+  }
+
+  #page-espresso .brew-metric-card{
+    min-height:132px!important;
+    padding:10px!important;
+    border-radius:21px!important;
+  }
+
+  #page-espresso .brew-metric-card .al-dial-icon{
+    width:28px!important;
+    height:28px!important;
+    left:9px;
+    top:9px;
+  }
+
+  #page-espresso .brew-metric-card strong{
+    font-size:20px!important;
+  }
+
+  #page-espresso .brew-warmup-strip{
+    grid-template-columns:auto auto;
+  }
+
+  #page-espresso .brew-warmup-strip > small{
+    grid-column:1/-1;
+    text-align:left;
+    white-space:normal;
+  }
+
+  #page-espresso .brew-stage-track .al-stage-item span{
+    font-size:7.2px;
+  }
+}
+
+@media(max-width:340px){
+  #page-espresso .brew-main-timer{
+    width:178px!important;
+    height:178px!important;
+  }
+
+  #page-espresso .brew-main-timer .timer{
+    font-size:36px!important;
+  }
+
+  #page-espresso .brew-metric-card strong{
+    font-size:18px!important;
+  }
+
+  #page-espresso .brew-stage-track .al-stage-item span{
+    font-size:6.5px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  #page-espresso .brew-session-badge:before,
+  #page-espresso .brew-note-pulse{
+    animation:none!important;
+  }
 }
 
 </style>
@@ -8113,27 +8886,107 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 </div></nav>
 
 <section id="page-espresso" class="page active">
-  <div class="al-page-head"><div class="kicker">PRECISION BREWING</div><h1>9Barista</h1><p>Dial in. Brew. Refine.</p></div>
-  <div class="card al-brew-shell">
-    <div class="al-brew-top"><span class="badge">9Barista Mk2 Pro</span><span id="sessionBadge" class="badge">未開始</span></div>
-    <div class="al-brew-circle"><small>SESSION TIMER</small><div id="totalTimer" class="timer">00:00.0</div></div>
-    <div class="al-dial-grid">
-      <div class="al-dial peach"><div class="al-dial-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.64 5.64l1.55 1.55M16.81 16.81l1.55 1.55M18.36 5.64l-1.55 1.55M7.19 16.81l-1.55 1.55"/></svg></div><small>Warm-up</small><strong id="warmTimer">—</strong></div>
-      <div class="al-dial blue"><div class="al-dial-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4c2.7 3.5 5.1 6.35 5.1 9.45A5.1 5.1 0 0 1 6.9 12.85C6.9 9.75 9.3 6.9 12 3.4Z"/><path d="M9.1 14.1c.55 1.35 1.48 2.02 2.8 2.02"/></svg></div><small>Extraction</small><strong id="extractTimer">—</strong></div>
-      <div class="al-dial pink"><div class="al-dial-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.2 8.4h11.6l-.95 8.4a2.4 2.4 0 0 1-2.38 2.13H9.53a2.4 2.4 0 0 1-2.38-2.13L6.2 8.4Z"/><path d="M8.1 5.2h7.8M18 10.4h1.15a2.05 2.05 0 0 1 0 4.1h-1.6"/></svg></div><small>Yield</small><strong id="heroYield">—</strong></div>
-    </div>
-    <div class="al-stage">
-      <div class="al-stage-item active" data-al-stage="heat"><div class="al-stage-dot">1</div><span>Heating</span></div>
-      <div class="al-stage-item" data-al-stage="extract"><div class="al-stage-dot">2</div><span>Extraction</span></div>
-      <div class="al-stage-item" data-al-stage="finish"><div class="al-stage-dot">✓</div><span>Finished</span></div>
-    </div>
-    <div class="actions al-brew-actions">
-      <button id="startEspresso" class="btn primary" type="button">開始加熱 / Save & Brew →</button>
-      <button id="markExtract" class="btn" type="button" disabled>記錄第一滴 / Start Extraction</button>
-      <button id="finishEspresso" class="btn" type="button" disabled>完成 / Finish Brew</button>
-    </div>
-    <div class="hint" style="margin-top:10px">Timestamp 計時；切去背景再返嚟仍會按真實時間重算。</div>
+  <div class="al-page-head espresso-page-head">
+    <div class="kicker">PRECISION BREWING</div>
+    <h1>9Barista</h1>
+    <p>One calm workflow from heat to extraction.</p>
   </div>
+
+  <div class="card al-brew-shell brew-experience-v55">
+    <div class="al-brew-top">
+      <div class="brew-machine-identity">
+        <span class="brew-machine-dot"></span>
+        <div>
+          <small>MY MACHINE</small>
+          <b>9Barista Mk2 Pro</b>
+        </div>
+      </div>
+      <span id="sessionBadge" class="badge brew-session-badge">Ready</span>
+    </div>
+
+    <div class="brew-live-copy">
+      <span id="brewStageEyebrow">READY</span>
+      <h2 id="brewStageTitle">Ready to brew.</h2>
+      <p id="brewStageHint">Start when the brewer is on heat. Aroma Lab will keep real timestamp timing even in the background.</p>
+    </div>
+
+    <div class="al-brew-circle brew-main-timer">
+      <small id="brewTimerLabel">SESSION TIME</small>
+      <div id="totalTimer" class="timer">00:00.0</div>
+      <span id="brewTimerSub">Waiting</span>
+    </div>
+
+    <div class="al-dial-grid brew-metric-grid">
+      <div class="al-dial peach brew-metric-card">
+        <div class="al-dial-icon">
+          <svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8.2h11l-1 10.1H7.5L6.5 8.2Z"/>
+            <path d="M9 5.5h6M9.4 12h5.2"/>
+          </svg>
+        </div>
+        <small>DOSE</small>
+        <strong id="heroDose">—</strong>
+        <span>grams</span>
+      </div>
+
+      <div class="al-dial blue brew-metric-card">
+        <div class="al-dial-icon">
+          <svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.2 8.4h11.6l-.95 8.4a2.4 2.4 0 0 1-2.38 2.13H9.53a2.4 2.4 0 0 1-2.38-2.13L6.2 8.4Z"/>
+            <path d="M8.1 5.2h7.8M18 10.4h1.15a2.05 2.05 0 0 1 0 4.1h-1.6"/>
+          </svg>
+        </div>
+        <small>YIELD</small>
+        <strong id="heroYield">—</strong>
+        <span>grams</span>
+      </div>
+
+      <div class="al-dial pink brew-metric-card">
+        <div class="al-dial-icon">
+          <svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="13" r="7"/>
+            <path d="M12 9.2V13l2.6 1.7M9.4 3.8h5.2"/>
+          </svg>
+        </div>
+        <small>BREW TIME</small>
+        <strong id="extractTimer">—</strong>
+        <span>extraction</span>
+      </div>
+    </div>
+
+    <div class="brew-warmup-strip">
+      <span>WARM-UP</span>
+      <b id="warmTimer">—</b>
+      <small>first espresso appearance ends warm-up</small>
+    </div>
+
+    <div class="al-stage brew-stage-track" aria-label="Brew progress">
+      <div class="al-stage-item active" data-al-stage="ready">
+        <div class="al-stage-dot">1</div><span>Ready</span>
+      </div>
+      <div class="al-stage-item" data-al-stage="heat">
+        <div class="al-stage-dot">2</div><span>Heating</span>
+      </div>
+      <div class="al-stage-item" data-al-stage="extract">
+        <div class="al-stage-dot">3</div><span>Extracting</span>
+      </div>
+      <div class="al-stage-item" data-al-stage="finish">
+        <div class="al-stage-dot">✓</div><span>Complete</span>
+      </div>
+    </div>
+
+    <div class="actions al-brew-actions brew-command-deck">
+      <button id="startEspresso" class="btn primary brew-primary-command" type="button">Start Brew</button>
+      <button id="markExtract" class="btn brew-secondary-command" type="button" disabled>Start Extraction</button>
+      <button id="finishEspresso" class="btn brew-secondary-command" type="button" disabled>Finish Brew</button>
+    </div>
+
+    <div class="brew-timestamp-note">
+      <span class="brew-note-pulse"></span>
+      Timestamp timing · background / lock-screen time is preserved
+    </div>
+  </div>
+
   <div class="espresso-reference-grid">
     <div id="previousBestCard" class="previous-best">
       <div class="kicker">PREVIOUS BEST</div>
@@ -8160,8 +9013,19 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     </div>
     <div id="espressoCoachBody" style="margin-top:10px"></div>
   </div>
-  <div class="card"><div class="row"><h2>今次時間線</h2><span id="draftBadge" class="badge">未有 Log</span></div><ul id="espressoTimeline" class="timeline"><li><span class="time">—</span><span>未有紀錄</span></li></ul></div>
-  <button id="goData" class="btn primary" style="width:100%;display:none" type="button">Save & Continue →</button>
+
+  <div class="card brew-timeline-card">
+    <div class="row">
+      <div>
+        <div class="kicker">LIVE SESSION</div>
+        <h2>Timeline</h2>
+      </div>
+      <span id="draftBadge" class="badge">未有 Log</span>
+    </div>
+    <ul id="espressoTimeline" class="timeline"><li><span class="time">—</span><span>未有紀錄</span></li></ul>
+  </div>
+
+  <button id="goData" class="btn primary" style="width:100%;display:none" type="button">Brew Details →</button>
 </section>
 
 
@@ -8818,7 +9682,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
   </div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.4.1 · Data stays in your browser</div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.5 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -9595,7 +10459,11 @@ function updateAppHeader(name){
     action.dataset.headerPage=name;
   }
 }
-function updateHeroYield(){const v=$('yield')?.value;if($('heroYield'))$('heroYield').textContent=v?`${v}g`:'—'}
+function updateHeroYield(){
+  const y=$('yield')?.value,d=$('dose')?.value;
+  if($('heroYield'))$('heroYield').textContent=y?`${y}g`:'—';
+  if($('heroDose'))$('heroDose').textContent=d?`${d}g`:'—';
+}
 function ensureAppChromeVisible(){
   const header=document.querySelector('.al-header-v54');
   const nav=document.querySelector('nav.al-nav-v54');
@@ -10842,18 +11710,90 @@ function showSuggestions(key){const box=$('suggest-'+key),input=$(key);if(!box||
 function renderPhoto(){const img=$('photoPreview'),empty=$('photoEmpty'),rm=$('removePhoto');if(current?.photo){img.src=current.photo;img.style.display='block';empty.style.display='none';rm.disabled=false}else{img.removeAttribute('src');img.style.display='none';empty.style.display='block';rm.disabled=true}}
 function compressImage(file){return new Promise((res,rej)=>{const r=new FileReader();r.onerror=()=>rej(r.error);r.onload=()=>{const img=new Image();img.onerror=()=>rej(new Error('圖片讀取失敗'));img.onload=()=>{let w=img.width,h=img.height,max=1280;if(w>max||h>max){const x=Math.min(max/w,max/h);w=Math.round(w*x);h=Math.round(h*x)}const c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(img,0,0,w,h);res(c.toDataURL('image/jpeg',.78))};img.src=r.result};r.readAsDataURL(file)})}
 function renderEspressoTimeline(){const ul=$('espressoTimeline');ul.innerHTML='';if(!current?.events?.length){ul.innerHTML='<li><span class="time">—</span><span>未有紀錄</span></li>';return}current.events.forEach(e=>ul.insertAdjacentHTML('beforeend',`<li><span class="time">${esc(stamp(e.ts))}</span><span>${esc(e.label)}</span></li>`))}
-function renderEspressoTimers(){if(!current){$('totalTimer').textContent='00:00.0';$('warmTimer').textContent='—';$('extractTimer').textContent='—';return}const end=current.endTs||Date.now();$('totalTimer').textContent=fmt(end-current.startTs);$('warmTimer').textContent=fmt((current.extractStartTs||end)-current.startTs);$('extractTimer').textContent=current.extractStartTs?fmt(end-current.extractStartTs):'—'}
+function renderEspressoTimers(){
+  if(!current){
+    $('totalTimer').textContent='00:00.0';
+    $('warmTimer').textContent='—';
+    $('extractTimer').textContent='—';
+    if($('brewTimerSub'))$('brewTimerSub').textContent='Waiting';
+    return;
+  }
+  const end=current.endTs||Date.now();
+  $('totalTimer').textContent=fmt(end-current.startTs);
+  $('warmTimer').textContent=fmt((current.extractStartTs||end)-current.startTs);
+  $('extractTimer').textContent=current.extractStartTs?fmt(end-current.extractStartTs):'—';
+  if($('brewTimerSub'))$('brewTimerSub').textContent=current.endTs?'Saved':current.extractStartTs?'Extraction live':'Heating live';
+}
 function espressoLoop(){renderEspressoTimers();if(current&&!current.endTs)eRAF=requestAnimationFrame(espressoLoop)}
 function updateEspressoUI(){
-  const active=!!current&&!current.endTs;$('startEspresso').disabled=active;$('markExtract').disabled=!active||!!current.extractStartTs;$('finishEspresso').disabled=!active||!current.extractStartTs;
-  $('sessionBadge').textContent=!current?'未開始':current.endTs?'已完成':'記錄中';$('draftBadge').textContent=!current?'未有 Log':current.endTs?'Log 已完成':'Log 記錄中';$('goData').style.display=current?'block':'none';
-  const heat=document.querySelector('[data-al-stage="heat"]'),extract=document.querySelector('[data-al-stage="extract"]'),finish=document.querySelector('[data-al-stage="finish"]');
-  [heat,extract,finish].forEach(x=>x&&x.classList.remove('active','done'));
-  if(!current){heat?.classList.add('active')}else if(current.endTs){heat?.classList.add('done');extract?.classList.add('done');finish?.classList.add('active')}else if(current.extractStartTs){heat?.classList.add('done');extract?.classList.add('active')}else{heat?.classList.add('active')}
+  const active=!!current&&!current.endTs;
+  $('startEspresso').disabled=active;
+  $('markExtract').disabled=!active||!!current.extractStartTs;
+  $('finishEspresso').disabled=!active||!current.extractStartTs;
+
+  const state=!current?'ready':current.endTs?'complete':current.extractStartTs?'extract':'heat';
+  const stateCopy={
+    ready:{
+      badge:'Ready',eyebrow:'READY',title:'Ready to brew.',
+      hint:'Start when the brewer is on heat. Aroma Lab will keep real timestamp timing even in the background.',
+      timer:'SESSION TIME'
+    },
+    heat:{
+      badge:'Heating',eyebrow:'HEATING',title:'Heat. Watch. Wait.',
+      hint:'Tap Start Extraction at the first appearance of espresso. Warm-up time will be saved automatically.',
+      timer:'SESSION TIME'
+    },
+    extract:{
+      badge:'Extracting',eyebrow:'EXTRACTION',title:'Espresso is flowing.',
+      hint:'Finish when espresso stops or is no longer rising. Taste decides; time only helps locate the shot.',
+      timer:'SESSION TIME'
+    },
+    complete:{
+      badge:'Complete',eyebrow:'COMPLETE',title:'Brew captured.',
+      hint:'The session is saved. Add brew details, rating and taste notes when you are ready.',
+      timer:'TOTAL SESSION'
+    }
+  }[state];
+
+  $('sessionBadge').textContent=stateCopy.badge;
+  $('draftBadge').textContent=!current?'未有 Log':current.endTs?'Log 已完成':'Log 記錄中';
+  $('goData').style.display=current?'block':'none';
+
+  if($('brewStageEyebrow'))$('brewStageEyebrow').textContent=stateCopy.eyebrow;
+  if($('brewStageTitle'))$('brewStageTitle').textContent=stateCopy.title;
+  if($('brewStageHint'))$('brewStageHint').textContent=stateCopy.hint;
+  if($('brewTimerLabel'))$('brewTimerLabel').textContent=stateCopy.timer;
+
+  const ready=document.querySelector('[data-al-stage="ready"]');
+  const heat=document.querySelector('[data-al-stage="heat"]');
+  const extract=document.querySelector('[data-al-stage="extract"]');
+  const finish=document.querySelector('[data-al-stage="finish"]');
+  [ready,heat,extract,finish].forEach(x=>x&&x.classList.remove('active','done'));
+
+  if(state==='ready'){
+    ready?.classList.add('active');
+  }else if(state==='heat'){
+    ready?.classList.add('done');
+    heat?.classList.add('active');
+  }else if(state==='extract'){
+    ready?.classList.add('done');
+    heat?.classList.add('done');
+    extract?.classList.add('active');
+  }else{
+    ready?.classList.add('done');
+    heat?.classList.add('done');
+    extract?.classList.add('done');
+    finish?.classList.add('active');
+  }
+
+  $('startEspresso').textContent=current?.endTs?'Start New Brew':'Start Brew';
+  $('markExtract').textContent=current?.extractStartTs?'Extraction Started':'Start Extraction';
+  $('finishEspresso').textContent=current?.endTs?'Brew Complete':'Finish Brew';
+
   updateHeroYield();
 }
 async function saveEspresso(quiet=true){if(!current)return;current.data=readEspressoForm();rememberGrinderData(current.data);const linked=beanById(selectedEspressoBeanId||current.beanId);if(linked){current.beanId=linked.id;current.beanSnapshot=espressoBeanSnapshot(current.data,linked)}else{delete current.beanId;delete current.beanSnapshot}const sessions=await getAll('sessions');current.coachResult=buildDialInCoach(current,sessions);current.updatedAt=Date.now();await put('sessions',current);await rebuildMemory();renderDialInCoach();renderNextShotTarget();if(!quiet)toast('已儲存到手機')}
-function queueEspressoSave(){calcRatio();updateBeanGuide();if(!current)return;clearTimeout(eSaveTimer);eSaveTimer=setTimeout(()=>saveEspresso(true).catch(()=>toast('儲存失敗')),300)}
+function queueEspressoSave(){calcRatio();updateBeanGuide();updateHeroYield();if(!current)return;clearTimeout(eSaveTimer);eSaveTimer=setTimeout(()=>saveEspresso(true).catch(()=>toast('儲存失敗')),300)}
 $('startEspresso').addEventListener('click',async()=>{if(current&&!current.endTs)return;const n=Date.now(),linked=beanById(selectedEspressoBeanId),grinderSeed=grinderSeedData();const beanData=linked?{machine:'9Barista Mk2 Pro',...grinderSeed,roaster:linked.roaster||'',beans:linked.name||'',roast:linked.roast||'',roastStyle:linked.roastStyle||'',roastDate:linked.roastDate||'',processing:linked.processing||'',origin:linked.origin||'',variety:linked.variety||'',altitude:linked.altitude||'',roasterNotes:linked.tastingNotes||''}:{machine:'9Barista Mk2 Pro',...grinderSeed};current={id:uid('e'),createdAt:n,updatedAt:n,startTs:n,extractStartTs:null,endTs:null,events:[{ts:n,label:'🔥 開始加熱 / 開始 Session'}],data:beanData,photo:null,tasteTags:[]};if(linked){current.beanId=linked.id;current.beanSnapshot=espressoBeanSnapshot(beanData,linked)}loadEspressoForm();renderEspressoTimeline();updateEspressoUI();cancelAnimationFrame(eRAF);espressoLoop();await put('sessions',current);await renderHistory()});
 $('markExtract').addEventListener('click',async()=>{if(!current||current.endTs||current.extractStartTs)return;current.extractStartTs=Date.now();current.events.push({ts:current.extractStartTs,label:'☕ 開始出咖啡 / 開始萃取'});renderEspressoTimeline();updateEspressoUI();await saveEspresso(true)});
 $('finishEspresso').addEventListener('click',async()=>{if(!current||current.endTs||!current.extractStartTs)return;current.endTs=Date.now();current.events.push({ts:current.endTs,label:'✓ 萃取完成'});cancelAnimationFrame(eRAF);renderEspressoTimers();renderEspressoTimeline();updateEspressoUI();await saveEspresso(true);await renderPreviousBest();renderNextShotTarget();await renderDialInCoach();toast('完成，Dial-in Coach 已更新')});
@@ -10940,7 +11880,7 @@ TOTAL     : ${x.startTs&&x.endTs?fmt(x.endTs-x.startTs):'—'}${x.rating?`<br>RA
     box.appendChild(d);
   });
 }
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.4.1',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.5',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
