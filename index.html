@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v5.17</title>
+<title>Aroma Lab v5.16</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -10065,7 +10065,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 @media(min-width:650px){#page-insights .insight-kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#page-insights #espressoInsightGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#page-learn .learn-panel .compare-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:365px){#page-insights>.card.ci-section{padding:22px 16px!important}#page-insights .insight-section-head{flex-wrap:wrap}#page-insights .insight-stat{padding:12px!important}#page-insights .insight-stat b{font-size:14px!important}#page-insights .bean-performance{flex-direction:column!important;align-items:flex-start!important}.more-library-row{padding:15px 13px;gap:10px}.more-row-copy>b{font-size:14px}.more-intelligence{padding:23px 19px}.more-intelligence>b{font-size:23px}#page-learn .learn-panel>.card{padding:23px 16px!important}#page-learn .learn-panel .recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#page-learn .learn-panel .calc-grid{grid-template-columns:minmax(0,1fr)!important}}
 
-/* Aroma Lab v5.17 — motion, accessibility and final polish. No new app features. */
+/* Aroma Lab v5.16 — motion, accessibility and final polish. No new app features. */
 :root{--al-motion-fast:140ms;--al-motion-page:220ms;--al-motion-ease:cubic-bezier(.2,.7,.2,1);--al-focus:#4977a7;--keyboard-space:0px}
 /* Preserve fixed chrome: animate pages/controls, never the nav or header containers. */
 .page.al-page-enter.active{animation:al511PageIn var(--al-motion-page) var(--al-motion-ease)!important}
@@ -10139,7 +10139,7 @@ body{padding-bottom:calc(86px + env(safe-area-inset-bottom) + var(--keyboard-spa
   nav.al-nav-v54 .tab:active .nav-icon{transform:none!important}
 }
 
-/* Aroma Lab v5.17 — floating Bean Home. Visuals only, IndexedDB v7 unchanged. */
+/* Aroma Lab v5.16 — floating Bean Home. Visuals only, IndexedDB v7 unchanged. */
 body:has(#page-beans.active){background:radial-gradient(ellipse at 8% 45%,#f7e7e629,transparent 45%),radial-gradient(ellipse at 88% 72%,#dceaf235,transparent 48%),#f5f6fa!important}
 #page-beans{--bean-stage-height:286px;background:transparent!important}
 #page-beans .bean-home-page-head{display:none!important}
@@ -10213,7 +10213,7 @@ body:has(#page-beans.active){background:radial-gradient(ellipse at 8% 45%,#f7e7e
 @media(prefers-reduced-motion:reduce){#page-beans .bean-carousel-card,#page-beans .bean-carousel-card.is-active,#page-beans .bean-home-options>summary>span{transition:none!important}#page-beans .bean-carousel-dots{scroll-behavior:auto!important}}
 
 
-/* Aroma Lab v5.17 — sculpted brew instruments. Existing data/timers preserved. */
+/* Aroma Lab v5.16 — sculpted brew instruments. Existing data/timers preserved. */
 body:has(#page-espresso.active),body:has(#page-pour.active){background:radial-gradient(ellipse at 95% 18%,#e3ecf83a,transparent 50%),radial-gradient(ellipse at 0 75%,#fae5e42c,transparent 48%),#f5f6fa!important}
 #page-espresso .espresso-page-head{display:none!important}
 #page-espresso .brew-metric-grid .brew-metric-card>small,#page-espresso .brew-metric-grid .brew-metric-card>strong,#page-espresso .brew-metric-grid .brew-metric-card>span{position:relative!important;inset:auto!important;transform:none!important;width:auto!important;text-align:center!important;align-self:center!important;margin:0!important}
@@ -10472,28 +10472,6 @@ body:has(#page-espresso.active),body:has(#page-pour.active){background:radial-gr
 #page-beans #beanDetailEdit{min-height:44px;min-width:58px;font-size:12px!important}
 #page-beans .bean-appearance-link{position:absolute;left:50%;bottom:0;transform:translateX(-50%);z-index:3;min-height:44px!important;padding:8px 14px!important;border-radius:999px!important;font-size:10px!important;background:#ffffffd9!important;white-space:nowrap;color:#414b54!important;border:1px solid #fff!important}
 @media(max-width:350px){.bean-pack-styles button{gap:7px;padding:10px 7px}.bean-visual-modes button{font-size:11px!important}.bean-appearance-preview{min-height:270px}}
-
-
-/* v5.17 — reference motion; fixed header/nav never become transformed descendants. */
-.page.active{position:relative;z-index:20;animation:none!important}
-.page.al-page-enter.active,.page.al-page-enter.active>.card,.page.al-page-enter.active>.more-intelligence,.page.al-page-enter.active>.more-library-group{animation:none!important}
-.al-motion-snapshot{position:fixed;left:0;right:0;z-index:19;overflow:hidden;pointer-events:none;background:#f2f3f5;contain:layout paint}
-.al-motion-snapshot *{animation:none!important;transition:none!important;pointer-events:none!important;scroll-behavior:auto!important}
-#page-beans .bean-carousel-card,#page-beans .bean-carousel-card.is-active{transform:translateY(var(--al-card-lift,0px)) scale(var(--al-card-scale,1))!important;opacity:var(--al-card-alpha,1)!important;filter:blur(var(--al-card-blur,0px));transition:none!important}
-#beanLibraryView{position:relative;isolation:isolate}
-#beanLibraryView:before{content:"";position:absolute;z-index:-1;pointer-events:none;top:95px;left:8%;right:8%;height:320px;border-radius:50%;background-color:var(--al-bean-halo,#acd8d5);opacity:.19;filter:blur(35px);transition:background-color 450ms ease}
-#beanHomeFocus .bean-carousel-body{animation:none!important}
-#pourRecipeSheet[open],#receiptFull .receipt{animation:none!important;clip-path:none!important}
-#pourRecipeSheet.al-motion-dialog::backdrop,#receiptDialog.al-motion-dialog::backdrop{animation:al517BackdropIn 350ms ease both}
-@keyframes al517BackdropIn{from{opacity:0}to{opacity:1}}
-#pourRecipeSheet.al-motion-closing::backdrop,#receiptDialog.al-motion-closing::backdrop{animation:al517BackdropOut 300ms ease both}
-@keyframes al517BackdropOut{from{opacity:1}to{opacity:0}}
-#receiptDialog{height:calc(100vh - 32px)!important;height:calc(100dvh - max(16px,env(safe-area-inset-top)) - max(16px,env(safe-area-inset-bottom)))!important;max-height:calc(100dvh - max(16px,env(safe-area-inset-top)) - max(16px,env(safe-area-inset-bottom)))!important}
-.receipt-print-stage{position:relative;box-sizing:border-box;overflow:hidden}
-.receipt-print-stage[data-printing]:after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(302px,calc(100% - 52px));height:9px;background:linear-gradient(transparent,#30352e24);pointer-events:none}
-:is(.btn,.mini,.filter,.bean-filter,.tag-chip,.taste-tag,.grinder-choice-card,.receipt-open,.more-library-row,.more-intelligence,.learning-chapter-link){transition:transform 220ms cubic-bezier(.18,.85,.3,1.15),background-color 160ms ease,box-shadow 220ms ease!important}
-:is(.btn,.mini,.filter,.bean-filter,.tag-chip,.taste-tag,.grinder-choice-card,.receipt-open,.more-library-row,.more-intelligence,.learning-chapter-link):not(:disabled):active{transform:scale(.975)!important}
-@media(prefers-reduced-motion:reduce){.al-motion-snapshot{display:none}#beanLibraryView:before{transition:none!important;filter:none;opacity:.06}#page-beans .bean-carousel-card,#page-beans .bean-carousel-card.is-active{filter:none!important;transform:scale(var(--al-card-scale,1))!important}#pourRecipeSheet.al-motion-dialog::backdrop,#receiptDialog.al-motion-dialog::backdrop,#pourRecipeSheet.al-motion-closing::backdrop,#receiptDialog.al-motion-closing::backdrop{animation:none!important}.receipt-print-stage:after{content:none!important}}
 
 </style>
 </head>
@@ -11517,7 +11495,7 @@ body:has(#page-espresso.active),body:has(#page-pour.active){background:radial-gr
 <button class="more-library-row" data-more-backup type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M4 17v4h16v-4"/></svg></span><span class="more-row-copy"><b>Backup & Restore</b><small>匯出或還原完整 JSON 備份</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
   </div></div>
   <div class="more-personal-setup"><div class="kicker">PERSONAL SETUP</div><b>9Barista Mk2 Pro</b><p>Mahlkönig X64 SD<br>Kinu M47 Titan</p></div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.17 · Data stays in your browser</div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.16 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -12421,134 +12399,15 @@ async function openPourRecipeSheet(){
       const time=times.length?fmt(Math.max(...times)*1000).replace(/\.\d$/,''):'未填';
       const button=document.createElement('button');button.type='button';button.className='brew-sheet-recipe';
       button.innerHTML=`${pourBrewerMark()}<span class="brew-sheet-recipe-copy"><b>${esc(r.name||'未命名技法')}</b><span>${esc(r.dose||'—')}g · ${esc(r.water||'—')}g · 目標 ${esc(time)}</span><small>${esc(r.brewer||'未指定器具')}${r.temps?' · '+esc(r.temps):''}</small></span><span class="brew-sheet-recipe-arrow" aria-hidden="true">›</span>`;
-      button.addEventListener('click',async()=>{
+      button.addEventListener('click',()=>{
         if(pourRun?.startTs&&!pourRun.endTs){toast('請先完成今次手沖。');return}
-        if(!await alCloseDialog($('pourRecipeSheet'),'sheet'))return;
-        if(pourRun?.startTs&&!pourRun.endTs){toast('請先完成今次手沖。');return}
-        openPourBrew({...r,steps});
+        $('pourRecipeSheet').close();openPourBrew({...r,steps});
         $('pourBrew').scrollIntoView({block:'start',behavior:motionBehavior()});
       });box.appendChild(button);
     });
-    $('pourRecipeSheet').showModal();alOpenDialog($('pourRecipeSheet'),'sheet');
+    $('pourRecipeSheet').showModal();
   }catch(err){toast('未能讀取配方，請再試。')}
 }
-
-// Motion is transient presentation state only. Fixed chrome and storage are untouched.
-const alMotionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');
-const alMotionAnimations=new Set(),alMotionByElement=new WeakMap(),alModalMotion=new WeakMap(),alPageSurface=new WeakMap();
-let alPageSnapshot=null,alReceiptRequest=0,alMotionMirror=null;
-function alMirrorSnapshotStyles(){
-  if(alMotionMirror)return;
-  const mirror=rules=>[...rules].map(rule=>{
-    if(rule.selectorText&&rule.selectorText.includes('#'))return rule.selectorText.replace(/#([a-zA-Z_][\w-]*)/g,'[data-al-motion-id="$1"]')+'{'+rule.style.cssText+'}';
-    if(rule.cssRules&&rule.conditionText){const inner=mirror(rule.cssRules);return inner?rule.cssText.slice(0,rule.cssText.indexOf('{'))+'{'+inner+'}':''}
-    return '';
-  }).join('\n');
-  const css=[...document.styleSheets].map(sheet=>{try{return mirror(sheet.cssRules)}catch{return ''}}).join('\n');
-  alMotionMirror=document.createElement('style');alMotionMirror.textContent=css;document.head.appendChild(alMotionMirror);
-}
-function alAnimate(element,frames,options={}){
-  if(!element)return null;
-  alMotionByElement.get(element)?.cancel();
-  if(alMotionPreference.matches||!element.animate)return null;
-  const animation=element.animate(frames,{duration:360,easing:'cubic-bezier(.22,.72,.22,1)',...options});
-  alMotionByElement.set(element,animation);alMotionAnimations.add(animation);
-  animation.finished.catch(()=>{}).then(()=>{alMotionAnimations.delete(animation);if(alMotionByElement.get(element)===animation)alMotionByElement.delete(element)});
-  return animation;
-}
-function alCapturePage(page){
-  alPageSnapshot?.remove();alPageSnapshot=null;
-  if(!page||alMotionPreference.matches)return null;
-  alMirrorSnapshotStyles();
-  const rect=page.getBoundingClientRect(),header=document.querySelector('.al-header-v54'),nav=document.querySelector('nav.al-nav-v54');
-  const top=Math.max(0,header?.getBoundingClientRect().bottom||64),bottom=Math.max(0,innerHeight-(nav?.getBoundingClientRect().top||innerHeight));
-  const layer=document.createElement('div');layer.className='al-motion-snapshot';layer.setAttribute('aria-hidden','true');layer.inert=true;
-  layer.style.top=top+'px';layer.style.bottom=bottom+'px';
-  const copy=page.cloneNode(true);copy.classList.remove('al-page-enter');
-  [copy,...copy.querySelectorAll('[id],[autofocus],[name]')].forEach(x=>{if(x.id)x.dataset.alMotionId=x.id;x.removeAttribute('id');x.removeAttribute('autofocus');x.removeAttribute('name')});
-  const originalNodes=[page,...page.querySelectorAll('*')],copyNodes=[copy,...copy.querySelectorAll('*')];
-  const scrolls=originalNodes.map((node,i)=>({node:copyNodes[i],left:node.scrollLeft,top:node.scrollTop})).filter(x=>x.left||x.top);
-  Object.assign(copy.style,{position:'absolute',top:(rect.top-top)+'px',left:rect.left+'px',width:rect.width+'px',margin:'0',display:'block'});
-  layer.appendChild(copy);document.body.appendChild(layer);scrolls.forEach(x=>{x.node.scrollLeft=x.left;x.node.scrollTop=x.top});alPageSnapshot=layer;return layer;
-}
-function alEnterPage(target,snapshot,direction=1){
-  if(!target?.classList.contains('active')){snapshot?.remove();return}
-  const surface=getComputedStyle(document.body).backgroundColor;
-  const background=surface==='rgba(0, 0, 0, 0)'?'#f2f3f5':surface;
-  const state=alPageSurface.get(target)||{value:target.style.getPropertyValue('background-color'),priority:target.style.getPropertyPriority('background-color')};
-  const token=Symbol();state.token=token;alPageSurface.set(target,state);target.style.setProperty('background-color',background,'important');
-  const incoming=alAnimate(target,[{translate:`${direction*100}% 0`,opacity:1},{translate:'0 0',opacity:1}],{duration:390});
-  const restore=()=>{if(state.token===token){if(state.value)target.style.setProperty('background-color',state.value,state.priority);else target.style.removeProperty('background-color');alPageSurface.delete(target)}};
-  if(incoming)incoming.finished.catch(()=>{}).then(restore);else restore();
-  const out=alAnimate(snapshot,[{translate:'0 0',opacity:1},{translate:`${-direction*25}% 0`,opacity:.65}],{duration:390});
-  if(out)out.finished.catch(()=>{}).then(()=>{snapshot.remove();if(alPageSnapshot===snapshot)alPageSnapshot=null});else snapshot?.remove();
-}
-function alEnterContent(element,direction=1){
-  alAnimate(element,[{translate:`${direction*48}px 0`,opacity:.45},{translate:'0 0',opacity:1}],{duration:340});
-}
-function alSwapBeanBody(focus,body){
-  const animate=!!focus.firstElementChild;
-  focus.replaceChildren(body);
-  if(animate)alAnimate(body,[{opacity:.15,filter:'blur(4px)',translate:'0 5px'},{opacity:1,filter:'blur(0px)',translate:'0 0'}],{duration:280});
-}
-function alSyncBeanDepth(){
-  const box=$('beanList');if(!box)return;
-  const center=box.scrollLeft+box.clientWidth/2;
-  beanCarouselCards().forEach(card=>{
-    const distance=Math.min(1.4,Math.abs(card.offsetLeft+card.clientWidth/2-center)/Math.max(1,card.clientWidth));
-    const t=Math.min(1,distance);
-    card.style.setProperty('--al-card-scale',String(1-.13*t));card.style.setProperty('--al-card-alpha',String(1-.62*t));
-    card.style.setProperty('--al-card-blur',alMotionPreference.matches?'0px':(2.2*t).toFixed(2)+'px');card.style.setProperty('--al-card-lift',alMotionPreference.matches?'0px':(6*t).toFixed(2)+'px');
-  });
-}
-function alBeanHalo(id){
-  const bean=beanRecords.find(b=>b.id===id);if(bean)$('beanLibraryView').style.setProperty('--al-bean-halo',beanAppearance(bean).color);
-}
-function alOpenDialog(dialog,kind){
-  const previous=alModalMotion.get(dialog);if(previous)previous.superseded=true;
-  alModalMotion.delete(dialog);dialog.style.pointerEvents='';dialog.classList.remove('al-motion-closing');dialog.classList.add('al-motion-dialog');
-  const offset=kind==='receipt'?'105% 0':'0 100%';
-  alAnimate(dialog,[{translate:offset,opacity:.9},{translate:'0 0',opacity:1}],{duration:kind==='receipt'?390:410});
-}
-function alCloseDialog(dialog,kind){
-  if(!dialog.open)return Promise.resolve(false);
-  const previous=alModalMotion.get(dialog);if(previous?.closing)return Promise.resolve(false);
-  const state={closing:true,superseded:false};alModalMotion.set(dialog,state);dialog.style.pointerEvents='none';dialog.classList.add('al-motion-closing');
-  if(kind==='receipt')alStopReceiptPrint(false);
-  const animation=alAnimate(dialog,[{translate:'0 0',opacity:1},{translate:kind==='receipt'?'105% 0':'0 100%',opacity:.8}],{duration:kind==='receipt'?330:300});
-  const finished=animation?animation.finished.catch(()=>{}):Promise.resolve();
-  return finished.then(()=>{
-    if(state.superseded||alModalMotion.get(dialog)!==state)return false;
-    alModalMotion.delete(dialog);dialog.style.pointerEvents='';dialog.classList.remove('al-motion-dialog','al-motion-closing');
-    if(dialog.open)dialog.close();if(kind==='receipt')alStopReceiptPrint(true);return true;
-  });
-}
-function alStopReceiptPrint(restore=true){
-  const stage=document.querySelector('.receipt-print-stage');if(!stage)return;
-  const height=stage.getBoundingClientRect().height;stage._alPrintEpoch=(stage._alPrintEpoch||0)+1;
-  alMotionByElement.get(stage)?.cancel();stage.removeAttribute('data-printing');
-  stage.style.height=restore?'':height+'px';
-}
-function alPrintReceipt(){
-  const stage=document.querySelector('.receipt-print-stage');alStopReceiptPrint(true);
-  if(!stage||alMotionPreference.matches)return;
-  const epoch=stage._alPrintEpoch,height=$('receiptFull').offsetHeight+20;
-  stage.style.height=height+'px';stage.setAttribute('data-printing','');
-  const animation=alAnimate(stage,[{height:'0px',offset:0},{height:'0px',offset:.07},{height:height+'px',offset:1}],{duration:1600,easing:'linear'});
-  if(animation)animation.finished.catch(()=>{}).then(()=>{if(stage._alPrintEpoch===epoch){stage.style.height='';stage.removeAttribute('data-printing')}});
-  else{stage.style.height='';stage.removeAttribute('data-printing')}
-  alAnimate($('receiptActions'),[{opacity:0},{opacity:1}],{duration:240,delay:1400,fill:'backwards'});
-}
-['receiptDialog','pourRecipeSheet'].forEach(id=>{
-  const dialog=$(id),kind=id==='receiptDialog'?'receipt':'sheet';
-  dialog.addEventListener('cancel',e=>{e.preventDefault();if(kind==='receipt')alReceiptRequest++;alCloseDialog(dialog,kind)});
-  dialog.addEventListener('close',()=>{const state=alModalMotion.get(dialog);if(state)state.superseded=true;alModalMotion.delete(dialog);alMotionByElement.get(dialog)?.cancel();dialog.style.pointerEvents='';dialog.classList.remove('al-motion-dialog','al-motion-closing');if(kind==='receipt')alStopReceiptPrint(true)});
-});
-alMotionPreference.addEventListener('change',()=>{
-  if(alMotionPreference.matches){for(const animation of alMotionAnimations)animation.cancel();alPageSnapshot?.remove();alPageSnapshot=null;alStopReceiptPrint(true)}
-  alSyncBeanDepth();
-});
-$$('.tab').forEach(button=>button.addEventListener('click',()=>alAnimate(button.querySelector('.nav-icon'),[{scale:.88},{scale:1.08,offset:.65},{scale:1}],{duration:300})));
 
 function ensureAppChromeVisible(){
   const header=document.querySelector('.al-header-v54');
@@ -12593,9 +12452,6 @@ document.addEventListener('focusin',syncKeyboardViewport);
 document.addEventListener('focusout',syncKeyboardViewport);
 
 function showPage(name){
-  const previous=document.querySelector('.page.active'),previousName=previous?.id?.replace('page-','');
-  const changed=previousName!==name,snapshot=changed?alCapturePage(previous):null;
-  const direction=name==='beans'||name==='more'&&['insights','learn'].includes(previousName)?-1:1;
   ensureAppChromeVisible();
   const target=$('page-'+name);
   $$('.page').forEach(p=>p.classList.toggle('active',p===target));
@@ -12605,10 +12461,10 @@ function showPage(name){
   updateAppHeader(name);
   if(target){
     target.classList.remove('al-page-enter');
-    requestAnimationFrame(()=>{if(target.classList.contains('active')){target.classList.add('al-page-enter');if(changed)alEnterPage(target,snapshot,direction)}else snapshot?.remove()});
+    requestAnimationFrame(()=>target.classList.add('al-page-enter'));
   }
   if(name==='learn')updateBeanGuide();if(name==='logs')renderHistory();if(name==='insights')renderInsights();if(name==='beans')refreshBeans();if(name==='pour')renderSelectedPourBean();if(name==='espresso'){updateHeroYield();renderBrewGrinderContext();renderPreviousBest()}
-  window.scrollTo({top:0,behavior:'auto'});
+  window.scrollTo({top:0,behavior:motionBehavior()});
 }
 $$('.tab').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
 $('alHomeButton')?.addEventListener('click',()=>{
@@ -12627,8 +12483,8 @@ $$('[data-open-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.data
 $('yield')?.addEventListener('input',updateHeroYield);
 $$('[data-brew-field]').forEach(button=>button.addEventListener('click',()=>{showPage('edata');const field=$(button.dataset.brewField);requestAnimationFrame(()=>{field?.scrollIntoView({block:'center',behavior:'auto'});field?.focus({preventScroll:true})})}));
 $$('[data-pour-select]').forEach(button=>button.addEventListener('click',openPourRecipeSheet));
-$('pourRecipeSheetClose').addEventListener('click',()=>alCloseDialog($('pourRecipeSheet'),'sheet'));
-$('pourRecipeSheet').addEventListener('click',e=>{if(e.target===$('pourRecipeSheet')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)alCloseDialog(e.target,'sheet')}});
+$('pourRecipeSheetClose').addEventListener('click',()=>$('pourRecipeSheet').close());
+$('pourRecipeSheet').addEventListener('click',e=>{if(e.target===$('pourRecipeSheet')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
 
 
 // Optional per-bean presentation data; no IndexedDB schema migration.
@@ -13535,10 +13391,9 @@ async function openBeanDetail(bean){
   });
 
   window.scrollTo({top:0,behavior:motionBehavior()});
-  alEnterContent($('beanDetailView'),1);
 }
 function closeBeanDetail(){
-  beanDetailCurrent=null;$('beanDetailView').style.display='none';$('beanEditorView').style.display='none';$('beanLibraryView').style.display='block';renderBeans();alEnterContent($('beanLibraryView'),-1);
+  beanDetailCurrent=null;$('beanDetailView').style.display='none';$('beanEditorView').style.display='none';$('beanLibraryView').style.display='block';renderBeans();
 }
 
 function renderBeanProcessFilters(){
@@ -13572,8 +13427,7 @@ function updateBeanCarouselActive(index,scroll=false){
   dots.forEach((d,i)=>{d.classList.toggle('active',i===index);d.setAttribute('aria-pressed',String(i===index))});
   beanCarouselActiveId=cards[index]?.dataset.beanId||'';
   const focus=$('beanHomeFocus'),body=beanHomeBodies.get(beanCarouselActiveId);
-  if(focus&&body&&focus.firstElementChild!==body){alSwapBeanBody(focus,body)}
-  alBeanHalo(beanCarouselActiveId);alSyncBeanDepth();
+  if(focus&&body&&focus.firstElementChild!==body){focus.replaceChildren(body)}
   const activeDot=dots[index];
   if(activeDot&&$('beanCarouselDots')){const strip=$('beanCarouselDots');const left=activeDot.offsetLeft-(strip.clientWidth-activeDot.clientWidth)/2;strip.scrollTo({left:Math.max(0,left),behavior:motionBehavior()})}
   if($('beanCarouselPosition'))$('beanCarouselPosition').textContent=`${index+1} / ${cards.length}`;
@@ -14096,17 +13950,16 @@ function buildReceipt(x,cupNumber){
     }
     return d;
 }
-function closeReceipt(){ alReceiptRequest++;alCloseDialog($('receiptDialog'),'receipt'); }
+function closeReceipt(){ $('receiptDialog').close(); }
 async function openReceipt(type,id){
-  const request=++alReceiptRequest;
   const list=await journalRecords(),index=list.findIndex(x=>x._type===type&&x.id===id);
-  if(index<0||request!==alReceiptRequest)return;
+  if(index<0)return;
   receiptSelection={type,id};
   const box=$('receiptFull'),paper=buildReceipt(list[index],index+1),actions=paper.querySelector('.flex-actions');
   $('receiptActions').replaceChildren(...(actions?[actions]:[]));
   box.replaceChildren(paper);
   const dialog=$('receiptDialog');if(!dialog.open)dialog.showModal();
-  dialog.scrollTop=0;alOpenDialog(dialog,'receipt');alPrintReceipt();
+  dialog.scrollTop=0;
 }
 $('receiptClose').addEventListener('click',closeReceipt);
 $('receiptDialog').addEventListener('close',()=>{receiptSelection=null;});
@@ -14162,7 +14015,7 @@ async function renderHistory(){
   }
 }
 
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.17',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.16',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
