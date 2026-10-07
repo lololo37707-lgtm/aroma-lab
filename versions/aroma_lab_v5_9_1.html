@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v5.10</title>
+<title>Aroma Lab v5.9.1</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -9937,133 +9937,6 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 @keyframes receiptAppear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:365px){#receiptFull{padding-left:10px;padding-right:10px}#receiptFull .receipt{padding:22px 16px}}
 @media(prefers-reduced-motion:reduce){#receiptFull .receipt{animation:none}}
-
-/* Aroma Lab v5.10 — Coffee Intelligence, Library and Teaching. Scoped presentation only. */
-#page-insights,#page-more,#page-learn{--ci-ink:#202328;--ci-muted:#686f79;--ci-line:#e3e7ec;--ci-paper:#f8fafc}
-.library-back{display:inline-flex;align-items:center;gap:9px;min-height:44px;border:0;background:transparent;color:#69717c;padding:8px 4px;font-size:12px;margin:0 0 10px}
-#page-insights .al-page-head{padding:10px 3px 25px!important;border:0!important}
-#page-insights .al-page-head h1{font-size:clamp(30px,8vw,44px)!important;letter-spacing:-.055em!important;line-height:1.08!important;font-weight:650!important;margin:9px 0 16px!important}
-#page-insights .al-page-head p{font-size:13px!important;color:var(--ci-muted)!important;line-height:1.7!important;max-width:28em}
-#page-insights .insight-hero{padding:25px 21px!important;border:1px solid #ffffff!important;border-radius:30px!important;background:radial-gradient(ellipse at 90% 2%,#dce8fb99,transparent 60%),radial-gradient(ellipse at 8% 95%,#fce5de80,transparent 62%),#f8fafc!important;box-shadow:9px 9px 24px #303c4e0a,-6px -6px 20px #fff!important;margin-bottom:0!important}
-#page-insights .insight-hero:before,#page-insights .insight-hero:after{content:none!important}
-#page-insights .insight-kicker{font-size:9px!important;letter-spacing:.15em!important;color:#77808d!important}
-#page-insights .insight-headline{font-size:25px!important;letter-spacing:-.045em!important;margin:9px 0!important;color:var(--ci-ink)!important}
-#page-insights .insight-sub{font-size:12px!important;line-height:1.7!important;color:var(--ci-muted)!important}
-#page-insights .insights-range{display:flex!important;gap:4px!important;border-radius:999px!important;padding:4px!important;margin:21px 0!important;background:#e9edf2!important;border:1px solid #fff!important;box-shadow:inset 2px 2px 6px #4052690c!important}
-#page-insights .insight-range-btn{flex:1;min-height:44px!important;padding:8px 10px!important;border:0!important;background:transparent!important;color:#737b86!important;font-size:12px!important;border-radius:999px!important;box-shadow:none!important}
-#page-insights .insight-range-btn.active{background:#1b1d21!important;color:#fff!important;box-shadow:0 5px 10px #1b1d211c!important}
-#page-insights .insight-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
-#page-insights .insight-kpi{min-height:112px!important;padding:15px!important;border-radius:22px!important;border:1px solid #ffffff!important;box-shadow:3px 4px 12px #40526907,inset 0 1px 0 #fff!important;background:#ffffffb8!important;text-align:left!important}
-#page-insights .insight-kpi small{font-size:9px!important;letter-spacing:.08em!important;color:#747c88!important}
-#page-insights .insight-kpi strong{font-size:27px!important;letter-spacing:-.05em!important;color:var(--ci-ink)!important;margin:9px 0 5px!important;overflow-wrap:anywhere}
-#page-insights .insight-kpi span{font-size:10px!important;color:#747c88!important}
-.ci-jump-nav{display:flex;gap:7px;overflow-x:auto;margin:19px -2px 30px;padding:5px 2px 9px;scrollbar-width:none}
-.ci-jump-nav::-webkit-scrollbar{display:none}
-.ci-jump-nav button{flex:0 0 auto;min-height:44px;padding:10px 15px;border:1px solid #fff;border-radius:999px;background:#f5f7fa;box-shadow:3px 3px 10px #303c4e06,-3px -3px 8px #fff;color:#596371;font-size:11px}
-#page-insights>.card.ci-section{padding:24px 20px!important;margin:0 0 27px!important;border-radius:28px!important;border:1px solid #fff!important;background:#fafbfd!important;box-shadow:9px 9px 24px #303c4e09,-5px -5px 15px #fff!important;scroll-margin-top:calc(80px + env(safe-area-inset-top))}
-#page-insights .insight-section-head{gap:12px!important;align-items:flex-start!important;margin-bottom:23px!important}
-#page-insights .insight-section-head h2{font-size:20px!important;letter-spacing:-.04em!important;line-height:1.2!important;color:var(--ci-ink)!important}
-#page-insights .insight-section-head p{font-size:11px!important;line-height:1.7!important;color:var(--ci-muted)!important;margin-top:7px!important}
-#page-insights .insight-section-head .badge{max-width:90px;white-space:normal;flex-shrink:0;padding:7px 10px!important;font-size:9px!important;background:#edf1f6!important;border:0!important;color:#687486!important;line-height:1.5}
-#page-insights .insight-callout{padding:18px!important;border-radius:20px!important;background:#f0f3f7!important;border:1px solid #fff!important;box-shadow:none!important;color:var(--ci-ink)!important}
-#page-insights .insight-callout p{font-size:12px!important;line-height:1.8!important;color:#626c79!important}
-#page-insights .insight-callout b{font-size:19px!important;line-height:1.4!important;letter-spacing:-.03em!important}
-#page-insights .insight-callout .eyebrow{font-size:9px!important;letter-spacing:.08em!important;color:#6b7583!important;margin-bottom:9px!important}
-#page-insights #insightsLatestCoach{background:radial-gradient(ellipse at 100% 0%,#3e4652,transparent 85%),#202328!important;color:#fff!important;border:0!important;padding:22px!important}
-#page-insights #insightsLatestCoach .eyebrow{color:#c0c8d4!important}
-#page-insights #insightsLatestCoach b,#page-insights .coach-inline-action{color:#fff!important;font-size:21px!important;font-weight:600!important;line-height:1.45!important;letter-spacing:-.025em!important}
-#page-insights .coach-inline-reason,#page-insights #insightsLatestCoach p{color:#d4dbe5!important;font-size:12px!important;line-height:1.8!important;margin-top:12px!important}
-#page-insights #insightsLatestCoach .coach-grinder-context{background:#ffffff13!important;color:#dce4ef!important;border-color:#ffffff1c!important;font-size:10px!important;line-height:1.6!important}
-#page-insights #insightsSaveLatestPlan{min-height:44px!important;background:#fff!important;color:#202328!important;border:0!important;padding:10px 16px!important;border-radius:999px!important;box-shadow:none!important}
-#page-insights .insights-target{padding:18px!important;border:1px solid #fff!important;border-radius:20px!important;background:radial-gradient(ellipse at 90% 0%,#dce8fb55,transparent 80%),#f2f5f9!important}
-#page-insights .insights-target-top{display:flex;justify-content:space-between;gap:12px}
-#page-insights .insights-target-name{font-size:15px!important;font-weight:600!important;color:var(--ci-ink)!important}
-#page-insights .insights-target-meta{font-size:11px!important;line-height:1.9!important;color:#677383!important;margin-top:7px!important;overflow-wrap:anywhere}
-#page-insights #consistencyBox{background:radial-gradient(ellipse at 90% 10%,#dce8fb88,transparent 85%),#f2f5fa!important;border-color:#fff!important;margin-top:16px!important}
-#page-insights .consistency-badge{font-size:10px!important;border-radius:999px!important;padding:7px 10px!important;margin:10px 0!important;display:inline-block!important}
-#page-insights #espressoInsightGrid,#page-insights #beanHighlights,#page-insights #pourHighlights{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
-#page-insights .insight-stat{padding:15px!important;border:1px solid #fff!important;border-radius:18px!important;background:#f1f4f8!important;box-shadow:none!important;min-width:0}
-#page-insights .insight-stat small{font-size:9px!important;letter-spacing:.04em!important;color:#738090!important}
-#page-insights .insight-stat b{font-size:16px!important;line-height:1.4!important;letter-spacing:-.02em!important;overflow-wrap:anywhere;color:var(--ci-ink)!important}
-#page-insights .insight-stat span{font-size:10px!important;color:#6b7583!important;line-height:1.6!important;overflow-wrap:anywhere}
-#page-insights #beanHighlights .insight-stat:nth-child(2){background:radial-gradient(ellipse at 90% 0%,#f7e1e999,transparent 85%),#f8f1f4!important}
-#page-insights .bean-performance{padding:18px 15px!important;border:1px solid #fff!important;border-radius:20px!important;background:#f2f5f8!important;box-shadow:none!important;gap:14px!important;min-height:72px!important}
-#page-insights .bean-performance-name{font-size:15px!important;line-height:1.5!important;font-weight:600!important;color:var(--ci-ink)!important;overflow-wrap:anywhere}
-#page-insights .bean-performance-meta{font-size:11px!important;color:#697586!important;line-height:1.8!important}
-#page-insights .bean-performance-score b{font-size:17px!important;white-space:nowrap}
-#page-insights .bean-performance:after{content:none!important}
-#page-insights .insight-chart{padding:15px!important;border-radius:20px!important;background:#f3f6fa!important;border:1px solid #fff!important;box-shadow:none!important;overflow:hidden}
-#page-insights .insight-chart-title{font-size:9px!important;letter-spacing:.09em!important;color:#68778b!important}
-#page-insights .insight-empty{padding:19px 12px!important;font-size:12px!important;line-height:1.8!important;border:1px dashed #d7dfe8!important;border-radius:18px!important;color:#6b7583!important;background:#f6f8fb!important}
-/* More uses grouped library rows, without adding account or cloud controls. */
-#page-more .al-page-head{border:0!important;padding:15px 3px 25px!important}
-#page-more .al-page-head h1{font-size:34px!important;letter-spacing:-.05em!important;font-weight:600!important}
-#page-more .al-page-head p{font-size:13px!important;color:var(--ci-muted)!important}
-.more-intelligence{display:block;position:relative;width:100%;text-align:left;border:1px solid #fff;border-radius:30px;padding:26px 23px;background:radial-gradient(ellipse at 98% 4%,#d9e8fbad,transparent 60%),radial-gradient(ellipse at 0% 100%,#f9dfde99,transparent 75%),#f8fafc;box-shadow:10px 10px 26px #303c4e0b,-6px -6px 18px #fff;color:var(--ci-ink);margin-bottom:32px}
-.more-feature-top{display:flex;align-items:center;gap:14px;margin-bottom:23px}
-.more-feature-eyebrow{font-size:8px;letter-spacing:.11em;color:#6c788a}
-.more-intelligence>b{font-size:25px;letter-spacing:-.04em;line-height:1.2;display:block;font-weight:600}
-.more-intelligence>p{font-size:12px;line-height:1.85;color:#657184;margin:12px 0 23px}
-.more-feature-action{display:inline-flex;align-items:center;gap:22px;min-height:44px;padding:11px 17px;border-radius:999px;background:#1c1e22;color:#fff;font-size:11px}
-.more-library-group{margin:0 0 28px}
-.more-library-group>h2{font-size:11px;letter-spacing:.06em;color:#778394;font-weight:500;padding:0 17px;margin:0 0 11px}
-.more-library-list{overflow:hidden;border:1px solid #fff;border-radius:26px;background:#fafbfd;box-shadow:7px 7px 20px #303c4e09,-5px -5px 16px #fff}
-.more-library-row{display:flex;align-items:center;gap:14px;min-height:84px;width:100%;text-align:left;padding:17px;border:0;background:transparent;color:var(--ci-ink)}
-.more-library-row+.more-library-row{position:relative}
-.more-library-row+.more-library-row:before{content:'';position:absolute;left:69px;right:17px;top:0;height:1px;background:#e6ebf1}
-.more-row-icon{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border-radius:13px;background:#e9eff7;border:1px solid #fff;box-shadow:2px 2px 6px #45576f07,inset 0 1px 0 #fff;color:#5e7189}
-.more-row-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.more-library-row[data-open-page=beans] .more-row-icon{background:#f2eae6;color:#9a7c68}
-.more-library-row[data-open-page=learn] .more-row-icon{background:#f2e9ed;color:#917b87}
-.more-row-copy{display:block;min-width:0;flex:1}
-.more-row-copy>b{display:block;font-size:15px;line-height:1.4;font-weight:550;letter-spacing:-.015em;overflow-wrap:anywhere}
-.more-row-copy>small{display:block;font-size:10px;line-height:1.7;color:#7b8492;margin-top:4px;overflow-wrap:anywhere}
-.more-row-chevron{font-size:23px;line-height:1;color:#a0a9b7;flex:0 0 auto}
-.more-personal-setup{padding:15px 17px 6px;color:#687485}
-.more-personal-setup>b{display:block;font-size:13px;font-weight:500;margin-top:9px}
-.more-personal-setup p{font-size:11px;line-height:1.85;margin:8px 0}
-/* Teaching is a reading surface: all original content, calculators and details retained. */
-#page-learn>.learn-hero{padding:25px 21px!important;margin:0 0 22px!important;border-radius:28px!important;border:1px solid #fff!important;background:radial-gradient(ellipse at 90% 0%,#e3eafb88,transparent 70%),#f9fafc!important;box-shadow:8px 8px 24px #303c4e09,-5px -5px 16px #fff!important}
-#page-learn>.learn-hero h2{font-size:28px!important;letter-spacing:-.05em!important;font-weight:600!important;margin:11px 0!important}
-#page-learn>.learn-hero p{font-size:12px!important;line-height:1.85!important;color:#687586!important}
-#page-learn .learn-switch{position:sticky!important;top:calc(64px + env(safe-area-inset-top))!important;z-index:30;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:4px!important;padding:5px!important;margin:0 0 21px!important;border:1px solid #ffffff!important;border-radius:22px!important;background:#eef1f7f5!important;box-shadow:3px 3px 12px #303c4e09;backdrop-filter:blur(16px)}
-#page-learn .learn-tab{min-height:66px!important;padding:9px 5px!important;border-radius:17px!important;border:0!important;background:transparent!important;box-shadow:none!important;color:#778191!important;font-size:11px!important;line-height:1.6!important;letter-spacing:0!important;font-weight:500!important}
-#page-learn .learn-tab.active{background:#202328!important;color:#fff!important;box-shadow:0 4px 10px #20232819!important}
-#page-learn .learning-contents{padding:0!important;margin:0 0 30px;border:1px solid #fff!important;border-radius:23px;background:#fafbfd;box-shadow:5px 5px 16px #303c4e07;overflow:hidden}
-.learning-contents>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:17px 20px;color:#323a46}
-.learning-contents>summary small{display:block;font-size:8px;font-weight:500;letter-spacing:.13em;color:#7d8899;margin-bottom:6px}
-.learning-contents>summary b{display:block;font-size:13px;font-weight:550;line-height:1.5}
-.learning-contents-count{font-size:10px;white-space:nowrap;color:#778598}
-.learning-contents>summary:after{content:'+';font-size:19px;font-weight:400;color:#8894a4}
-.learning-contents[open]>summary:after{content:'−'}
-#learningChapterList{padding:0 12px 12px}
-.learning-chapter-link{display:flex;align-items:center;gap:12px;min-height:50px;width:100%;padding:13px 8px;border:0;border-top:1px solid #edf0f5;background:transparent;text-align:left;color:#465264}
-.learning-chapter-link>span{font-size:9px;color:#8794a7;font-variant-numeric:tabular-nums;flex-shrink:0}
-.learning-chapter-link>b{flex:1;min-width:0;font-size:12px;font-weight:500;line-height:1.65;overflow-wrap:anywhere}
-#page-learn .learning-heading{scroll-margin-top:calc(156px + env(safe-area-inset-top));outline-offset:6px}
-#page-learn .learn-panel>.card{padding:26px 21px!important;margin:0 0 27px!important;border:1px solid #fff!important;border-radius:27px!important;background:#fafbfd!important;box-shadow:7px 7px 22px #303c4e07,-4px -4px 13px #fff!important}
-#page-learn .learn-panel h2{font-size:21px!important;line-height:1.45!important;letter-spacing:-.025em!important;font-weight:600!important;color:#26313d!important;overflow-wrap:anywhere;margin-bottom:19px!important}
-#page-learn .learn-panel h3{font-size:17px!important;line-height:1.5!important;color:#34404f!important;margin:19px 0 12px!important}
-#page-learn .learn-panel .detail,#page-learn .learn-panel .guide,#page-learn .learn-panel .meta,#page-learn .learn-panel .method-card,#page-learn .learn-panel .sourcebox,#page-learn .learn-panel .pro-row,#page-learn .learn-panel .compare-card,#page-learn .learn-panel .decision-step{font-size:14px!important;line-height:1.9!important;color:#546273!important;overflow-wrap:anywhere}
-#page-learn .learn-panel .detail b,#page-learn .learn-panel .guide b,#page-learn .learn-panel .decision-step b{color:#303e4d!important}
-#page-learn .learn-panel .guide{padding:18px!important;border:1px solid #e1e8f2!important;border-radius:18px!important;background:#eef3fa!important;margin-top:18px!important;box-shadow:none!important}
-#page-learn .learn-panel .formula{padding:19px!important;border-radius:18px!important;background:#252b33!important;color:#f6f8fb!important;font-size:15px!important;line-height:1.85!important;box-shadow:none!important}
-#page-learn .learn-panel .formula b{color:inherit!important}
-#page-learn .learn-panel .compare-grid{grid-template-columns:minmax(0,1fr)!important;gap:10px!important}
-#page-learn .learn-panel .compare-card,#page-learn .learn-panel .decision-step{padding:17px!important;border:1px solid #fff!important;border-radius:17px!important;background:#f1f4f8!important;box-shadow:none!important}
-#page-learn .learn-panel details{padding:15px 0!important;border-color:#e3e9f1!important}
-#page-learn .learn-panel summary{font-size:13px!important;line-height:1.75!important;min-height:44px;display:flex;align-items:center;color:#344254!important;gap:10px;overflow-wrap:anywhere}
-#page-learn .learn-panel .recipe-stat,#page-learn .learn-panel .bean-chip,#page-learn .learn-panel .calc-result{background:#f0f4f9!important;border:1px solid #fff!important;border-radius:17px!important;padding:15px!important;box-shadow:none!important;min-width:0;overflow-wrap:anywhere}
-#page-learn .learn-panel .calc-result b{font-size:21px!important;line-height:1.5!important;color:#344b66!important;overflow-wrap:anywhere}
-#page-learn .learn-panel .learn-jump{min-height:44px!important;margin-top:18px!important;background:#202328!important;color:#fff!important;border:0!important;box-shadow:none!important;padding:12px 18px!important;white-space:normal}
-#page-learn .learn-panel .pro-row{grid-template-columns:minmax(65px,.8fr) minmax(0,2fr)!important;gap:14px!important;padding:14px 0!important;background:transparent!important;border-bottom:1px solid #e5eaf0!important}
-#page-learn .learn-panel .variable-row{grid-template-columns:minmax(60px,.8fr) minmax(52px,.65fr) minmax(0,1.7fr)!important;gap:8px!important;font-size:12px!important;line-height:1.8!important;padding:13px 8px!important}
-#page-learn .learn-panel .variable-row b{font-size:12px!important;overflow-wrap:anywhere}
-#page-learn .learn-panel .safety{padding:18px!important;border-radius:18px!important;font-size:14px!important;line-height:1.85!important}
-.library-back:focus-visible,.ci-jump-nav button:focus-visible,.more-intelligence:focus-visible,.more-library-row:focus-visible,.learning-chapter-link:focus-visible{outline:3px solid #6c8caf;outline-offset:4px}
-.more-library-row:active{background:#edf2f8}
-@media(min-width:650px){#page-insights .insight-kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#page-insights #espressoInsightGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#page-learn .learn-panel .compare-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-@media(max-width:365px){#page-insights>.card.ci-section{padding:22px 16px!important}#page-insights .insight-section-head{flex-wrap:wrap}#page-insights .insight-stat{padding:12px!important}#page-insights .insight-stat b{font-size:14px!important}#page-insights .bean-performance{flex-direction:column!important;align-items:flex-start!important}.more-library-row{padding:15px 13px;gap:10px}.more-row-copy>b{font-size:14px}.more-intelligence{padding:23px 19px}.more-intelligence>b{font-size:23px}#page-learn .learn-panel>.card{padding:23px 16px!important}#page-learn .learn-panel .recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#page-learn .learn-panel .calc-grid{grid-template-columns:minmax(0,1fr)!important}}
 </style>
 </head>
 <body>
@@ -10260,11 +10133,10 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 
 
 <section id="page-insights" class="page">
-  <button class="library-back" data-open-page="more" type="button"><span aria-hidden="true">←</span> 更多</button>
   <div class="al-page-head">
-    <div class="kicker">YOUR BREW PATTERNS</div>
-    <h1>Coffee<br>Intelligence.</h1>
-    <p>由每杯紀錄，理解你嘅味道、穩定度同下一步。</p>
+    <div class="kicker">COFFEE INSIGHTS</div>
+    <h1>Insights</h1>
+    <p>Turn your brew history into patterns you can actually use.</p>
   </div>
 
   <div class="card insight-hero">
@@ -10280,43 +10152,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <div id="insightKpis" class="insight-kpi-grid"></div>
   </div>
 
-  <nav class="ci-jump-nav" aria-label="Coffee Intelligence 章節">
-    <button data-intelligence-jump="coach" type="button">Coach & Target</button>
-    <button data-intelligence-jump="espresso" type="button">Consistency</button>
-    <button data-intelligence-jump="beans" type="button">Bean Performance</button>
-    <button data-intelligence-jump="activity" type="button">Activity</button>
-    <button data-intelligence-jump="pour" type="button">Pour-over</button>
-  </nav>
-  <div class="card ci-section" id="intelligence-coach" tabindex="-1">
-    <div class="insight-section-head">
-      <div><h2>Dial-in Coach</h2><p>最近一杯診斷，同埋你已經手動保存嘅 Next Shot Target。</p></div>
-      <span class="badge">One variable</span>
-    </div>
-    <div id="insightsLatestCoach" class="insight-callout"></div>
-    <div id="insightsActiveTargets" class="insights-coach-list"></div>
-  </div>
-
-  <div class="card ci-section" id="intelligence-espresso" tabindex="-1">
-    <div class="insight-section-head">
-      <div><h2>9Barista Analytics</h2><p>時間、比例同你實際記錄嘅味道評分。</p></div>
-      <span id="espressoInsightCount" class="badge">0 Shots</span>
-    </div>
-    <div id="espressoInsightGrid" class="insight-grid three"></div>
-    <div id="typicalShot" class="insight-callout"></div>
-    <div id="bestExtractionRange" class="insight-callout blue"></div>
-    <div id="consistencyBox" class="insight-callout"></div>
-  </div>
-
-  <div class="card ci-section" id="intelligence-beans" tabindex="-1">
-    <div class="insight-section-head">
-      <div><h2>Bean Performance</h2><p>Personal Best · Highest Rated Bean · 你每包豆嘅沖煮表現。</p></div>
-      <span id="linkedBrewBadge" class="badge">0 Linked</span>
-    </div>
-    <div id="beanHighlights" class="insight-grid"></div>
-    <div id="beanPerformanceList" class="bean-performance-list" style="margin-top:12px"></div>
-  </div>
-
-  <div class="card ci-section" id="intelligence-activity" tabindex="-1">
+  <div class="card">
     <div class="insight-section-head">
       <div><h2>Brew Activity</h2><p>所選時間範圍內嘅沖煮活動。</p></div>
       <span id="activityTotalBadge" class="badge">0 Brews</span>
@@ -10331,7 +10167,36 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     </div>
   </div>
 
-  <div class="card ci-section" id="intelligence-pour" tabindex="-1">
+  <div class="card">
+    <div class="insight-section-head">
+      <div><h2>9Barista Analytics</h2><p>時間、比例同你實際記錄嘅味道評分。</p></div>
+      <span id="espressoInsightCount" class="badge">0 Shots</span>
+    </div>
+    <div id="espressoInsightGrid" class="insight-grid three"></div>
+    <div id="typicalShot" class="insight-callout"></div>
+    <div id="bestExtractionRange" class="insight-callout blue"></div>
+    <div id="consistencyBox" class="insight-callout"></div>
+  </div>
+
+  <div class="card">
+    <div class="insight-section-head">
+      <div><h2>Dial-in Coach</h2><p>最近一杯診斷，同埋你已經手動保存嘅 Next Shot Target。</p></div>
+      <span class="badge">One variable</span>
+    </div>
+    <div id="insightsLatestCoach" class="insight-callout"></div>
+    <div id="insightsActiveTargets" class="insights-coach-list"></div>
+  </div>
+
+  <div class="card">
+    <div class="insight-section-head">
+      <div><h2>Bean Performance</h2><p>舊 9Barista Log 亦會用 Roaster + Bean/Lot 嘗試對應返豆庫。</p></div>
+      <span id="linkedBrewBadge" class="badge">0 Linked</span>
+    </div>
+    <div id="beanHighlights" class="insight-grid"></div>
+    <div id="beanPerformanceList" class="bean-performance-list" style="margin-top:12px"></div>
+  </div>
+
+  <div class="card">
     <div class="insight-section-head">
       <div><h2>Pour-over Analytics</h2><p>Recipe 使用次數、平均評分同已連結咖啡豆。</p></div>
       <span id="pourInsightCount" class="badge">0 Brews</span>
@@ -10341,7 +10206,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
   </div>
 
   <div class="small-note" style="text-align:center;margin:18px 0">
-    Coffee Intelligence 只反映你目前輸入嘅紀錄；資料不足時會直接顯示「未有足夠資料」。
+    Insights 只反映你目前輸入嘅紀錄；資料不足時會直接顯示「未有足夠資料」。
   </div>
 </section>
 
@@ -11019,28 +10884,17 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
   </section>
 
 <section id="page-more" class="page">
-  <div class="al-page-head"><div class="kicker">YOUR COFFEE SPACE</div><h1>更多</h1><p>你的豆、知識同每杯記錄。</p></div>
-  <button class="more-intelligence" data-open-page="insights" type="button">
-    <span class="more-feature-top"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 18.5V13M10 18.5V9M15.5 18.5V5.5M21 18.5V11.5"/><path d="M3.5 20h18"/></svg></span><span class="more-feature-eyebrow">FROM YOUR COFFEE JOURNAL</span></span>
-    <b>Coffee Intelligence</b><p>Personal Best、Consistency、Bean Performance、Dial-in Coach 同 Next Shot Target。</p><span class="more-feature-action">探索沖煮表現 <span aria-hidden="true">↗</span></span>
-  </button>
-  <div class="more-library-group"><h2>Library</h2><div class="more-library-list">
-<button class="more-library-row" data-open-page="beans" type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 4.8c2.2 2.2 1.3 7.1-2 10.4-3.3 3.3-8.2 4.2-10.4 2-2.2-2.2-1.3-7.1 2-10.4 3.3-3.3 8.2-4.2 10.4-2Z"/><path d="M7.1 17.4c1.2-2.7 2.8-4.2 5.1-5.7 2.1-1.35 3.6-3 5.1-6"/></svg></span><span class="more-row-copy"><b>Bean Collection</b><small>咖啡豆、剩餘重量、烘焙資料與相片</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
-<button class="more-library-row" data-open-page="pour" type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v16H7zM10 8h4M10 12h4M10 16h2"/></svg></span><span class="more-row-copy"><b>Pour-over Recipes</b><small>你的手沖配方與沖煮步驟</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
-<button class="more-library-row" data-open-page="mix" type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h11v6a5.5 5.5 0 0 1-11 0V8ZM16 9h2a2.5 2.5 0 0 1 0 5h-2M4 21h14M8 3v2M12 3v2"/></svg></span><span class="more-row-copy"><b>Specialty Drinks</b><small>特調配方、圖片與標籤</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
-<button class="more-library-row" data-open-page="learn" type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></span><span class="more-row-copy"><b>Teaching</b><small>9Barista、手沖通識、冰咖啡與冷泡</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
-  </div></div>
-  <div class="more-library-group"><h2>Journal & Data</h2><div class="more-library-list">
-<button class="more-library-row" data-open-page="logs" type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></span><span class="more-row-copy"><b>Coffee Journal</b><small>完整 receipt、味道、評分與紀錄</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
-<button class="more-library-row" data-open-page="edata" type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></span><span class="more-row-copy"><b>Brew Details</b><small>Bean Profile、磨度、Dose、Yield、TDS / EY</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
-<button class="more-library-row" data-more-backup type="button"><span class="more-row-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M4 17v4h16v-4"/></svg></span><span class="more-row-copy"><b>Backup & Restore</b><small>匯出或還原完整 JSON 備份</small></span><span class="more-row-chevron" aria-hidden="true">›</span></button>
-  </div></div>
-  <div class="more-personal-setup"><div class="kicker">PERSONAL SETUP</div><b>9Barista Mk2 Pro</b><p>Mahlkönig X64 SD<br>Kinu M47 Titan</p></div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.10 · Data stays in your browser</div>
+  <div class="al-page-head"><div class="kicker">TOOLS & RESOURCES</div><h1>更多</h1><p>Manage details, learn and troubleshoot.</p></div>
+  <div class="al-more-grid">
+    <button class="al-more-card insights" data-open-page="insights" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 18.5V13M10 18.5V9M15.5 18.5V5.5M21 18.5V11.5"/><path d="M3.5 20h18"/></svg></div><b>Insights</b><p>分析沖煮趨勢、Personal Best、穩定度、咖啡豆表現同手沖使用情況。</p></button>
+    <button class="al-more-card beans" data-open-page="beans" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 4.8c2.2 2.2 1.3 7.1-2 10.4-3.3 3.3-8.2 4.2-10.4 2-2.2-2.2-1.3-7.1 2-10.4 3.3-3.3 8.2-4.2 10.4-2Z"/><path d="M7.1 17.4c1.2-2.7 2.8-4.2 5.1-5.7 2.1-1.35 3.6-3 5.1-6"/></svg></div><b>豆庫</b><p>記錄買過嘅咖啡豆、剩餘重量、烘焙資料、價錢、店舖同咖啡袋相片。</p></button>
+    <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
+    <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
+  </div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.9.1 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
-  <button class="library-back" data-open-page="more" type="button"><span aria-hidden="true">←</span> 更多</button>
   <div class="learn-hero">
     <div class="kicker">Coffee Learning Hub</div>
     <h2>教學中心</h2>
@@ -11052,11 +10906,6 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button class="learn-tab" data-learn="common" type="button">💧<br>手沖・咖啡<br>通識</button>
     <button class="learn-tab" data-learn="cold" type="button">🧊<br>冰咖啡・<br>冷泡</button>
   </div>
-
-  <details id="learningContents" class="learning-contents">
-    <summary><span><small>IN THIS GUIDE</small><b id="learningGuideLabel">9Barista 專業指南</b></span><span class="learning-contents-count" id="learningChapterCount"></span></summary>
-    <nav id="learningChapterList" aria-label="Teaching 章節目錄"></nav>
-  </details>
 
   <!-- 9BARISTA -->
   <div id="learn-ninebar" class="learn-panel active">
@@ -11867,7 +11716,7 @@ function st(name,mode='readonly'){return db.transaction(name,mode).objectStore(n
 function getAll(name){return new Promise((res,rej)=>{const q=st(name).getAll();q.onsuccess=()=>res(q.result||[]);q.onerror=()=>rej(q.error)})}
 function put(name,o){return new Promise((res,rej)=>{const q=st(name,'readwrite').put(o);q.onsuccess=()=>res(o);q.onerror=()=>rej(q.error)})}
 function remove(name,id){return new Promise((res,rej)=>{const q=st(name,'readwrite').delete(id);q.onsuccess=()=>res();q.onerror=()=>rej(q.error)})}
-const alPageNames={espresso:'9Barista',pour:'手沖',mix:'特調',logs:'紀錄',more:'更多',insights:'Coffee Intelligence',beans:'Coffee Collection',edata:'Brew Details',learn:'教學'};
+const alPageNames={espresso:'9Barista',pour:'手沖',mix:'特調',logs:'紀錄',more:'更多',insights:'Insights',beans:'Coffee Collection',edata:'Brew Details',learn:'教學'};
 const alHeaderMeta={
   beans:{kicker:'COFFEE COLLECTION',title:'Your coffee.',action:'＋',actionLabel:'新增咖啡豆'},
   espresso:{kicker:'PRECISION BREWING',title:'9Barista',action:'Log',actionLabel:'查看咖啡紀錄'},
@@ -11875,7 +11724,7 @@ const alHeaderMeta={
   mix:{kicker:'SPECIALTY DRINKS',title:'Specialty',action:'',actionLabel:''},
   logs:{kicker:'COFFEE JOURNAL',title:'Journal',action:'',actionLabel:''},
   more:{kicker:'AROMA LAB',title:'More',action:'',actionLabel:''},
-  insights:{kicker:'COFFEE INTELLIGENCE',title:'Intelligence',action:'',actionLabel:''},
+  insights:{kicker:'COFFEE INTELLIGENCE',title:'Insights',action:'',actionLabel:''},
   edata:{kicker:'BREW DETAILS',title:'Details',action:'Log',actionLabel:'查看咖啡紀錄'},
   learn:{kicker:'LEARNING',title:'Guide',action:'',actionLabel:''}
 };
@@ -13374,7 +13223,7 @@ async function renderHistory(){
     box.appendChild(preview);
   });
 }
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.10',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.9.1',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
@@ -13474,36 +13323,13 @@ $('pourGrind').addEventListener('input',()=>{syncPourGrinderToRun();renderGrinde
 ['pourGrindTurns','pourGrindClicks'].forEach(id=>{$(id).addEventListener('input',()=>{updateKinuDisplay('pourGrindTurns','pourGrindClicks','pourKinuGrindDisplay');updateGrinderInstrumentVisuals();syncPourGrinderToRun()});$(id).addEventListener('blur',()=>{normalizeKinuValues('pourGrindTurns','pourGrindClicks');updateKinuDisplay('pourGrindTurns','pourGrindClicks','pourKinuGrindDisplay');updateGrinderInstrumentVisuals();syncPourGrinderToRun()})});
 
 
-// v5.10: navigation and reading controls only; instructional content is unchanged.
-const learningGuideNames={ninebar:'9Barista 專業指南',common:'手沖・咖啡通識',cold:'冰咖啡・冷泡'};
-function readingMotion(){return window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';}
-function buildLearningContents(name){
-  const panel=$('learn-'+name),box=$('learningChapterList');if(!panel||!box)return;
-  const chapters=[...panel.children].map(card=>card.querySelector('h2,h3')).filter(Boolean);
-  $('learningGuideLabel').textContent=learningGuideNames[name];
-  $('learningChapterCount').textContent=chapters.length+' 章';
-  box.replaceChildren();
-  chapters.forEach((heading,i)=>{
-    if(!heading.id)heading.id='learning-heading-'+name+'-'+i;
-    heading.classList.add('learning-heading');heading.tabIndex=-1;
-    const button=document.createElement('button');button.type='button';button.className='learning-chapter-link';
-    button.innerHTML='<span>'+String(i+1).padStart(2,'0')+'</span><b>'+esc(heading.textContent)+'</b><span aria-hidden="true">↗</span>';
-    button.onclick=()=>{$('learningContents').open=false;heading.focus({preventScroll:true});heading.scrollIntoView({behavior:readingMotion(),block:'start'})};
-    box.appendChild(button);
-  });
-}
 function setLearnPanel(name){
-  if(!learningGuideNames[name])return;
-  $$('.learn-tab').forEach(b=>{const active=b.dataset.learn===name;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));b.setAttribute('aria-controls','learn-'+b.dataset.learn)});
+  $$('.learn-tab').forEach(b=>b.classList.toggle('active',b.dataset.learn===name));
   $$('.learn-panel').forEach(p=>p.classList.toggle('active',p.id==='learn-'+name));
-  $('learningContents').open=false;buildLearningContents(name);
-  window.scrollTo({top:0,behavior:readingMotion()});
+  window.scrollTo({top:0,behavior:'smooth'});
 }
-$$('.learn-tab').forEach(b=>{b.setAttribute('aria-pressed',String(b.classList.contains('active')));b.setAttribute('aria-controls','learn-'+b.dataset.learn);b.addEventListener('click',()=>setLearnPanel(b.dataset.learn))});
+$$('.learn-tab').forEach(b=>b.addEventListener('click',()=>setLearnPanel(b.dataset.learn)));
 $$('[data-jump-learn]').forEach(b=>b.addEventListener('click',()=>setLearnPanel(b.dataset.jumpLearn)));
-buildLearningContents('ninebar');
-$$('[data-intelligence-jump]').forEach(button=>button.addEventListener('click',()=>{const section=$('intelligence-'+button.dataset.intelligenceJump);if(section){section.focus({preventScroll:true});section.scrollIntoView({behavior:readingMotion(),block:'start'})}}));
-$$('[data-more-backup]').forEach(button=>button.addEventListener('click',()=>{showPage('logs');requestAnimationFrame(()=>{$('exportJson').focus({preventScroll:true});$('exportJson').closest('.card').scrollIntoView({behavior:readingMotion(),block:'start'})})}));
 
 function nval(id){const v=parseFloat($(id)?.value);return Number.isFinite(v)?v:0}
 function calcFlash(){
