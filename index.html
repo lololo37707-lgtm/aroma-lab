@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Aroma Lab v5.8</title>
+<title>Aroma Lab v5.9</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f4f4f6;--p:#fff;--c:#fafafa;--bd:#dedee3;--m:#6b7280;--a:#111}
 *{box-sizing:border-box}body{margin:0;padding:12px;max-width:820px;margin:auto}button,input,select,textarea{font:inherit}button{cursor:pointer}h1{font-size:22px;margin:0}h2{font-size:17px;margin:0}h3{font-size:15px;margin:0}.muted,.hint{color:var(--m);font-size:13px;line-height:1.55}.card{background:var(--p);border:1px solid var(--bd);border-radius:18px;padding:15px;margin:10px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}.badge{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:5px 8px;color:var(--m);white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:5px;border:1px solid var(--bd);border-radius:14px;background:var(--p);position:sticky;top:0;z-index:20}.tab{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--m);font-size:12px;font-weight:800;padding:5px}.tab.active{background:#eee;color:#111}.page{display:none}.page.active{display:block}.btn{min-height:50px;border:1px solid var(--bd);border-radius:13px;background:var(--c);color:#111;font-weight:800;padding:9px 12px}.btn.primary{background:#111;color:#fff;border-color:#111}.btn.danger{color:#b42318}.btn:disabled{opacity:.35}.mini{min-height:38px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:#111;padding:7px 10px;font-weight:750}.actions{display:grid;gap:8px;margin-top:12px}.flex-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.timer{text-align:center;font-variant-numeric:tabular-nums;font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1.05;margin:15px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{background:var(--c);border-radius:13px;padding:11px;text-align:center}.stat small{display:block;color:var(--m);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:4px}.timeline{list-style:none;padding:0;margin:8px 0 0}.timeline li{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:9px 0;border-top:1px solid #eee;font-size:13px}.timeline li:first-child{border-top:0}.time{font-variant-numeric:tabular-nums;color:var(--m)}.form{display:grid;gap:13px;margin-top:12px}.field label{display:block;font-size:12px;color:var(--m);margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}input,select,textarea{width:100%;min-height:48px;border:1px solid var(--bd);border-radius:12px;background:#fff;color:#111;padding:10px 11px;font-size:16px;outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#777}.suggest-wrap{position:relative}.suggestions{display:none;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;margin-top:4px}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-top:1px solid #eee;background:#fff;text-align:left;padding:9px 11px}.suggestion:first-child{border-top:0}.metric{font-size:13px;color:var(--m);margin-top:6px}.photo-box{border:1px dashed var(--bd);border-radius:15px;background:var(--c);padding:10px;text-align:center}.photo-box img{display:none;width:100%;max-height:340px;object-fit:contain;border-radius:12px;margin-bottom:9px}.photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-label{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--bd);border-radius:13px;background:#fff;font-weight:750;padding:9px}.history-filter{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.filter.active{background:#111;color:#fff}.history-item,.recipe-item{border-top:1px solid #eee;padding:13px 0}.history-item:first-child,.recipe-item:first-child{border-top:0}.history-title,.recipe-title{font-weight:850}.history-meta,.recipe-meta{font-size:13px;color:var(--m);line-height:1.55;margin-top:4px}.thumb{width:64px;height:64px;object-fit:cover;border-radius:11px;border:1px solid var(--bd);flex:0 0 auto}.guide{border-left:3px solid #111;background:var(--c);border-radius:0 13px 13px 0;padding:11px;font-size:14px;line-height:1.65;margin-top:10px}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.recipe-stat{background:var(--c);border-radius:12px;padding:10px;text-align:center}.recipe-stat small{display:block;color:var(--m);font-size:11px}.recipe-stat b{display:block;font-size:17px;margin-top:3px}.steps{display:grid;gap:8px;margin-top:10px}.step{background:var(--c);border-radius:13px;padding:11px}.step-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.step-grid .full{grid-column:1/-1}.step .meta{margin-top:3px}.diagnose{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.diag{min-height:44px;border:1px solid var(--bd);border-radius:11px;background:#fff;font-weight:750}.cheat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.cheat div{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.cheat b{display:block;margin-bottom:3px}details{border-top:1px solid #eee;padding:11px 0}details:first-of-type{border-top:0}summary{font-weight:800;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.detail{font-size:14px;line-height:1.7;color:var(--m);padding-top:8px}.detail b{color:#111}.bean-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.bean-chip{background:var(--c);border-radius:12px;padding:10px}.bean-chip small{display:block;color:var(--m);font-size:11px}.pour-editor-step{border:1px solid var(--bd);border-radius:14px;background:var(--c);padding:11px;margin-top:9px}.pour-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.pour-screen{display:none}.pour-screen.show{display:block}.pour-stepno{text-align:center;color:var(--m);font-size:13px}.pour-mode{text-align:center;font-size:22px;font-weight:900;margin:7px 0}.pour-temp{text-align:center;color:var(--m);font-weight:750}.pour-target{text-align:center;font-size:38px;font-weight:900;margin:8px 0}.toast{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#111;color:#fff;border-radius:12px;padding:11px 13px;font-size:13px;max-width:796px;margin:auto}.backup{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-link{font-size:13px;display:inline-block;margin-top:5px}.section-title{margin-top:4px}.warn{background:#fff7df;border:1px solid #ead28c;border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}.factor-list{display:grid;gap:8px;margin-top:10px}.factor-row{display:grid;grid-template-columns:78px 1fr 40px;gap:8px;align-items:center;background:var(--c);border-radius:12px;padding:10px}.factor-name{font-weight:800;font-size:13px}.factor-scale{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;color:var(--m)}.factor-line{height:7px;flex:1;border-radius:99px;background:linear-gradient(90deg,#e8dfc8,#8d4f42)}.factor-arrow{text-align:center;font-weight:900}.formula{background:#111;color:#fff;border-radius:13px;padding:12px;font-size:14px;line-height:1.65;margin-top:10px;font-variant-numeric:tabular-nums}.calc-box{background:var(--c);border-radius:12px;padding:11px}.calc-value{font-size:24px;font-weight:900;margin-top:4px}.variable-table{display:grid;gap:7px;margin-top:10px}.variable-row{display:grid;grid-template-columns:1.2fr .7fr 2fr;gap:8px;align-items:start;background:var(--c);border-radius:11px;padding:9px;font-size:13px}.variable-row b{font-size:13px}.ok{font-weight:850}.fixed{color:#8b5d14;font-weight:850}.learn-note{font-size:12px;color:var(--m);line-height:1.55;margin-top:8px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.compare-card{background:var(--c);border-radius:12px;padding:10px;font-size:13px;line-height:1.55}.compare-card b{display:block;margin-bottom:4px}.refbox{border:1px dashed var(--bd);border-radius:12px;padding:10px;font-size:13px;line-height:1.55;margin-top:10px}
@@ -9838,6 +9838,87 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 @media(min-width:700px){#page-pour #recipeList{grid-template-columns:repeat(2,minmax(0,1fr))!important}#page-pour .pour-live-card{max-width:550px;margin-left:auto!important;margin-right:auto!important}}
 @media(max-width:365px){#page-pour .card{padding:17px!important}#page-pour .recipe-item{padding:18px!important}#page-pour .recipe-title{font-size:18px!important}#page-pour .pour-brewer-orb{width:49px;height:49px;flex-basis:49px;border-radius:17px}#page-pour .pour-param b{font-size:19px}#page-pour .pour-clock{width:218px;min-height:218px}#page-pour .recipe-item .flex-actions{grid-template-columns:minmax(0,1fr) auto!important}#page-pour .recipe-item .mini{padding:10px 13px!important}#page-pour .pour-live-actions{grid-template-columns:1fr 1fr!important}}
 
+
+/* Aroma Lab v5.9 — Specialty Drinks Redesign. Presentation only; no drink Log. */
+#page-mix{--mix-ink:#24272c;--mix-muted:#8c919a;--mix-line:rgba(82,94,111,.10);--mix-shadow:7px 12px 29px rgba(47,58,76,.065),-5px -5px 18px rgba(255,255,255,.86);color:var(--mix-ink)}
+#page-mix .card{border:1px solid rgba(255,255,255,.95)!important;border-radius:27px!important;background:linear-gradient(140deg,#fff,#f8fafc)!important;box-shadow:var(--mix-shadow)!important;padding:20px!important;margin:19px 0!important}
+#page-mix .mix-intro{background:transparent!important;box-shadow:none!important;border:0!important;padding:0 2px!important;margin:0 0 22px!important}
+#page-mix .mix-intro h2{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:10px!important;letter-spacing:.17em!important;text-transform:uppercase;color:#9299a3!important;font-weight:500!important}
+#page-mix .mix-intro .small-note{margin-top:7px;font-size:11px;color:var(--mix-muted)}
+#page-mix #mixLibrary > .card:first-child{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+#page-mix .mix-library-head{padding:0 2px;gap:14px;margin:0 0 20px}
+#page-mix .mix-library-head > div{min-width:0}
+#page-mix .mix-library-head h2{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:22px!important;font-weight:650!important;letter-spacing:-.04em!important;line-height:1.4!important}
+#page-mix .mix-library-head .small-note{font-size:11px;line-height:1.85;margin-top:10px;color:#959aa2}
+#page-mix #mixAddBtn,#page-mix #mixSaveBtn{border-radius:999px!important;background:#191b1f!important;color:#fff!important;border:1px solid #191b1f!important;min-height:45px!important;padding:11px 18px!important;font-size:12px!important;font-weight:600!important;flex:0 0 auto;white-space:nowrap;box-shadow:0 5px 12px rgba(25,27,31,.10)!important}
+#page-mix .mix-filter{border:1px solid #fff!important;border-radius:23px!important;background:radial-gradient(ellipse at 100% 0,rgba(228,237,244,.6),transparent 80%),#f8fafc!important;padding:17px!important;margin:0 0 27px!important;box-shadow:var(--mix-shadow)!important}
+#page-mix .mix-filter b{font-size:12px!important;font-weight:550!important;color:#677482}
+#page-mix .mix-filter .small-note{font-size:10px;line-height:1.85;color:#919ba7;margin-top:8px}
+#page-mix .tag-chip-wrap{display:flex;flex-wrap:wrap;gap:7px!important;margin-top:12px!important}
+#page-mix .tag-chip{min-height:36px!important;border-radius:999px!important;border:1px solid #e1e7ed!important;background:#fcfdff!important;color:#8894a1!important;padding:8px 12px!important;font-size:11px!important;font-weight:500!important;box-shadow:0 2px 3px rgba(70,85,105,.025)!important}
+#page-mix .tag-chip.active{background:#28313b!important;color:#fff!important;border-color:#28313b!important;box-shadow:0 4px 9px rgba(40,49,59,.10)!important}
+#page-mix #mixClearTags{background:transparent!important;border:0!important;box-shadow:none!important;color:#8693a0!important;padding:5px 0!important;min-height:36px!important;font-size:10px!important;font-weight:400!important}
+#page-mix #mixClearTags:disabled{opacity:.4}
+#page-mix #mixRecipeList{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:29px!important;margin:0!important}
+#page-mix .drink-card{position:relative;min-width:0;overflow:hidden!important;border:1px solid #fff!important;border-radius:29px!important;padding:0!important;margin:0!important;background:linear-gradient(140deg,#fff,#fafbfd)!important;box-shadow:var(--mix-shadow)!important}
+#page-mix .drink-card:before,#page-mix .drink-card:after,#page-mix .al-drink-feature:has(.al-drink-photo):after{content:none!important}
+#page-mix .al-drink-feature{display:block!important;padding:0!important;position:relative!important;min-height:0!important;background:none!important}
+#page-mix .mix-product-visual{margin:0;padding:12px 12px 0;position:relative}
+#page-mix .al-drink-photo{position:static!important;display:block!important;width:100%!important;height:260px!important;object-fit:cover!important;object-position:50% 46%!important;border-radius:21px!important;margin:0!important;filter:none!important;opacity:1!important;box-shadow:none!important;transform:none!important}
+#page-mix .mix-photo-label{position:absolute;left:26px;bottom:14px;padding:6px 9px;background:rgba(255,255,255,.75);color:#686f78;border:1px solid rgba(255,255,255,.7);border-radius:999px;backdrop-filter:blur(10px);font-size:8px;letter-spacing:.09em;font-weight:500}
+#page-mix .mix-product-placeholder{display:grid;place-items:center;height:125px;margin:13px 13px 0;border-radius:21px;background:radial-gradient(ellipse at 50% 0,#e7eef4,transparent 85%),#f3f6f9;color:#a0adba}
+#page-mix .mix-product-placeholder svg{width:64px;height:64px;filter:drop-shadow(0 5px 4px rgba(80,95,112,.08))}
+#page-mix .al-drink-body{padding:23px 23px 20px!important;position:static!important;background:none!important;text-align:left!important;min-width:0;transform:none!important}
+#page-mix .mix-product-eyebrow{display:flex;justify-content:space-between;gap:12px;font-size:9px!important;font-weight:400!important;letter-spacing:.10em;color:#979ca5;margin-bottom:10px;line-height:1.65}
+#page-mix .mix-product-eyebrow span{overflow-wrap:anywhere;min-width:0}
+#page-mix .al-drink-title{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:27px!important;font-weight:650!important;letter-spacing:-.045em!important;line-height:1.35!important;color:var(--mix-ink)!important;max-width:none!important;margin:0 0 12px!important;overflow-wrap:anywhere}
+#page-mix .al-drink-summary{overflow:visible!important;font-size:12px!important;line-height:1.85!important;color:#87919e!important;margin:0 0 16px!important;white-space:pre-wrap;overflow-wrap:anywhere;display:block!important;max-height:none!important;-webkit-line-clamp:unset!important}
+#page-mix .al-drink-tags{display:flex;flex-wrap:wrap;gap:6px!important;margin:0!important}
+#page-mix .recipe-tag{border:1px solid #e5e9ed!important;background:#f5f8fb!important;color:#909ba7!important;border-radius:999px!important;font-size:9px!important;font-weight:500!important;padding:5px 9px!important;line-height:1.5!important}
+#page-mix .al-drink-actions{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:9px!important;padding:0 23px 22px!important;margin:0!important;border:0!important;background:none!important}
+#page-mix .al-drink-actions button{min-height:46px!important;border-radius:999px!important;font-size:12px!important;font-weight:550!important;padding:10px 17px!important}
+#page-mix .al-drink-actions .viewMix{background:#1b1d20!important;color:#fff!important;border:1px solid #1b1d20!important;box-shadow:0 6px 13px rgba(25,27,31,.10)!important}
+#page-mix .al-drink-actions .editMix{background:#f7f9fb!important;color:#8b95a1!important;border:1px solid #e4e8ed!important;box-shadow:none!important}
+#page-mix .al-drink-detail{padding:0 23px 22px!important;min-width:0;color:#6f7d8b}
+#page-mix .drink-recipe-panel{border-top:1px solid var(--mix-line)!important;padding:0!important;margin:0!important;background:none!important;border-radius:0!important;box-shadow:none!important}
+#page-mix .drink-recipe-panel > summary{min-height:45px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px!important;font-weight:500!important;color:#99a2ad!important;letter-spacing:.04em;list-style:none}
+#page-mix .drink-recipe-panel > summary:after{content:"+";font-size:18px;font-weight:400}
+#page-mix .drink-recipe-panel[open] > summary:after{content:"−"}
+#page-mix .mix-detail-section{padding:21px 0 6px}
+#page-mix .mix-detail-label{display:block;font-size:8px;color:#9ca8b3;letter-spacing:.14em;font-weight:500;margin-bottom:10px}
+#page-mix .mix-detail-section h3{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:16px!important;font-weight:600!important;letter-spacing:-.025em!important;margin:0 0 14px!important;color:#566474!important}
+#page-mix .mix-target-copy{background:#f0f5f8;border-radius:17px;padding:14px 15px;font-size:12px;color:#7b8d9e;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+#page-mix .mix-ingredient-list{padding:0;margin:0;list-style:none}
+#page-mix .mix-ingredient-line{display:grid;grid-template-columns:minmax(0,1fr) minmax(50px,auto);gap:14px;align-items:baseline;font-size:12px;line-height:1.8;padding:10px 0;border-bottom:1px solid var(--mix-line)}
+#page-mix .mix-ingredient-line span{color:#7b8794;overflow-wrap:anywhere;white-space:pre-wrap}
+#page-mix .mix-ingredient-line b{font-weight:550;color:#5f7285;text-align:right;overflow-wrap:anywhere;white-space:pre-wrap}
+#page-mix .mix-instruction-list{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+#page-mix .mix-instruction{display:grid;grid-template-columns:29px minmax(0,1fr);gap:12px;align-items:start;font-size:12px;line-height:1.85;color:#7c8895}
+#page-mix .mix-instruction-number{display:grid;place-items:center;width:27px;height:27px;border-radius:10px;background:linear-gradient(135deg,#eaf1f7,#e2ebf2);box-shadow:inset 0 1px 1px #fff;color:#7990a4;font-size:10px;font-weight:600}
+#page-mix .mix-instruction-copy{white-space:pre-wrap;overflow-wrap:anywhere}
+#page-mix .mix-secondary-detail{border-top:1px solid var(--mix-line)!important;margin-top:14px;padding:10px 0!important}
+#page-mix .mix-secondary-detail > summary{font-size:11px!important;font-weight:500!important;min-height:32px;display:flex;align-items:center;justify-content:space-between;color:#909ba7!important}
+#page-mix .mix-secondary-detail > summary:after{content:"+";font-size:17px}
+#page-mix .mix-secondary-detail[open] > summary:after{content:"−"}
+#page-mix .mix-secondary-detail .detail{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px!important;line-height:1.85!important;color:#7f8b98!important}
+#page-mix #mixBackBtn{min-height:42px!important;border-radius:999px!important;background:#f6f9fb!important;border:1px solid #e1e7ed!important;color:#83919f!important;padding:10px 15px!important;font-size:12px!important}
+#page-mix #mixEditor > .card{border-radius:25px!important;padding:20px!important;margin:17px 0!important}
+#page-mix #mixEditor > .card:first-of-type{background:radial-gradient(ellipse at 100% 0,rgba(227,237,246,.62),transparent 65%),#fff!important}
+#page-mix #mixEditor h2{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;font-size:18px!important;font-weight:600!important;letter-spacing:-.025em!important}
+#page-mix #mixEditor .field label{font-size:11px;color:#939eaa;margin-bottom:7px}
+#page-mix #mixEditor input,#page-mix #mixEditor select,#page-mix #mixEditor textarea{border:1px solid #e3e9ef!important;background:#fafcfe!important;box-shadow:inset 2px 3px 8px rgba(65,83,106,.035)!important;border-radius:15px!important;font-size:16px!important;color:#667584!important}
+#page-mix .mix-item-editor{border:1px solid #e5ebf1!important;background:#f4f8fb!important;border-radius:18px!important;padding:14px!important;margin-top:12px!important}
+#page-mix .mix-item-head b{font-size:11px!important;font-weight:550!important;color:#8394a5}
+#page-mix .mini,#page-mix #mixAddTag{border-radius:999px!important;min-height:39px!important;font-size:11px!important;font-weight:500!important}
+#page-mix #mixAddTag{background:#eaf1f6!important;border:1px solid #e0e8ef!important;color:#7a8ea1!important;box-shadow:none!important}
+#page-mix .mix-item-actions{display:flex;gap:5px;flex-wrap:wrap}
+#page-mix .ingredient-row{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr) minmax(0,.7fr)!important;gap:6px!important}
+#page-mix .ingredient-row input{min-width:0;padding-left:9px!important;padding-right:9px!important}
+#page-mix #mixDeleteBtn{background:transparent!important;color:#a26d6a!important;border:1px solid #e8dada!important;border-radius:999px!important;box-shadow:none!important}
+#page-mix .filter-empty{padding:30px 20px;border:1px dashed #dce4ec;border-radius:23px;text-align:center;color:#97a2ad;font-size:12px;line-height:1.9}
+@media(min-width:700px){#page-mix #mixRecipeList{grid-template-columns:repeat(2,minmax(0,1fr))!important}#page-mix .al-drink-photo{height:250px!important}}
+@media(max-width:365px){#page-mix .al-drink-photo{height:225px!important}#page-mix .al-drink-body{padding:20px 18px 17px!important}#page-mix .al-drink-title{font-size:24px!important}#page-mix .al-drink-actions{padding:0 18px 20px!important}#page-mix .al-drink-detail{padding:0 18px 18px!important}#page-mix .mix-library-head{gap:10px}#page-mix #mixAddBtn{padding:10px 14px!important}#page-mix .mix-item-head{flex-wrap:wrap;gap:8px}#page-mix #mixEditor > .card{padding:17px!important}}
+
 </style>
 </head>
 <body>
@@ -10666,12 +10747,12 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
 
   <!-- SPECIALTY DRINKS -->
   <section id="page-mix" class="page">
-  <div class="al-page-head"><div class="kicker">SPECIALTY DRINKS</div><h1>特調</h1><p>Coffee, remixed.</p></div>
-    <div class="card"><div class="row"><div><h2>Recipe Library</h2><div class="small-note">新增、編輯或以 Tag 組合篩選你嘅特調配方。</div></div><span class="badge">Local Library</span></div></div>
+  <div class="al-page-head"><div class="kicker">SPECIALTY DRINKS</div><h1>特調</h1><p>咖啡以外，試一種新味道。</p></div>
+    <div class="card mix-intro"><div class="row"><div><h2>Recipe Library</h2><div class="small-note">新增、編輯或以 Tag 組合篩選你嘅特調配方。</div></div><span class="badge">Local Library</span></div></div>
 
     <div id="mixLibrary">
       <div class="card">
-        <div class="row">
+        <div class="row mix-library-head">
           <div>
             <div class="row" style="justify-content:flex-start">
               <h2>我的特調配方</h2>
@@ -10792,7 +10873,7 @@ nav.tabs.al-nav-v54 > .al-nav-dock > .tab{
     <button class="al-more-card data" data-open-page="edata" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><b>資料</b><p>Bean Profile、磨度、Dose、Yield、TDS / EY、相片與風味紀錄。</p></button>
     <button class="al-more-card learn" data-open-page="learn" type="button"><div class="al-more-icon"><svg class="ui-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.4 5.6c2.85-.85 5.4-.35 7.6 1.5v11.2c-2.2-1.85-4.75-2.35-7.6-1.5V5.6Z"/><path d="M19.6 5.6c-2.85-.85-5.4-.35-7.6 1.5v11.2c2.2-1.85 4.75-2.35 7.6-1.5V5.6Z"/></svg></div><b>教學</b><p>9Barista、手沖、咖啡通識、冰咖啡與冷泡知識。</p></button>
   </div>
-  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.8 · Data stays in your browser</div>
+  <div class="small-note" style="text-align:center;margin:20px 0">Aroma Lab v5.9 · Data stays in your browser</div>
 </section>
 
 <section id="page-learn" class="page">
@@ -13082,7 +13163,7 @@ async function renderHistory(){
     box.appendChild(d);
   });
 }
-$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.8',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+$('exportJson').addEventListener('click',async()=>{const payload={app:'Aroma Lab',version:'5.9',exportedAt:new Date().toISOString(),sessions:await getAll('sessions'),pourRecipes:await getAll('pourRecipes'),pourLogs:await getAll('pourLogs'),drinkRecipes:await getAll('drinkRecipes'),beans:await getAll('beans')};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aroma_lab_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
 $('importJson').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());const sessions=Array.isArray(p)?p:(p.sessions||[]);for(const x of sessions)if(x?.id)await put('sessions',x);for(const x of (p.pourRecipes||[]))if(x?.id)await put('pourRecipes',x);for(const x of (p.pourLogs||[]))if(x?.id)await put('pourLogs',x);for(const x of (p.drinkRecipes||[]))if(x?.id)await put('drinkRecipes',x);for(const x of (p.beans||[]))if(x?.id)await put('beans',x);await rebuildMemory();await seedGrinderPrefsFromLogs();await renderHistory();await renderRecipes();await refreshDrinkRecipes();await refreshBeans();toast('備份已還原')}catch(err){toast('還原失敗：'+err.message)}e.target.value=''});
 
 function normalizeStep(s){return{mode:s.mode||'',temp:s.temp||'',target:s.target||'',waitSec:s.waitSec??null,description:s.description||[s.action,s.note].filter(Boolean).join('；')||''}}
@@ -13322,6 +13403,8 @@ function renderDrinkTagFilters(){
     :`未選 Tag · 顯示全部 ${drinkRecipes.length} 款`;
   const clear=$('mixClearTags');if(clear)clear.disabled=!selected.length;
 }
+// v5.9 product presentation only. No drink sessions/logs or storage fields added.
+function mixProductPlaceholder(){return `<div class="mix-product-placeholder" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M18 19h28l-4 32H22l-4-32Z" fill="#fbfdff" stroke="currentColor" stroke-width="1.4"/><path d="M24 36h16l-2 12H26l-2-12Z" fill="#e1e8ef"/><path d="M35 19l5-12h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M17 19h30" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>`}
 function renderDrinkRecipes(){
   const box=$('mixRecipeList');if(!box)return;box.innerHTML='';
   const selected=[...activeDrinkTags];
@@ -13331,22 +13414,25 @@ function renderDrinkRecipes(){
   filtered.forEach(r=>{
     const d=document.createElement('div'),img=builtinDrinkImages[r.id]||'';
     d.className='drink-card'+(img?'':' al-no-photo');
-    const ingredients=(r.ingredients||[]).map(i=>`${esc(i.name)} ${esc(i.amount||'')} ${esc(i.unit||'')}`.trim()).join(' · ');
-    const steps=(r.steps||[]).map((s,i)=>`<div class="step"><b>Step ${i+1}</b><div class="meta">${esc(s)}</div></div>`).join('');
-    const tags=drinkTagsOf(r),miniTags=tags.slice(0,4).map(t=>`<span class="recipe-tag">${esc(t)}</span>`).join('');
+    const ingredients=(r.ingredients||[]).map(i=>`<li class="mix-ingredient-line"><span>${esc(i.name||'未填材料')}</span><b>${esc(i.amount||'')}${i.unit?' '+esc(i.unit):''}</b></li>`).join('');
+    const steps=(r.steps||[]).map((s,i)=>`<li class="mix-instruction"><span class="mix-instruction-number">${i+1}</span><div class="mix-instruction-copy">${esc(s)}</div></li>`).join('');
+    const tags=drinkTagsOf(r),miniTags=tags.map(t=>`<span class="recipe-tag">${esc(t)}</span>`).join('');
     d.innerHTML=`<div class="al-drink-feature">
-      ${img?`<img class="al-drink-photo" src="${img}" alt="${esc(r.name||'特調')}">`:''}
-      <div class="al-drink-body"><div class="al-drink-title">${esc(r.name||'未命名')}</div><div class="al-drink-sub">${esc(r.base||'未指定基底')} · ${esc(r.serve||'')}</div><div class="al-drink-summary">${esc(r.summary||'')}</div><div class="al-drink-tags">${miniTags}</div></div>
+      ${img?`<figure class="mix-product-visual"><img class="al-drink-photo" src="${img}" alt="${esc(r.name||'特調')}" loading="lazy" decoding="async"><span class="mix-photo-label">AROMA LAB · SPECIALTY</span></figure>`:mixProductPlaceholder()}
+      <div class="al-drink-body"><div class="mix-product-eyebrow"><span>${esc(r.base||'未指定基底')}</span><span>${esc(r.serve||'')}</span></div><div class="al-drink-title">${esc(r.name||'未命名')}</div><div class="al-drink-summary">${esc(r.summary||'')}</div><div class="al-drink-tags">${miniTags}</div></div>
     </div>
-    <div class="al-drink-actions"><button class="mini editMix" type="button">查看 / 編輯 →</button></div>
-    <div class="al-drink-detail">
-      ${r.target?`<details><summary>風味目標</summary><div class="detail">${esc(r.target)}</div></details>`:''}
-      <details><summary>材料與份量</summary><div class="detail">${ingredients||'未填'}</div></details>
-      <details><summary>完整做法</summary><div class="steps">${steps||'<div class="detail">未填</div>'}</div></details>
-      ${r.troubleshooting?`<details><summary>Troubleshooting / 點調</summary><div class="detail" style="white-space:pre-line">${esc(r.troubleshooting)}</div></details>`:''}
-      ${r.variations?`<details><summary>可選 Variation</summary><div class="detail" style="white-space:pre-line">${esc(r.variations)}</div></details>`:''}
-      ${r.notes?`<details><summary>備註</summary><div class="detail">${esc(r.notes)}</div></details>`:''}
-    </div>`;
+    <div class="al-drink-actions"><button class="mini viewMix" type="button" aria-expanded="false" aria-label="查看 ${esc(r.name||'特調')} 配方">查看配方</button><button class="mini editMix" type="button">編輯</button></div>
+    <div class="al-drink-detail"><details class="drink-recipe-panel"><summary>材料、步驟及調整</summary>
+      ${r.target?`<section class="mix-detail-section"><span class="mix-detail-label">TASTE PROFILE</span><h3>風味目標</h3><p class="mix-target-copy">${esc(r.target)}</p></section>`:''}
+      <section class="mix-detail-section"><span class="mix-detail-label">INGREDIENTS</span><h3>材料與份量</h3><ul class="mix-ingredient-list">${ingredients||'<li class="hint">未填</li>'}</ul></section>
+      <section class="mix-detail-section"><span class="mix-detail-label">THE METHOD</span><h3>完整做法</h3><ol class="mix-instruction-list">${steps||'<li class="hint">未填</li>'}</ol></section>
+      ${r.troubleshooting?`<details class="mix-secondary-detail"><summary>Troubleshooting / 點調</summary><div class="detail">${esc(r.troubleshooting)}</div></details>`:''}
+      ${r.variations?`<details class="mix-secondary-detail"><summary>可選 Variation</summary><div class="detail">${esc(r.variations)}</div></details>`:''}
+      ${r.notes?`<details class="mix-secondary-detail"><summary>備註</summary><div class="detail">${esc(r.notes)}</div></details>`:''}
+    </details></div>`;
+    const panel=d.querySelector('.drink-recipe-panel'),view=d.querySelector('.viewMix');
+    const syncView=()=>{view.setAttribute('aria-expanded',String(panel.open));view.textContent=panel.open?'收起配方':'查看配方'};
+    view.addEventListener('click',()=>{panel.open=!panel.open;syncView()});panel.addEventListener('toggle',syncView);
     d.querySelector('.editMix').addEventListener('click',()=>openMixEditor(r.id));box.appendChild(d);
   });
 }
